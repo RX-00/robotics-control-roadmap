@@ -1,97 +1,76 @@
 # Repo Understanding
 
-This repository is a work-in-progress learning roadmap for robot control. It is not currently a software package: there is no build system, package manifest, executable source tree, CI configuration, or test suite in the repo at the time this document was written.
+This repository is a work-in-progress learning roadmap for robot control. It is a documentation and diagram repository, not a software package. There is no build system, package manifest, executable source tree, CI configuration, or test suite.
 
-## Current Artifact Inventory
+## Artifact Inventory
 
-- `README.md`: short public-facing project stub. It names the project, states that the roadmap is WIP, and contains TODO sections for motivation, audience, visualization, and usage.
-- `robotics-control-roadmap.drawio`: editable diagrams.net / Draw.io source for a simple roadmap graph titled `Control For Robots!`.
-- `images/Control_Map_ver5.png`: a large PNG image titled `The Map of Control Theory`. This image appears to be an external reference-style control theory map and does not match the current Draw.io roadmap source.
-- `topics-and-references.md`: empty placeholder referenced by the README as the future complete reference list.
+- `README.md`: public-facing project stub with sections for audience, roadmap visualization, usage, references, and inspiration.
+- `robotics-control-roadmap.drawio`: editable diagrams.net / Draw.io source for the robot control roadmap.
+- `topics-and-references.md`: Markdown skeleton whose sections mirror the roadmap topic nodes. Each section currently has an empty `References:` block.
+- `images/Control_Map_ver5.png`: 5011 x 3878 PNG titled `The Map of Control Theory`, credited in-image to Brian Douglas / Engineering Media, August 2020.
 - `LICENSE`: GPL-3.0 license text.
-- `docs/`: repo-facing documentation for future agents and contributors.
+- `.gitignore`: ignores Emacs lock, backup, and autosave files.
+- `docs/repo-understanding.md`: this repo orientation document.
 
-Only `README.md` and `LICENSE` are tracked in the initial commit. The current working tree also contains untracked roadmap artifacts and this `docs/` directory.
+## Roadmap Diagram
 
-## Project Shape
+`robotics-control-roadmap.drawio` is uncompressed XML compatible with diagrams.net. The diagram is named `Robot Control Roadmap`.
 
-The intended repository shape appears to be:
+The diagram contains 43 vertices:
 
-1. A conceptual roadmap for robot control.
-2. A visual diagram showing topic progression and dependencies.
-3. A companion reference list mapping topics to learning resources.
+- One title vertex: `Robot Control Roadmap`.
+- 27 topic vertices.
+- 15 legend vertices.
 
-The project is currently closer to a scaffold than a complete roadmap. The README explicitly marks core sections as TODO, and the topic/reference file is empty.
+The 27 topic vertices are:
 
-## Roadmap Source Of Truth
-
-Treat `robotics-control-roadmap.drawio` as the editable roadmap source unless the user says otherwise. It is plain XML compatible with diagrams.net.
-
-The current Draw.io graph contains these topic nodes:
-
-- `Control For Robots!`
-- `State Estimation`
+- `Mathematical Foundations`
+- `Signals, Systems & Optimization`
+- `Robot Kinematics`
+- `Robot Dynamics`
+- `State-Space Modeling`
+- `Simulation & System Identification`
+- `Feedback Control Basics`
+- `Stability & Lyapunov Analysis`
+- `Controllability & Observability`
 - `Linear Control`
-- `Non-Linear Control`
+- `Nonlinear Control`
+- `Robust & Adaptive Control`
+- `Optimal Control`
+- `State Estimation`
+- `Sensor Fusion & Localization`
+- `Motion Planning`
+- `Trajectory Generation`
+- `Trajectory Optimization`
 - `Model Predictive Control`
 - `Dynamic Programming`
-- `Policy Iteration`
 - `Value Iteration`
+- `Policy Iteration`
 - `Reinforcement Learning`
+- `Learning-Based Control`
+- `Force & Impedance Control`
+- `Operational Space & Whole-Body Control`
+- `Contact & Hybrid Systems`
 
-Every topic node currently has three child rows named `Resource 1`, `Resource 2`, and `Resource 3`. These are placeholders, not real references.
+The diagram contains 22 directed edges. All roadmap arrows are minimal in-group learning-order links between topics of the same color.
 
-The current directed relationships in the Draw.io graph are:
+The roadmap's in-group chains are:
 
-- `Control For Robots!` -> `State Estimation`
-- `Control For Robots!` -> `Linear Control`
-- `Control For Robots!` -> `Dynamic Programming`
-- `Linear Control` -> `Non-Linear Control`
-- `Non-Linear Control` -> `Model Predictive Control`
-- `Dynamic Programming` -> `Policy Iteration`
-- `Dynamic Programming` -> `Value Iteration`
-- `Policy Iteration` -> `Reinforcement Learning`
-- `Value Iteration` -> `Reinforcement Learning`
+- Foundations: mathematical foundations feeds signals, systems, and optimization.
+- Robot modeling and control: kinematics feeds dynamics, dynamics feeds state-space modeling and force/impedance control, state-space modeling feeds simulation/system identification, force/impedance control feeds operational-space/whole-body control, and operational-space/whole-body control feeds contact/hybrid systems.
+- Feedback and control theory: feedback basics feeds stability analysis, stability feeds controllability/observability, controllability/observability feeds linear control, linear control feeds nonlinear control, nonlinear control feeds robust/adaptive control, and robust/adaptive control feeds optimal control.
+- Estimation and localization: state estimation feeds sensor fusion/localization.
+- Planning and optimization: motion planning feeds trajectory generation, trajectory generation feeds trajectory optimization, and trajectory optimization feeds model predictive control.
+- Dynamic programming and learning: dynamic programming feeds value iteration and policy iteration, both feed reinforcement learning, and reinforcement learning feeds learning-based control.
 
-## PNG Caveat
+## Topics File
 
-`images/Control_Map_ver5.png` is a 5011 x 3878 PNG titled `The Map of Control Theory`, credited in-image to Brian Douglas / Engineering Media, August 2020. It has many more topics than the Draw.io file, including adaptive control, robust control, planning, system analysis, modeling and simulation, multi-agent control, and many state estimation subtopics.
+`topics-and-references.md` mirrors the 27 roadmap topic vertices as second-level Markdown headings. It contains no actual references yet.
 
-Do not assume this PNG is generated from `robotics-control-roadmap.drawio`. The visible content and structure differ substantially. If the roadmap visualization should be derived from Draw.io, a new export needs to be generated from `robotics-control-roadmap.drawio`.
+## PNG Relationship
 
-## Documentation Gaps
+`images/Control_Map_ver5.png` is not an export of `robotics-control-roadmap.drawio`. The PNG is a dense external control-theory map with many topics that are not present in the Draw.io roadmap.
 
-The repo does not yet define:
+## Validation State
 
-- The intended audience or prerequisite background.
-- The exact scope boundary between robotics control, general control theory, estimation, planning, and reinforcement learning.
-- A canonical topic taxonomy beyond the small Draw.io graph.
-- Any real resource entries for the topic placeholders.
-- A process for updating the Draw.io source and exported image together.
-- Attribution/licensing details for the PNG image.
-- Commands for validation, export, formatting, or link checking.
-
-## Suggested Contribution Workflow
-
-Because this repo has no automated validation, contributors should be explicit about manual checks.
-
-When changing roadmap content:
-
-1. Edit `robotics-control-roadmap.drawio` in diagrams.net or another compatible Draw.io editor.
-2. Update `topics-and-references.md` with the same topic names and real resource entries.
-3. Export a fresh image only if the repo intends to keep a rendered roadmap image in `images/`.
-4. Verify that README links and file names still match the repo.
-5. State manual validation performed, such as opening the Draw.io file, viewing the exported PNG, or checking Markdown rendering.
-
-When adding references:
-
-- Prefer stable, primary, or widely accepted educational sources.
-- Keep topic names consistent between the diagram and `topics-and-references.md`.
-- Do not replace placeholder rows with claims about prerequisites or sequence unless those relationships are also reflected in the graph.
-
-## Agent Notes
-
-- Be careful with the dirty working tree. At the time of this document, user changes include a modified `README.md`, untracked `robotics-control-roadmap.drawio`, untracked `topics-and-references.md`, untracked `images/`, and an editor lock/symlink named `.#README.md`.
-- Do not delete or normalize untracked files unless explicitly asked.
-- There are no tests to run. Validation is currently limited to file inspection and Markdown/XML sanity checks.
-- If asked to “complete” the roadmap, clarify whether the user wants topic taxonomy, curated references, diagram editing, README content, or all of those.
+The Draw.io file parses as XML. There are no automated project tests or documented validation commands for this repository.
