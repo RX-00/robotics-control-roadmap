@@ -19,3 +19,13 @@ For a complete list of references for each topic please refer to the `topics-and
 This project was inspired by the following:
 - [mathematics-roadmap](https://github.com/talalalrawajfeh/mathematics-roadmap) by Talal Alrawajfeh.
 - [The Map of Control Theory](https://engineeringmedia.com/maps) by Engineering Media
+
+# Ideas/TODOs
+
+Could go chronologically when things were created
+vs
+Go from fundamentals (but ppl would argue b/w if you should go from foundations like stats or calc)
+
+Formatting:
+- Brian suggested maybe you could even make it into a clear ring of subjects, so the closer to the center is more fundamental, and then have branches that go off from there
+- Shivesh suggested that it would be nice if you hovered the mouse over the subject, a popup would appear with links/textbooks
