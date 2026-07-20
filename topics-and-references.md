@@ -1,6 +1,6 @@
 # Topics and References
 
-This index mirrors the 64 topic nodes in the robot-control roadmap. References have not yet been curated.
+This index mirrors the 59 topic nodes in the robot-control roadmap. References have not yet been curated.
 
 ## 1. Mathematical and Computational Foundations
 
@@ -162,7 +162,7 @@ References:
 
 References:
 
-## 4. Robot-Specific Control
+## 4. Contact-Rich Robot and Whole-Body Control
 
 ### Joint-space tracking and actuator control
 
@@ -253,27 +253,5 @@ References:
 References:
 
 ### Deployment-ready robot autonomy
-
-References:
-
-## 7. Specialization Tracks
-
-### Manipulation and grasping
-
-References:
-
-### Mobile robots and autonomous vehicles
-
-References:
-
-### Aerial robotics
-
-References:
-
-### Legged robots and humanoids
-
-References:
-
-### Multi-robot and human-robot systems
 
 References:

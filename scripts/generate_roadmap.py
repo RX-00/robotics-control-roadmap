@@ -23,7 +23,7 @@ DRAWIO_PATH = ROOT / "robotics-control-roadmap.drawio"
 SVG_PATH = ROOT / "images" / "robotics-control-roadmap.svg"
 MERMAID_PATH = ROOT / "roadmap-prerequisites.mmd"
 
-CANVAS = 6800
+CANVAS = 6000
 CX = CY = CANVAS / 2
 HUB_RADIUS = 820
 TOPIC_BASE_RADIUS = 1360
@@ -177,7 +177,7 @@ GROUPS = (
     ),
     Group(
         "R",
-        "4. Robot-Specific Control",
+        "4. Contact-Rich Robot and Whole-Body Control",
         150,
         "#d0e8e6",
         "#3f8f89",
@@ -255,15 +255,6 @@ GROUPS = (
 )
 
 
-APPLICATIONS = (
-    Topic("A1", "Manipulation and grasping", 0),
-    Topic("A2", "Mobile robots and autonomous vehicles", 0),
-    Topic("A3", "Aerial robotics", 0),
-    Topic("A4", "Legged robots and humanoids", 0),
-    Topic("A5", "Multi-robot and human-robot systems", 0),
-)
-
-
 # Exact entry edges from the accepted semantic draft.
 ENTRY_EDGES = (
     ("START", "F1"),
@@ -317,15 +308,6 @@ CROSS_EDGES = (
     ("M9", "D5"),
     ("L8", "D5"),
     ("R7", "D3"),
-)
-
-
-APPLICATION_EDGES = (
-    ("D7", "A1"),
-    ("D7", "A2"),
-    ("D7", "A3"),
-    ("D7", "A4"),
-    ("D7", "A5"),
 )
 
 
@@ -383,16 +365,6 @@ def node_geometry() -> dict[str, tuple[float, float, float, float]]:
                 TOPIC_HEIGHT,
             )
 
-    ax, ay = polar(2800, -90)
-    geometry["hub-A"] = (ax - HUB_WIDTH / 2, ay - HUB_HEIGHT / 2, HUB_WIDTH, HUB_HEIGHT)
-    for topic, angle in zip(APPLICATIONS, (-145, -117.5, -90, -62.5, -35), strict=True):
-        x, y = polar(3220, angle)
-        geometry[topic.id] = (
-            x - TOPIC_WIDTH / 2,
-            y - TOPIC_HEIGHT / 2,
-            TOPIC_WIDTH,
-            TOPIC_HEIGHT,
-        )
     return geometry
 
 
@@ -545,7 +517,6 @@ def generate_drawio() -> None:
     spoke_style = "edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;"
     for group in GROUPS:
         drawio_edge(root, f"spoke-{group.id}", "START", f"hub-{group.id}", "1", spoke_style)
-    drawio_edge(root, "spoke-A", "START", "hub-A", "1", spoke_style)
 
     summary_style = (
         "edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;"
@@ -596,25 +567,6 @@ def generate_drawio() -> None:
                 "1",
                 internal_style,
             )
-
-    drawio_edge(
-        root,
-        "bundle-deployment-apps",
-        "D7",
-        "hub-A",
-        "1",
-        "edgeStyle=none;curved=1;strokeColor=#666666;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;",
-        (polar(2960, -130), polar(2960, -105)),
-    )
-    for topic in APPLICATIONS:
-        drawio_edge(
-            root,
-            f"hub-edge-A-{topic.id}",
-            "hub-A",
-            topic.id,
-            "1",
-            "edgeStyle=none;curved=1;strokeColor=#444444;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;",
-        )
 
     start = ET.SubElement(
         root,
@@ -675,41 +627,6 @@ def generate_drawio() -> None:
             )
             add_geometry(cell, topic.id)
 
-    app_hub = ET.SubElement(
-        root,
-        "mxCell",
-        {
-            "id": "hub-A",
-            "parent": "1",
-            "vertex": "1",
-            "value": "<b>7. Specialization Tracks</b>",
-            "style": (
-                "rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;"
-                "verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#ffffff;"
-                "strokeColor=#444444;strokeWidth=3;shadow=1;spacing=10;"
-            ),
-        },
-    )
-    add_geometry(app_hub, "hub-A")
-    for topic in APPLICATIONS:
-        cell = ET.SubElement(
-            root,
-            "mxCell",
-            {
-                "id": topic.id,
-                "parent": "1",
-                "vertex": "1",
-                "value": escape(topic.label),
-                "tooltip": escape(topic.label),
-                "style": (
-                    "rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;"
-                    "verticalAlign=middle;fontSize=14;fillColor=#ffffff;"
-                    "strokeColor=#444444;strokeWidth=1.6;shadow=1;spacing=8;"
-                ),
-            },
-        )
-        add_geometry(cell, topic.id)
-
     detailed_style = (
         "edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;"
         "strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;"
@@ -721,7 +638,6 @@ def generate_drawio() -> None:
     detailed_edges = (
         [(source, target, detailed_solid_style) for source, target in ENTRY_EDGES]
         + [(source, target, detailed_style) for source, target in CROSS_EDGES]
-        + [(source, target, detailed_solid_style) for source, target in APPLICATION_EDGES]
     )
     for index, (source, target, style) in enumerate(detailed_edges):
         drawio_edge(
@@ -820,7 +736,6 @@ def generate_svg() -> None:
         )
     parts.extend(
         [
-            '<marker id="arrow-A" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#444444"/></marker>',
             '<style>text{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;fill:#202124}.ring-label{fill:#80868b;letter-spacing:.08em;text-transform:uppercase}.topic:hover rect{filter:url(#shadow);stroke-width:5}</style>',
             "</defs>",
             f'<rect width="{CANVAS}" height="{CANVAS}" fill="#fbfaf7"/>',
@@ -837,11 +752,6 @@ def generate_svg() -> None:
         parts.append(
             f'<path d="M {CX:.1f} {CY:.1f} L {hx:.1f} {hy:.1f}" stroke="{group.stroke}" stroke-width="8" opacity="0.12"/>'
         )
-    ax, ay = center("hub-A")
-    parts.append(
-        f'<path d="M {CX:.1f} {CY:.1f} L {ax:.1f} {ay:.1f}" stroke="#444444" stroke-width="8" opacity="0.08"/>'
-    )
-
     for index, (source_group, target_group) in enumerate(SUMMARY_EDGES):
         parts.append(svg_summary_edge(source_group, target_group, index))
 
@@ -852,15 +762,6 @@ def generate_svg() -> None:
             parts.append(svg_edge(f"hub-{group.id}", topic_id, group.stroke, f"arrow-{group.id}", 0.48))
         for source, target in group.edges:
             parts.append(svg_edge(source, target, group.stroke, f"arrow-{group.id}", 0.72))
-
-    sx, sy = center("D7")
-    ax, ay = center("hub-A")
-    qx, qy = polar(3000, -130)
-    parts.append(
-        f'<path d="M {sx:.1f} {sy:.1f} Q {qx:.1f} {qy:.1f} {ax:.1f} {ay:.1f}" fill="none" stroke="#666666" stroke-width="2.5" opacity="0.45" marker-end="url(#arrow-A)"/>'
-    )
-    for topic in APPLICATIONS:
-        parts.append(svg_edge("hub-A", topic.id, "#444444", "arrow-A", 0.5))
 
     parts.append(
         f'<g id="node-START"><circle cx="{CX}" cy="{CY}" r="245" fill="#ffffff" stroke="#202124" stroke-width="5" filter="url(#shadow)"/>'
@@ -893,10 +794,6 @@ def generate_svg() -> None:
                 )
             )
 
-    parts.append(svg_card("hub-A", "7. Specialization Tracks", "#ffffff", "#444444", 19, True, 25))
-    for topic in APPLICATIONS:
-        parts.append(svg_card(topic.id, topic.label, "#ffffff", "#444444", 15))
-
     parts.extend(
         [
             f'<text x="{CX:.1f}" y="{CANVAS - 75}" text-anchor="middle" font-size="17" fill="#5f6368">The full edge-level prerequisite graph is stored in roadmap-prerequisites.mmd and in the hidden Draw.io detail layer.</text>',
@@ -924,18 +821,10 @@ def generate_mermaid() -> None:
         lines.append("    end")
         lines.append("")
 
-    lines.append('    subgraph A["7. Specialization Tracks"]')
-    lines.append("        direction TB")
-    for topic in APPLICATIONS:
-        lines.append(f'        {topic.id}["{topic.label}"]')
-    lines.append("    end")
-    lines.append("")
     for source, target in ENTRY_EDGES:
         lines.append(f"    {source} --> {target}")
     for source, target in CROSS_EDGES:
         lines.append(f"    {source} -.-> {target}")
-    for source, target in APPLICATION_EDGES:
-        lines.append(f"    {source} --> {target}")
     lines.append("")
 
     for group in GROUPS:
@@ -945,8 +834,6 @@ def generate_mermaid() -> None:
         lines.append(
             "    class " + ",".join(topic.id for topic in group.topics) + f" group{group.id}"
         )
-    lines.append("    classDef groupA fill:#ffffff,stroke:#444444,color:#111")
-    lines.append("    class " + ",".join(topic.id for topic in APPLICATIONS) + " groupA")
     lines.append("    classDef checkpoint stroke-width:3px")
     checkpoint_ids = [
         topic.id for group in GROUPS for topic in group.topics if topic.checkpoint
@@ -957,20 +844,18 @@ def generate_mermaid() -> None:
 
 def validate() -> None:
     topic_ids = {topic.id for group in GROUPS for topic in group.topics}
-    topic_ids.update(topic.id for topic in APPLICATIONS)
     all_ids = topic_ids | {"START"}
-    assert len(topic_ids) == 64, f"Expected 64 topics, found {len(topic_ids)}"
-    assert len(all_ids) == 65
+    assert len(topic_ids) == 59, f"Expected 59 topics, found {len(topic_ids)}"
+    assert len(all_ids) == 60
 
     internal_edges = [edge for group in GROUPS for edge in group.edges]
-    nonlocal_edges = list(ENTRY_EDGES) + list(CROSS_EDGES) + list(APPLICATION_EDGES)
+    nonlocal_edges = list(ENTRY_EDGES) + list(CROSS_EDGES)
     semantic_edges = internal_edges + nonlocal_edges
     assert len(internal_edges) == 53
     assert len(ENTRY_EDGES) == 2
     assert len(CROSS_EDGES) == 44
-    assert len(APPLICATION_EDGES) == 5
-    assert len(nonlocal_edges) == 51
-    assert len(semantic_edges) == 104
+    assert len(nonlocal_edges) == 46
+    assert len(semantic_edges) == 99
     assert len(set(semantic_edges)) == len(semantic_edges), "Duplicate prerequisite edge"
 
     for group in GROUPS:

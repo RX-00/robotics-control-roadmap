@@ -11,7 +11,7 @@ The roadmap is intended for advanced undergraduates, graduate students, research
 - enter robotics or robot-control research;
 - identify gaps in their background;
 - understand how control, planning, estimation, and learning fit together; or
-- choose a specialization without losing sight of its prerequisites.
+- plan a learning path without losing sight of its prerequisites.
 
 It is a reference map with multiple valid tracks, not a single course syllabus. A newcomer should begin near the center, while an experienced reader can enter at the topic closest to their current background.
 
@@ -37,14 +37,13 @@ Displaying every cross-track edge at once would obscure the content. The exact e
 2. Follow solid arrows outward within a learning track.
 3. Use the cross-track prerequisite graph when moving between disciplines.
 4. Treat thick-bordered topics as checkpoints rather than final destinations.
-5. Select one or more specialization tracks after reaching robot-specific control and deployment.
-6. Consult [`topics-and-references.md`](topics-and-references.md) for topic-specific learning resources as they are added.
+5. Consult [`topics-and-references.md`](topics-and-references.md) for topic-specific learning resources as they are added.
 
 The order is intentionally based on conceptual prerequisites rather than the historical order in which the subjects were developed.
 
 ## Roadmap Contents
 
-The current atlas contains 64 topic nodes organized into:
+The current atlas contains 59 topic nodes organized into:
 
 1. Mathematical and computational foundations
 2. Robot modeling
@@ -52,10 +51,9 @@ The current atlas contains 64 topic nodes organized into:
 4. State estimation
 5. Motion planning
 6. Optimal control
-7. Robot-specific control
+7. Contact-rich robot and whole-body control
 8. Learning and learning-based control
 9. Safety and real-world deployment
-10. Application-oriented specialization tracks
 
 ## Editing and Regenerating
 

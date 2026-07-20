@@ -95,7 +95,7 @@ flowchart TB
         O4 --> O5
     end
 
-    subgraph R["4. Robot-Specific Control"]
+    subgraph R["4. Contact-Rich Robot and Whole-Body Control"]
         direction TB
         R1["Joint-space tracking and actuator control"]
         R2["Computed torque and inverse-dynamics control"]
@@ -151,15 +151,6 @@ flowchart TB
         D6 --> D7
     end
 
-    subgraph A["7. Specialization Tracks"]
-        direction TB
-        A1["Manipulation and grasping"]
-        A2["Mobile robots and autonomous vehicles"]
-        A3["Aerial robotics"]
-        A4["Legged robots and humanoids"]
-        A5["Multi-robot and human-robot systems"]
-    end
-
     START --> F1
     START --> F6
     F1 -.-> M1
@@ -206,11 +197,6 @@ flowchart TB
     M9 -.-> D5
     L8 -.-> D5
     R7 -.-> D3
-    D7 --> A1
-    D7 --> A2
-    D7 --> A3
-    D7 --> A4
-    D7 --> A5
 
     classDef groupF fill:#fff2cc,stroke:#d6b656,color:#111
     class F1,F6,F2,F3,F4,F5 groupF
@@ -230,7 +216,5 @@ flowchart TB
     class L1,L2,L4,L6,L3,L5,L7,L8 groupL
     classDef groupD fill:#e6e6e6,stroke:#666666,color:#111
     class D1,D2,D4,D5,D3,D6,D7 groupD
-    classDef groupA fill:#ffffff,stroke:#444444,color:#111
-    class A1,A2,A3,A4,A5 groupA
     classDef checkpoint stroke-width:3px
     class F1,M2,M5,C1,C5,C6,E1,P2,P5,O5,R6,L2,L5,D7 checkpoint

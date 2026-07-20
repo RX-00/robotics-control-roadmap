@@ -14,7 +14,7 @@ The organizing principle is conceptual prerequisite order, not historical chrono
 
 ## Canonical Content
 
-The roadmap contains 64 topic nodes across ten content areas:
+The roadmap contains 59 topic nodes across nine content areas:
 
 - mathematical and computational foundations;
 - robot modeling;
@@ -22,15 +22,14 @@ The roadmap contains 64 topic nodes across ten content areas:
 - state estimation;
 - motion planning;
 - optimal control;
-- robot-specific control;
+- contact-rich robot and whole-body control;
 - learning and learning-based control;
-- safety and real-world deployment; and
-- application-oriented specialization tracks.
+- safety and real-world deployment.
 
-The canonical semantic graph is [`roadmap-prerequisites.mmd`](../roadmap-prerequisites.mmd). It contains 65 semantic nodes when the central roadmap node is included, and 104 directed prerequisite edges:
+The canonical semantic graph is [`roadmap-prerequisites.mmd`](../roadmap-prerequisites.mmd). It contains 60 semantic nodes when the central roadmap node is included, and 99 directed prerequisite edges:
 
 - 53 within-track edges; and
-- 51 cross-track, entry, or specialization edges.
+- 46 cross-track or entry edges.
 
 The graph is acyclic.
 
