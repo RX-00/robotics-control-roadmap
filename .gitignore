@@ -2,3 +2,10 @@
 .#*
 *~
 \#*\#
+
+# Draw.io editor backups
+.$*.bkp
+
+# Python generator cache
+__pycache__/
+*.py[cod]
