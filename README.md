@@ -26,10 +26,9 @@ The atlas uses the following visual language:
 - topics near the center are more foundational;
 - each colored spoke is a coherent learning track;
 - solid arrows show recommended prerequisite order within a track;
-- faint dashed arcs summarize important dependencies between tracks; and
 - thick-bordered cards are major checkpoint topics.
 
-Displaying every cross-track edge at once would obscure the content. The exact edge-level graph is therefore preserved in [`roadmap-prerequisites.mmd`](roadmap-prerequisites.mmd). The editable [`robotics-control-roadmap.drawio`](robotics-control-roadmap.drawio) also contains a hidden **Detailed cross-domain prerequisites** layer that can be enabled in diagrams.net.
+Cross-track connectors are omitted from the radial atlas because they obscure the topic layout. The exact edge-level graph is preserved in [`roadmap-prerequisites.mmd`](roadmap-prerequisites.mmd). The editable [`robotics-control-roadmap.drawio`](robotics-control-roadmap.drawio) also contains a hidden **Detailed cross-domain prerequisites** layer that can be enabled in diagrams.net.
 
 ## How to Use the Roadmap
 

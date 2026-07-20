@@ -40,10 +40,9 @@ The default roadmap is a radial atlas:
 - foundational material is placed near the center;
 - coherent subject tracks radiate outward;
 - solid colored arrows show within-track learning order;
-- thick borders identify major checkpoints; and
-- faint dashed arcs summarize cross-track dependencies.
+- thick borders identify major checkpoints.
 
-Rendering every edge-level cross-track prerequisite in the public atlas would create excessive crossings. The exact cross-track edges are therefore stored on a hidden **Detailed cross-domain prerequisites** layer in the Draw.io file. The public SVG uses a smaller set of domain-level bundled connectors.
+Cross-track connectors are omitted from the public atlas because they create excessive crossings. The exact cross-track edges are stored in the canonical Mermaid graph and on a hidden **Detailed cross-domain prerequisites** layer in the Draw.io file.
 
 ## Artifact Inventory
 

@@ -3,9 +3,8 @@
 
 The semantic source is a directed prerequisite graph.  The radial atlas keeps
 all within-track prerequisite edges visible, while dense cross-track edges are
-stored on a hidden Draw.io layer and summarized with a small set of bundled
-connectors in the public SVG.  This keeps the default view readable without
-discarding the underlying graph.
+stored on a hidden Draw.io layer and in the canonical Mermaid graph.  This
+keeps the default view readable without discarding the underlying graph.
 """
 
 from __future__ import annotations
@@ -311,24 +310,6 @@ CROSS_EDGES = (
 )
 
 
-# Bundled domain-level connectors used only in the clean public atlas.
-SUMMARY_EDGES = (
-    ("F", "M"),
-    ("M", "C"),
-    ("M", "E"),
-    ("M", "P"),
-    ("M", "O"),
-    ("C", "R"),
-    ("E", "R"),
-    ("P", "R"),
-    ("O", "R"),
-    ("O", "L"),
-    ("R", "L"),
-    ("R", "D"),
-    ("L", "D"),
-)
-
-
 def polar(radius: float, angle_deg: float) -> tuple[float, float]:
     angle = radians(angle_deg)
     return CX + radius * cos(angle), CY + radius * sin(angle)
@@ -518,26 +499,6 @@ def generate_drawio() -> None:
     for group in GROUPS:
         drawio_edge(root, f"spoke-{group.id}", "START", f"hub-{group.id}", "1", spoke_style)
 
-    summary_style = (
-        "edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;"
-        "strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;"
-    )
-    for index, (source_group, target_group) in enumerate(SUMMARY_EDGES):
-        source = next(group for group in GROUPS if group.id == source_group)
-        target = next(group for group in GROUPS if group.id == target_group)
-        middle_angle = (source.angle + target.angle) / 2
-        control_radius = 1010 + 24 * (index % 5)
-        point = polar(control_radius, middle_angle)
-        drawio_edge(
-            root,
-            f"summary-{source_group}-{target_group}",
-            f"hub-{source_group}",
-            f"hub-{target_group}",
-            "1",
-            summary_style,
-            (point,),
-        )
-
     for group in GROUPS:
         incoming = {target for _, target in group.edges}
         roots = [topic.id for topic in group.topics if topic.id not in incoming]
@@ -579,7 +540,7 @@ def generate_drawio() -> None:
                 "<b>Robot Control Roadmap</b><br>"
                 "<font style=\"font-size:16px\">Start near the center and follow each track outward</font><br>"
                 "<font style=\"font-size:13px;color:#5f6368\">Solid arrows: within-track prerequisites<br>"
-                "Dashed arcs: bundled cross-track dependencies</font>"
+                "Cross-track links: see the prerequisite graph</font>"
             ),
             "style": (
                 "ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;"
@@ -703,23 +664,6 @@ def svg_edge(source: str, target: str, stroke: str, marker: str, opacity: float 
     )
 
 
-def svg_summary_edge(source_group: str, target_group: str, index: int) -> str:
-    source_group_obj = next(group for group in GROUPS if group.id == source_group)
-    target_group_obj = next(group for group in GROUPS if group.id == target_group)
-    source = f"hub-{source_group}"
-    target = f"hub-{target_group}"
-    sx, sy = center(source)
-    tx, ty = center(target)
-    middle_angle = (source_group_obj.angle + target_group_obj.angle) / 2
-    control_radius = 1010 + 24 * (index % 5)
-    qx, qy = polar(control_radius, middle_angle)
-    return (
-        f'<path d="M {sx:.1f} {sy:.1f} Q {qx:.1f} {qy:.1f} {tx:.1f} {ty:.1f}" '
-        'fill="none" stroke="#59636e" stroke-width="2" stroke-dasharray="12 12" '
-        'opacity="0.18" marker-end="url(#arrow-summary)"/>'
-    )
-
-
 def generate_svg() -> None:
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
@@ -728,7 +672,6 @@ def generate_svg() -> None:
         '<desc id="desc">A radial learning atlas with foundations near the center and advanced robot-control topics extending outward.</desc>',
         "<defs>",
         '<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feGaussianBlur in="SourceAlpha" stdDeviation="6" result="blur"/><feOffset in="blur" dx="0" dy="5" result="offsetBlur"/><feComponentTransfer in="offsetBlur" result="shadowAlpha"><feFuncA type="linear" slope="0.13"/></feComponentTransfer><feMerge><feMergeNode in="shadowAlpha"/><feMergeNode in="SourceGraphic"/></feMerge></filter>',
-        '<marker id="arrow-summary" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#59636e"/></marker>',
     ]
     for group in GROUPS:
         parts.append(
@@ -752,9 +695,6 @@ def generate_svg() -> None:
         parts.append(
             f'<path d="M {CX:.1f} {CY:.1f} L {hx:.1f} {hy:.1f}" stroke="{group.stroke}" stroke-width="8" opacity="0.12"/>'
         )
-    for index, (source_group, target_group) in enumerate(SUMMARY_EDGES):
-        parts.append(svg_summary_edge(source_group, target_group, index))
-
     for group in GROUPS:
         incoming = {target for _, target in group.edges}
         roots = [topic.id for topic in group.topics if topic.id not in incoming]
@@ -767,7 +707,7 @@ def generate_svg() -> None:
         f'<g id="node-START"><circle cx="{CX}" cy="{CY}" r="245" fill="#ffffff" stroke="#202124" stroke-width="5" filter="url(#shadow)"/>'
         f'<text x="{CX}" y="{CY - 40}" text-anchor="middle" font-size="38" font-weight="750"><tspan x="{CX}" dy="0">Robot Control</tspan><tspan x="{CX}" dy="48">Roadmap</tspan></text>'
         f'<text x="{CX}" y="{CY + 78}" text-anchor="middle" font-size="18" fill="#5f6368"><tspan x="{CX}">Start near the center</tspan><tspan x="{CX}" dy="26">and follow tracks outward</tspan></text>'
-        f'<text x="{CX}" y="{CY + 160}" text-anchor="middle" font-size="14" fill="#80868b"><tspan x="{CX}">Solid: within-track order</tspan><tspan x="{CX}" dy="21">Dashed: bundled cross-track links</tspan></text></g>'
+        f'<text x="{CX}" y="{CY + 160}" text-anchor="middle" font-size="14" fill="#80868b"><tspan x="{CX}">Solid: within-track order</tspan><tspan x="{CX}" dy="21">Cross-track: see prerequisite graph</tspan></text></g>'
     )
 
     for group in GROUPS:
