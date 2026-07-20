@@ -1,6 +1,6 @@
 # Repository Understanding
 
-This repository is a work-in-progress learning atlas for robot control. It is primarily a documentation and diagram project, with a small standard-library generator used to keep the editable and rendered roadmap artifacts synchronized.
+This repository is a work-in-progress learning atlas for robot control. It is primarily a documentation and diagram project, with a small standard-library synchronizer used to derive rendered and textual artifacts from the editable Draw.io source.
 
 ## Project Goal
 
@@ -14,24 +14,26 @@ The organizing principle is conceptual prerequisite order, not historical chrono
 
 ## Canonical Content
 
-The roadmap contains 59 topic nodes across nine content areas:
+<!-- roadmap-canonical:start -->
+The canonical Draw.io source contains 59 topic nodes across 9 content areas:
 
-- mathematical and computational foundations;
-- robot modeling;
-- feedback and control theory;
-- state estimation;
-- motion planning;
-- optimal control;
-- contact-rich robot and whole-body control;
-- learning and learning-based control;
-- safety and real-world deployment.
+- 1. Mathematical and Computational Foundations
+- 2. Robot Modeling
+- 3A. Feedback and Control Theory
+- 3B. State Estimation
+- 3C. Motion Planning
+- 3D. Optimal Control
+- 4. Contact-Rich Robot and Whole-Body Control
+- 5. Learning and Learning-Based Control
+- 6. Safety and Real-World Deployment
 
-The canonical semantic graph is [`roadmap-prerequisites.mmd`](../roadmap-prerequisites.mmd). It contains 60 semantic nodes when the central roadmap node is included, and 99 directed prerequisite edges:
+The synchronized semantic graph contains 60 nodes when the central roadmap node is included, and 99 directed prerequisite edges:
 
 - 53 within-track edges; and
 - 46 cross-track or entry edges.
 
 The graph is acyclic.
+<!-- roadmap-canonical:end -->
 
 ## Visual Presentation
 
@@ -42,28 +44,35 @@ The default roadmap is a radial atlas:
 - solid colored arrows show within-track learning order;
 - thick borders identify major checkpoints.
 
-Cross-track connectors are omitted from the public atlas because they create excessive crossings. The exact cross-track edges are stored in the canonical Mermaid graph and on a hidden **Detailed cross-domain prerequisites** layer in the Draw.io file.
+Cross-track connectors are omitted from the public atlas because they create excessive crossings. The exact cross-track edges are authored on a hidden **Detailed cross-domain prerequisites** layer in the Draw.io file and reproduced in the generated Mermaid graph.
 
 ## Artifact Inventory
 
 - `README.md`: public-facing project explanation and embedded roadmap.
-- `roadmap-prerequisites.mmd`: exact edge-level Mermaid prerequisite graph.
-- `robotics-control-roadmap.drawio`: editable radial atlas with visible and detailed prerequisite layers.
-- `images/robotics-control-roadmap.svg`: scalable public rendering generated from the same topic data.
-- `topics-and-references.md`: reference skeleton containing a section for every topic node.
-- `scripts/generate_roadmap.py`: standard-library generator for the Draw.io, SVG, and Mermaid artifacts.
+- `robotics-control-roadmap.drawio`: canonical editable source with visible and detailed prerequisite layers.
+- `roadmap-prerequisites.mmd`: generated exact edge-level Mermaid prerequisite graph.
+- `images/robotics-control-roadmap.svg`: generated scalable public rendering.
+- `topics-and-references.md`: partially synchronized reference index; topic bodies remain human-authored.
+- `scripts/sync_from_drawio.py`: standard-library parser, validator, and synchronizer.
+- `tests/test_sync_from_drawio.py`: synchronization and preservation regression tests.
 - `images/Control_Map_ver5.png`: external visual inspiration; it is not an export of this roadmap.
 - `LICENSE`: GPL-3.0 license text.
 
-## Regeneration and Validation
+## Synchronization and Validation
 
-Regenerate the synchronized artifacts with:
+After editing the Draw.io source, synchronize downstream artifacts with:
 
 ```bash
-python scripts/generate_roadmap.py
+python scripts/sync_from_drawio.py
 ```
 
-The generator validates the node and edge inventory and verifies that the Draw.io and SVG outputs parse as XML. Contributors should additionally inspect the SVG visually and open the Draw.io file after meaningful layout changes.
+Check that committed artifacts are current without writing files:
+
+```bash
+python scripts/sync_from_drawio.py --check
+```
+
+The synchronizer validates stable node IDs, layer roles, edge endpoints, section roots, duplicate edges, graph acyclicity, canvas bounds, node overlap, and SVG XML. It supports both compressed and uncompressed Draw.io pages, but never rewrites the Draw.io source. Contributors should additionally inspect the SVG after meaningful layout changes.
 
 There is no package build or automated CI workflow at present.
 
@@ -71,11 +80,11 @@ There is no package build or automated CI workflow at present.
 
 When changing roadmap content:
 
-1. Update the topic or edge definitions in `scripts/generate_roadmap.py`.
-2. Keep the corresponding headings in `topics-and-references.md` synchronized.
-3. Run the generator.
-4. Inspect the radial SVG for overlap, clipping, and confusing edge crossings.
-5. Open the Draw.io file and verify both the default atlas and hidden detailed-prerequisite layer.
-6. Update the README if the visual language or roadmap scope changed.
+1. Edit `robotics-control-roadmap.drawio` in diagrams.net.
+2. Keep existing semantic IDs stable. New topics should use a custom `roadmapId` such as `F7`; new section hubs should use `hub-X`.
+3. Put within-track arrows on the visible **Radial atlas** layer and entry or cross-track arrows on the hidden detail layer.
+4. Run `python scripts/sync_from_drawio.py`.
+5. Inspect the radial SVG for overlap, clipping, and confusing edge crossings.
+6. Run the unit tests and synchronization check before committing.
 
 When adding references, prefer stable, authoritative, and pedagogically strong sources. Do not add a reference merely to fill a section; topic-level curation is part of the roadmap's intended value.

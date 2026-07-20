@@ -42,27 +42,37 @@ The order is intentionally based on conceptual prerequisites rather than the his
 
 ## Roadmap Contents
 
-The current atlas contains 59 topic nodes organized into:
+<!-- roadmap-contents:start -->
+The current atlas contains 59 topic nodes organized into 9 content areas:
 
-1. Mathematical and computational foundations
-2. Robot modeling
-3. Feedback and control theory
-4. State estimation
-5. Motion planning
-6. Optimal control
-7. Contact-rich robot and whole-body control
-8. Learning and learning-based control
-9. Safety and real-world deployment
+- 1. Mathematical and Computational Foundations
+- 2. Robot Modeling
+- 3A. Feedback and Control Theory
+- 3B. State Estimation
+- 3C. Motion Planning
+- 3D. Optimal Control
+- 4. Contact-Rich Robot and Whole-Body Control
+- 5. Learning and Learning-Based Control
+- 6. Safety and Real-World Deployment
+<!-- roadmap-contents:end -->
 
-## Editing and Regenerating
+## Editing and Synchronizing
 
-The editable Draw.io file, scalable SVG, and canonical Mermaid prerequisite graph are generated from one shared topic definition:
+[`robotics-control-roadmap.drawio`](robotics-control-roadmap.drawio) is the canonical roadmap source. Open it in diagrams.net to move, resize, relabel, or restyle topics and to edit prerequisite arrows. Use the visible **Radial atlas** layer for within-track arrows and the hidden **Detailed cross-domain prerequisites** layer for exact entry and cross-track edges.
+
+After saving the Draw.io file, synchronize the SVG, Mermaid graph, roadmap counts, section lists, and topic headings:
 
 ```bash
-python scripts/generate_roadmap.py
+python scripts/sync_from_drawio.py
 ```
 
-The generator uses only the Python standard library. After changing the topic definitions or edges, regenerate the artifacts and inspect the SVG and Draw.io file before committing them.
+Existing semantic IDs such as `F1`, `R6`, and `hub-R` must remain stable. For a newly created node whose diagrams.net cell ID is arbitrary, add a custom `roadmapId` property such as `F7` or `hub-X`. New edge IDs may remain arbitrary. Topic reference content beneath the synchronized headings in [`topics-and-references.md`](topics-and-references.md) is preserved by stable ID markers.
+
+The synchronizer uses only the Python standard library and never rewrites the Draw.io source. Verify that committed artifacts are current with:
+
+```bash
+python scripts/sync_from_drawio.py --check
+```
 
 ## References
 

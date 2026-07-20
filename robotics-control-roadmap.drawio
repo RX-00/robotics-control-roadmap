@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="robotics-control-roadmap generator">
+<mxfile host="Electron" agent="robotics-control-roadmap" compressed="false">
   <diagram id="radial-roadmap" name="Radial Atlas">
     <mxGraphModel dx="2400" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="6000" pageHeight="6000" background="#fbfaf7" math="0" shadow="0">
       <root>
@@ -260,7 +260,7 @@
         <mxCell id="START" parent="1" vertex="1" value="&lt;b&gt;Robot Control Roadmap&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px&quot;&gt;Start near the center and follow each track outward&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px;color:#5f6368&quot;&gt;Solid arrows: within-track prerequisites&lt;br&gt;Cross-track links: see the prerequisite graph&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;fillColor=#ffffff;strokeColor=#202124;strokeWidth=4;shadow=1;spacing=18;">
           <mxGeometry x="2755.0" y="2755.0" width="490.0" height="490.0" as="geometry" />
         </mxCell>
-        <mxCell id="hub-F" parent="1" vertex="1" value="&lt;b&gt;1. Foundations&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;shadow=1;spacing=10;">
+        <mxCell id="hub-F" parent="1" vertex="1" value="&lt;b&gt;1. Mathematical and Computational Foundations&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;shadow=1;spacing=10;">
           <mxGeometry x="2840.0" y="2129.0" width="320.0" height="102.0" as="geometry" />
         </mxCell>
         <mxCell id="F1" parent="1" vertex="1" value="Linear algebra and geometry" tooltip="Linear algebra and geometry" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;shadow=1;spacing=8;">
@@ -311,7 +311,7 @@
         <mxCell id="M9" parent="1" vertex="1" value="Simulation, calibration, and system identification" tooltip="Simulation, calibration, and system identification" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
           <mxGeometry x="4486.9" y="1264.9" width="300.0" height="82.0" as="geometry" />
         </mxCell>
-        <mxCell id="hub-C" parent="1" vertex="1" value="&lt;b&gt;3A. Feedback and Control&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;spacing=10;">
+        <mxCell id="hub-C" parent="1" vertex="1" value="&lt;b&gt;3A. Feedback and Control Theory&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;spacing=10;">
           <mxGeometry x="3647.5" y="2806.6" width="320.0" height="102.0" as="geometry" />
         </mxCell>
         <mxCell id="C1" parent="1" vertex="1" value="Feedback, feedforward, and PID control" tooltip="Feedback, feedforward, and PID control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;spacing=8;">
@@ -413,7 +413,7 @@
         <mxCell id="R7" parent="1" vertex="1" value="Contact scheduling, grasping, and locomotion control" tooltip="Contact scheduling, grasping, and locomotion control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=1.6;shadow=1;spacing=8;">
           <mxGeometry x="243.3" y="4464.0" width="300.0" height="82.0" as="geometry" />
         </mxCell>
-        <mxCell id="hub-L" parent="1" vertex="1" value="&lt;b&gt;5. Learning-Based Control&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=3;shadow=1;spacing=10;">
+        <mxCell id="hub-L" parent="1" vertex="1" value="&lt;b&gt;5. Learning and Learning-Based Control&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=3;shadow=1;spacing=10;">
           <mxGeometry x="2032.5" y="2806.6" width="320.0" height="102.0" as="geometry" />
         </mxCell>
         <mxCell id="L1" parent="1" vertex="1" value="Supervised learning and function approximation" tooltip="Supervised learning and function approximation" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
@@ -440,7 +440,7 @@
         <mxCell id="L8" parent="1" vertex="1" value="Hybrid learning and model-based control" tooltip="Hybrid learning and model-based control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
           <mxGeometry x="210.7" y="2493.6" width="300.0" height="82.0" as="geometry" />
         </mxCell>
-        <mxCell id="hub-D" parent="1" vertex="1" value="&lt;b&gt;6. Safety and Deployment&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=3;shadow=1;spacing=10;">
+        <mxCell id="hub-D" parent="1" vertex="1" value="&lt;b&gt;6. Safety and Real-World Deployment&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=3;shadow=1;spacing=10;">
           <mxGeometry x="2312.9" y="2320.8" width="320.0" height="102.0" as="geometry" />
         </mxCell>
         <mxCell id="D1" parent="1" vertex="1" value="Constraints, saturation, and anti-windup" tooltip="Constraints, saturation, and anti-windup" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=1.6;shadow=1;spacing=8;">
