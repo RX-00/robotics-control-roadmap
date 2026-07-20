@@ -1,111 +1,279 @@
 # Topics and References
 
-This file mirrors the core topics in `robotics-control-roadmap.drawio`. References have not been added yet.
+This index mirrors the 64 topic nodes in the robot-control roadmap. References have not yet been curated.
 
-## Mathematical Foundations
+## 1. Mathematical and Computational Foundations
 
-References:
-
-## Signals, Systems & Optimization
+### Linear algebra and geometry
 
 References:
 
-## Robot Kinematics
+### Calculus and differential equations
 
 References:
 
-## Robot Dynamics
+### Probability, statistics, and stochastic processes
 
 References:
 
-## State-Space Modeling
+### Numerical methods and optimization
 
 References:
 
-## Simulation & System Identification
+### Signals, systems, and frequency response
 
 References:
 
-## Feedback Control Basics
+### Programming, algorithms, and real-time computing
 
 References:
 
-## Stability & Lyapunov Analysis
+## 2. Robot Modeling
+
+### Coordinate frames, SO(3), and SE(3)
 
 References:
 
-## Controllability & Observability
+### Forward and inverse kinematics
 
 References:
 
-## Linear Control
+### Jacobians, differential kinematics, and singularities
 
 References:
 
-## Nonlinear Control
+### Classical and analytical mechanics
 
 References:
 
-## Robust & Adaptive Control
+### Rigid-body and multibody dynamics
 
 References:
 
-## Optimal Control
+### Constrained, contact, and hybrid dynamics
 
 References:
 
-## State Estimation
+### Continuous and discrete state-space models
 
 References:
 
-## Sensor Fusion & Localization
+### Sensors, actuators, friction, and transmissions
 
 References:
 
-## Motion Planning
+### Simulation, calibration, and system identification
 
 References:
 
-## Trajectory Generation
+## 3A. Feedback and Control Theory
+
+### Feedback, feedforward, and PID control
 
 References:
 
-## Trajectory Optimization
+### Transfer functions and frequency-domain control
 
 References:
 
-## Model Predictive Control
+### Stability, Lyapunov theory, and passivity
 
 References:
 
-## Dynamic Programming
+### Controllability and observability
 
 References:
 
-## Value Iteration
+### Linear state-space control
 
 References:
 
-## Policy Iteration
+### Nonlinear and geometric control
 
 References:
 
-## Reinforcement Learning
+### Robust and adaptive control
 
 References:
 
-## Learning-Based Control
+## 3B. State Estimation
+
+### Bayesian state estimation
 
 References:
 
-## Force & Impedance Control
+### Observers and Kalman filtering
 
 References:
 
-## Operational Space & Whole-Body Control
+### EKF, UKF, and particle filtering
 
 References:
 
-## Contact & Hybrid Systems
+### Smoothing and factor graphs
+
+References:
+
+### Sensor fusion, localization, and SLAM
+
+References:
+
+## 3C. Motion Planning
+
+### Configuration spaces and collision checking
+
+References:
+
+### Graph search and sampling-based planning
+
+References:
+
+### Kinodynamic and belief-space planning
+
+References:
+
+### Trajectory generation and time scaling
+
+References:
+
+### Trajectory optimization
+
+References:
+
+## 3D. Optimal Control
+
+### Calculus of variations and Pontryagin principle
+
+References:
+
+### Dynamic programming and Hamilton-Jacobi theory
+
+References:
+
+### LQR, iLQR, and DDP
+
+References:
+
+### Constrained and stochastic optimal control
+
+References:
+
+### Linear, nonlinear, robust, and stochastic MPC
+
+References:
+
+## 4. Robot-Specific Control
+
+### Joint-space tracking and actuator control
+
+References:
+
+### Computed torque and inverse-dynamics control
+
+References:
+
+### Task-space and operational-space control
+
+References:
+
+### Redundancy resolution and null-space control
+
+References:
+
+### Force, impedance, and admittance control
+
+References:
+
+### Whole-body control and hierarchical QPs
+
+References:
+
+### Contact scheduling, grasping, and locomotion control
+
+References:
+
+## 5. Learning and Learning-Based Control
+
+### Supervised learning and function approximation
+
+References:
+
+### MDPs, POMDPs, and Bellman equations
+
+References:
+
+### Value iteration and policy iteration
+
+References:
+
+### Imitation and inverse reinforcement learning
+
+References:
+
+### Reinforcement learning
+
+References:
+
+### Learned dynamics, representations, and residual models
+
+References:
+
+### Model-based, model-free, and offline RL
+
+References:
+
+### Hybrid learning and model-based control
+
+References:
+
+## 6. Safety and Real-World Deployment
+
+### Constraints, saturation, and anti-windup
+
+References:
+
+### Uncertainty, robustness, and risk
+
+References:
+
+### CLFs, CBFs, reachability, and safety filters
+
+References:
+
+### Real-time optimization, latency, and embedded control
+
+References:
+
+### Sim-to-real, domain randomization, and adaptation
+
+References:
+
+### Verification, hardware-in-the-loop, and experiments
+
+References:
+
+### Deployment-ready robot autonomy
+
+References:
+
+## 7. Specialization Tracks
+
+### Manipulation and grasping
+
+References:
+
+### Mobile robots and autonomous vehicles
+
+References:
+
+### Aerial robotics
+
+References:
+
+### Legged robots and humanoids
+
+References:
+
+### Multi-robot and human-robot systems
 
 References:

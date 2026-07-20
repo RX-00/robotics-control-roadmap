@@ -1,0 +1,236 @@
+%% Canonical edge-level prerequisite graph.
+%% The radial atlas bundles cross-domain edges only for visual clarity.
+flowchart TB
+    START["Robot Control Roadmap"]
+
+    subgraph F["1. Foundations"]
+        direction TB
+        F1["Linear algebra and geometry"]
+        F6["Programming, algorithms, and real-time computing"]
+        F2["Calculus and differential equations"]
+        F3["Probability, statistics, and stochastic processes"]
+        F4["Numerical methods and optimization"]
+        F5["Signals, systems, and frequency response"]
+        F1 --> F2
+        F1 --> F3
+        F2 --> F4
+        F2 --> F5
+    end
+
+    subgraph M["2. Robot Modeling"]
+        direction TB
+        M1["Coordinate frames, SO(3), and SE(3)"]
+        M4["Classical and analytical mechanics"]
+        M8["Sensors, actuators, friction, and transmissions"]
+        M2["Forward and inverse kinematics"]
+        M5["Rigid-body and multibody dynamics"]
+        M3["Jacobians, differential kinematics, and singularities"]
+        M6["Constrained, contact, and hybrid dynamics"]
+        M7["Continuous and discrete state-space models"]
+        M9["Simulation, calibration, and system identification"]
+        M1 --> M2
+        M2 --> M3
+        M4 --> M5
+        M5 --> M6
+        M5 --> M7
+        M7 --> M9
+        M8 --> M9
+    end
+
+    subgraph C["3A. Feedback and Control"]
+        direction TB
+        C1["Feedback, feedforward, and PID control"]
+        C4["Controllability and observability"]
+        C2["Transfer functions and frequency-domain control"]
+        C3["Stability, Lyapunov theory, and passivity"]
+        C5["Linear state-space control"]
+        C6["Nonlinear and geometric control"]
+        C7["Robust and adaptive control"]
+        C1 --> C2
+        C1 --> C3
+        C2 --> C5
+        C3 --> C5
+        C4 --> C5
+        C5 --> C6
+        C6 --> C7
+    end
+
+    subgraph E["3B. State Estimation"]
+        direction TB
+        E1["Bayesian state estimation"]
+        E2["Observers and Kalman filtering"]
+        E3["EKF, UKF, and particle filtering"]
+        E4["Smoothing and factor graphs"]
+        E5["Sensor fusion, localization, and SLAM"]
+        E1 --> E2
+        E2 --> E3
+        E3 --> E4
+        E4 --> E5
+    end
+
+    subgraph P["3C. Motion Planning"]
+        direction TB
+        P1["Configuration spaces and collision checking"]
+        P2["Graph search and sampling-based planning"]
+        P4["Trajectory generation and time scaling"]
+        P3["Kinodynamic and belief-space planning"]
+        P5["Trajectory optimization"]
+        P1 --> P2
+        P2 --> P3
+        P1 --> P4
+        P4 --> P5
+        P3 --> P5
+    end
+
+    subgraph O["3D. Optimal Control"]
+        direction TB
+        O1["Calculus of variations and Pontryagin principle"]
+        O2["Dynamic programming and Hamilton-Jacobi theory"]
+        O3["LQR, iLQR, and DDP"]
+        O4["Constrained and stochastic optimal control"]
+        O5["Linear, nonlinear, robust, and stochastic MPC"]
+        O1 --> O3
+        O2 --> O3
+        O3 --> O4
+        O4 --> O5
+    end
+
+    subgraph R["4. Robot-Specific Control"]
+        direction TB
+        R1["Joint-space tracking and actuator control"]
+        R2["Computed torque and inverse-dynamics control"]
+        R3["Task-space and operational-space control"]
+        R4["Redundancy resolution and null-space control"]
+        R5["Force, impedance, and admittance control"]
+        R6["Whole-body control and hierarchical QPs"]
+        R7["Contact scheduling, grasping, and locomotion control"]
+        R1 --> R2
+        R2 --> R3
+        R3 --> R4
+        R3 --> R5
+        R4 --> R6
+        R5 --> R6
+        R6 --> R7
+    end
+
+    subgraph L["5. Learning-Based Control"]
+        direction TB
+        L1["Supervised learning and function approximation"]
+        L2["MDPs, POMDPs, and Bellman equations"]
+        L4["Imitation and inverse reinforcement learning"]
+        L6["Learned dynamics, representations, and residual models"]
+        L3["Value iteration and policy iteration"]
+        L5["Reinforcement learning"]
+        L7["Model-based, model-free, and offline RL"]
+        L8["Hybrid learning and model-based control"]
+        L2 --> L3
+        L3 --> L5
+        L5 --> L7
+        L7 --> L8
+        L1 --> L4
+        L4 --> L8
+        L1 --> L6
+        L6 --> L8
+        L6 --> L7
+    end
+
+    subgraph D["6. Safety and Deployment"]
+        direction TB
+        D1["Constraints, saturation, and anti-windup"]
+        D2["Uncertainty, robustness, and risk"]
+        D4["Real-time optimization, latency, and embedded control"]
+        D5["Sim-to-real, domain randomization, and adaptation"]
+        D3["CLFs, CBFs, reachability, and safety filters"]
+        D6["Verification, hardware-in-the-loop, and experiments"]
+        D7["Deployment-ready robot autonomy"]
+        D1 --> D3
+        D2 --> D3
+        D3 --> D6
+        D4 --> D6
+        D5 --> D6
+        D6 --> D7
+    end
+
+    subgraph A["7. Specialization Tracks"]
+        direction TB
+        A1["Manipulation and grasping"]
+        A2["Mobile robots and autonomous vehicles"]
+        A3["Aerial robotics"]
+        A4["Legged robots and humanoids"]
+        A5["Multi-robot and human-robot systems"]
+    end
+
+    START --> F1
+    START --> F6
+    F1 -.-> M1
+    F2 -.-> M4
+    F5 -.-> M7
+    F4 -.-> M9
+    F6 -.-> M9
+    M7 -.-> C1
+    M7 -.-> C4
+    F5 -.-> C2
+    F3 -.-> E1
+    M7 -.-> E2
+    C4 -.-> E2
+    M8 -.-> E5
+    M2 -.-> P1
+    M3 -.-> P4
+    M6 -.-> P3
+    E5 -.-> P3
+    F4 -.-> P5
+    F4 -.-> O1
+    M7 -.-> O1
+    M7 -.-> O2
+    C5 -.-> O3
+    P5 -.-> O4
+    E3 -.-> O4
+    C7 -.-> O5
+    M3 -.-> R3
+    M5 -.-> R2
+    M6 -.-> R5
+    C5 -.-> R1
+    O4 -.-> R6
+    O5 -.-> R7
+    E3 -.-> R6
+    F3 -.-> L2
+    F4 -.-> L1
+    F6 -.-> L1
+    O2 -.-> L3
+    M9 -.-> L6
+    O5 -.-> L8
+    R6 -.-> L8
+    C7 -.-> D2
+    O5 -.-> D1
+    O5 -.-> D4
+    M9 -.-> D5
+    L8 -.-> D5
+    R7 -.-> D3
+    D7 --> A1
+    D7 --> A2
+    D7 --> A3
+    D7 --> A4
+    D7 --> A5
+
+    classDef groupF fill:#fff2cc,stroke:#d6b656,color:#111
+    class F1,F6,F2,F3,F4,F5 groupF
+    classDef groupM fill:#d5e8d4,stroke:#82b366,color:#111
+    class M1,M4,M8,M2,M5,M3,M6,M7,M9 groupM
+    classDef groupC fill:#dae8fc,stroke:#6c8ebf,color:#111
+    class C1,C4,C2,C3,C5,C6,C7 groupC
+    classDef groupE fill:#e1d5e7,stroke:#9673a6,color:#111
+    class E1,E2,E3,E4,E5 groupE
+    classDef groupP fill:#f8cecc,stroke:#b85450,color:#111
+    class P1,P2,P4,P3,P5 groupP
+    classDef groupO fill:#f5d6b3,stroke:#c97b30,color:#111
+    class O1,O2,O3,O4,O5 groupO
+    classDef groupR fill:#d0e8e6,stroke:#3f8f89,color:#111
+    class R1,R2,R3,R4,R5,R6,R7 groupR
+    classDef groupL fill:#ffe6cc,stroke:#d79b00,color:#111
+    class L1,L2,L4,L6,L3,L5,L7,L8 groupL
+    classDef groupD fill:#e6e6e6,stroke:#666666,color:#111
+    class D1,D2,D4,D5,D3,D6,D7 groupD
+    classDef groupA fill:#ffffff,stroke:#444444,color:#111
+    class A1,A2,A3,A4,A5 groupA
+    classDef checkpoint stroke-width:3px
+    class F1,M2,M5,C1,C5,C6,E1,P2,P5,O5,R6,L2,L5,D7 checkpoint

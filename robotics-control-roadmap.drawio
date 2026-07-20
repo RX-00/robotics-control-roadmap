@@ -1,184 +1,755 @@
-<mxfile host="Electron">
-  <diagram id="robot-control-roadmap" name="Robot Control Roadmap">
-    <mxGraphModel dx="2138" dy="1249" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1200" math="0" shadow="0">
+<mxfile host="Electron" agent="robotics-control-roadmap generator">
+  <diagram id="radial-roadmap" name="Radial Atlas">
+    <mxGraphModel dx="2400" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="6800" pageHeight="6800" background="#fbfaf7" math="0" shadow="0">
       <root>
         <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontSize=24;fontStyle=1;fillColor=#ffffff;strokeColor=#000000;" value="Robot Control Roadmap" vertex="1">
-          <mxGeometry height="60" width="380" x="940" y="20" as="geometry" />
+        <mxCell id="1" value="Radial atlas" parent="0" />
+        <mxCell id="2" value="Detailed cross-domain prerequisites" parent="0" visible="0" />
+        <mxCell id="ring-820" parent="1" vertex="1" connectable="0" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9aa0a6;strokeWidth=1;opacity=35;movable=0;resizable=0;rotatable=0;">
+          <mxGeometry x="2580.0" y="2580.0" width="1640.0" height="1640.0" as="geometry" />
         </mxCell>
-        <mxCell id="math" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Mathematical Foundations" vertex="1">
-          <mxGeometry height="70" width="200" x="90" y="150" as="geometry" />
+        <mxCell id="ring-1360" parent="1" vertex="1" connectable="0" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9aa0a6;strokeWidth=1;opacity=24;movable=0;resizable=0;rotatable=0;">
+          <mxGeometry x="2040.0" y="2040.0" width="2720.0" height="2720.0" as="geometry" />
         </mxCell>
-        <mxCell id="signals" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="Signals, Systems &amp; Optimization" vertex="1">
-          <mxGeometry height="70" width="200" x="90" y="260" as="geometry" />
+        <mxCell id="ring-2020" parent="1" vertex="1" connectable="0" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9aa0a6;strokeWidth=1;opacity=18;movable=0;resizable=0;rotatable=0;">
+          <mxGeometry x="1380.0" y="1380.0" width="4040.0" height="4040.0" as="geometry" />
         </mxCell>
-        <mxCell id="kinematics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Robot Kinematics" vertex="1">
-          <mxGeometry height="70" width="210" x="350" y="150" as="geometry" />
+        <mxCell id="ring-2680" parent="1" vertex="1" connectable="0" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9aa0a6;strokeWidth=1;opacity=14;movable=0;resizable=0;rotatable=0;">
+          <mxGeometry x="720.0" y="720.0" width="5360.0" height="5360.0" as="geometry" />
         </mxCell>
-        <mxCell id="dynamics" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Robot Dynamics" vertex="1">
-          <mxGeometry height="70" width="210" x="350" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="state-space" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="State-Space Modeling" vertex="1">
-          <mxGeometry height="70" width="210" x="350" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="system-id" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="Simulation &amp; System Identification" vertex="1">
-          <mxGeometry height="70" width="210" x="350" y="480" as="geometry" />
-        </mxCell>
-        <mxCell id="force-impedance" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="Force &amp; Impedance Control" vertex="1">
-          <mxGeometry height="70" width="210" x="610" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="operational-space" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="Operational Space &amp; Whole-Body Control" vertex="1">
-          <mxGeometry height="80" width="210" x="610" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="contact-hybrid" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="Contact &amp; Hybrid Systems" vertex="1">
-          <mxGeometry height="70" width="210" x="610" y="480" as="geometry" />
-        </mxCell>
-        <mxCell id="feedback" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Feedback Control Basics" vertex="1">
-          <mxGeometry height="70" width="220" x="890" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="stability" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Stability &amp; Lyapunov Analysis" vertex="1">
-          <mxGeometry height="70" width="220" x="890" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="controllability" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Controllability &amp; Observability" vertex="1">
-          <mxGeometry height="70" width="220" x="890" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="linear" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Linear Control" vertex="1">
-          <mxGeometry height="70" width="220" x="890" y="480" as="geometry" />
-        </mxCell>
-        <mxCell id="nonlinear" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Nonlinear Control" vertex="1">
-          <mxGeometry height="70" width="220" x="890" y="593" as="geometry" />
-        </mxCell>
-        <mxCell id="state-estimation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="State Estimation" vertex="1">
-          <mxGeometry height="70" width="220" x="1440" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="sensor-fusion" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Sensor Fusion &amp; Localization" vertex="1">
-          <mxGeometry height="70" width="220" x="1440" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="motion-planning" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Motion Planning" vertex="1">
-          <mxGeometry height="70" width="220" x="1160" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="trajectory-generation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#f8cecc;strokeColor=#b85450;" value="Trajectory Generation" vertex="1">
-          <mxGeometry height="70" width="220" x="1160" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="trajectory-optimization" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Trajectory Optimization" vertex="1">
-          <mxGeometry height="70" width="220" x="1160" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="mpc" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Model Predictive Control" vertex="1">
-          <mxGeometry height="70" width="220" x="1160" y="479" as="geometry" />
-        </mxCell>
-        <mxCell id="dp" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Dynamic Programming" vertex="1">
-          <mxGeometry height="70" width="220" x="1800" y="150" as="geometry" />
-        </mxCell>
-        <mxCell id="value-iteration" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Value Iteration" vertex="1">
-          <mxGeometry height="70" width="190" x="1700" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="policy-iteration" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Policy Iteration" vertex="1">
-          <mxGeometry height="70" width="190" x="1940" y="260" as="geometry" />
-        </mxCell>
-        <mxCell id="rl" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Reinforcement Learning" vertex="1">
-          <mxGeometry height="70" width="220" x="1800" y="370" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-box" parent="1" style="swimlane;html=1;rounded=1;arcSize=8;fontStyle=1;startSize=30;fillColor=#ffffff;strokeColor=#666666;collapsible=0;" value="Legend" vertex="1">
-          <mxGeometry height="270" width="260" x="70" y="400" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-foundations-swatch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="" vertex="1">
-          <mxGeometry height="18" width="28" x="90" y="445" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-foundations-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Foundations and prerequisites" vertex="1">
-          <mxGeometry height="28" width="180" x="130" y="440" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-modeling-swatch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="" vertex="1">
-          <mxGeometry height="18" width="28" x="90" y="475" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-modeling-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Robot modeling and control" vertex="1">
-          <mxGeometry height="28" width="180" x="130" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-feedback-swatch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="" vertex="1">
-          <mxGeometry height="18" width="28" x="90" y="505" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-feedback-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Feedback and control theory" vertex="1">
-          <mxGeometry height="28" width="180" x="130" y="500" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-estimation-swatch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#e1d5e7;strokeColor=#9673a6;" value="" vertex="1">
-          <mxGeometry height="18" width="28" x="90" y="535" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-estimation-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Estimation and localization" vertex="1">
-          <mxGeometry height="28" width="180" x="130" y="530" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-planning-swatch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#f8cecc;strokeColor=#b85450;" value="" vertex="1">
-          <mxGeometry height="18" width="28" x="90" y="565" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-planning-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Planning and optimization" vertex="1">
-          <mxGeometry height="28" width="180" x="130" y="560" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-learning-swatch" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=8;fillColor=#ffe6cc;strokeColor=#d79b00;" value="" vertex="1">
-          <mxGeometry height="18" width="28" x="90" y="595" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-learning-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="DP, RL, and learning" vertex="1">
-          <mxGeometry height="28" width="180" x="130" y="590" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-arrow-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" value="Arrows: minimal in-group learning order" vertex="1">
-          <mxGeometry height="28" width="220" x="90" y="615" as="geometry" />
-        </mxCell>
-        <mxCell id="legend-bold-text" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;" value="Bold topic: major checkpoint topic" vertex="1">
-          <mxGeometry height="28" width="220" x="90" y="635" as="geometry" />
-        </mxCell>
-        <mxCell id="e-math-signals" edge="1" parent="1" source="math" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="signals">
+        <mxCell id="spoke-F" edge="1" parent="1" source="START" target="hub-F" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-kinematics-dynamics" edge="1" parent="1" source="kinematics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="dynamics">
+        <mxCell id="spoke-M" edge="1" parent="1" source="START" target="hub-M" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-dynamics-state-space" edge="1" parent="1" source="dynamics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="state-space">
+        <mxCell id="spoke-C" edge="1" parent="1" source="START" target="hub-C" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-state-space-system-id" edge="1" parent="1" source="state-space" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="system-id">
+        <mxCell id="spoke-E" edge="1" parent="1" source="START" target="hub-E" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-dynamics-force" edge="1" parent="1" source="dynamics" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="force-impedance">
+        <mxCell id="spoke-P" edge="1" parent="1" source="START" target="hub-P" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-force-operational" edge="1" parent="1" source="force-impedance" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="operational-space">
+        <mxCell id="spoke-O" edge="1" parent="1" source="START" target="hub-O" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-operational-contact" edge="1" parent="1" source="operational-space" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="contact-hybrid">
+        <mxCell id="spoke-R" edge="1" parent="1" source="START" target="hub-R" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-feedback-stability" edge="1" parent="1" source="feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="stability">
+        <mxCell id="spoke-L" edge="1" parent="1" source="START" target="hub-L" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-stability-controllability" edge="1" parent="1" source="stability" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="controllability">
+        <mxCell id="spoke-D" edge="1" parent="1" source="START" target="hub-D" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-controllability-linear" edge="1" parent="1" source="controllability" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="linear">
+        <mxCell id="spoke-A" edge="1" parent="1" source="START" target="hub-A" style="edgeStyle=none;endArrow=none;strokeWidth=5;opacity=18;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-linear-nonlinear" edge="1" parent="1" source="linear" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="nonlinear">
+        <mxCell id="summary-F-M" edge="1" parent="1" source="hub-F" target="hub-M" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3745.4" y="2450.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-M-C" edge="1" parent="1" source="hub-M" target="hub-C" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4295.5" y="2883.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-M-E" edge="1" parent="1" source="hub-M" target="hub-E" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4441.9" y="3216.3" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-M-P" edge="1" parent="1" source="hub-M" target="hub-P" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4465.6" y="3587.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-M-O" edge="1" parent="1" source="hub-M" target="hub-O" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="4357.8" y="3953.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-C-R" edge="1" parent="1" source="hub-C" target="hub-R" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3745.4" y="4349.1" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-E-R" edge="1" parent="1" source="hub-E" target="hub-R" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3400.0" y="4434.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-P-R" edge="1" parent="1" source="hub-P" target="hub-R" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3038.1" y="4394.2" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-O-R" edge="1" parent="1" source="hub-O" target="hub-R" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2704.5" y="4228.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-O-L" edge="1" parent="1" source="hub-O" target="hub-L" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2442.2" y="3953.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-R-L" edge="1" parent="1" source="hub-R" target="hub-L" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2405.3" y="3575.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-R-D" edge="1" parent="1" source="hub-R" target="hub-D" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2381.7" y="3220.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="summary-L-D" edge="1" parent="1" source="hub-L" target="hub-D" style="edgeStyle=none;curved=1;rounded=1;dashed=1;dashPattern=8 8;strokeColor=#59636e;strokeWidth=2;opacity=24;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2483.7" y="2871.0" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hub-edge-F-F1" edge="1" parent="1" source="hub-F" target="F1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#d6b656;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-state-estimation-sensor" edge="1" parent="1" source="state-estimation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="sensor-fusion">
+        <mxCell id="hub-edge-F-F6" edge="1" parent="1" source="hub-F" target="F6" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#d6b656;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-motion-trajectory" edge="1" parent="1" source="motion-planning" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="trajectory-generation">
+        <mxCell id="edge-F1-F2" edge="1" parent="1" source="F1" target="F2" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d6b656;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-trajectory-trajopt" edge="1" parent="1" source="trajectory-generation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="trajectory-optimization">
+        <mxCell id="edge-F1-F3" edge="1" parent="1" source="F1" target="F3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d6b656;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-trajopt-mpc" edge="1" parent="1" source="trajectory-optimization" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="mpc">
+        <mxCell id="edge-F2-F4" edge="1" parent="1" source="F2" target="F4" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d6b656;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-dp-value" edge="1" parent="1" source="dp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="value-iteration">
+        <mxCell id="edge-F2-F5" edge="1" parent="1" source="F2" target="F5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d6b656;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-dp-policy" edge="1" parent="1" source="dp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="policy-iteration">
+        <mxCell id="hub-edge-M-M1" edge="1" parent="1" source="hub-M" target="M1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-value-rl" edge="1" parent="1" source="value-iteration" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="rl">
+        <mxCell id="hub-edge-M-M4" edge="1" parent="1" source="hub-M" target="M4" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e-policy-rl" edge="1" parent="1" source="policy-iteration" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="rl">
+        <mxCell id="hub-edge-M-M8" edge="1" parent="1" source="hub-M" target="M8" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-M1-M2" edge="1" parent="1" source="M1" target="M2" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-M2-M3" edge="1" parent="1" source="M2" target="M3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-M4-M5" edge="1" parent="1" source="M4" target="M5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-M5-M6" edge="1" parent="1" source="M5" target="M6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-M5-M7" edge="1" parent="1" source="M5" target="M7" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-M7-M9" edge="1" parent="1" source="M7" target="M9" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-M8-M9" edge="1" parent="1" source="M8" target="M9" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#82b366;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-C-C1" edge="1" parent="1" source="hub-C" target="C1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-C-C4" edge="1" parent="1" source="hub-C" target="C4" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-C1-C2" edge="1" parent="1" source="C1" target="C2" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-C1-C3" edge="1" parent="1" source="C1" target="C3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-C2-C5" edge="1" parent="1" source="C2" target="C5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-C3-C5" edge="1" parent="1" source="C3" target="C5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-C4-C5" edge="1" parent="1" source="C4" target="C5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-C5-C6" edge="1" parent="1" source="C5" target="C6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-C6-C7" edge="1" parent="1" source="C6" target="C7" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#6c8ebf;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-E-E1" edge="1" parent="1" source="hub-E" target="E1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#9673a6;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-E1-E2" edge="1" parent="1" source="E1" target="E2" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#9673a6;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-E2-E3" edge="1" parent="1" source="E2" target="E3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#9673a6;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-E3-E4" edge="1" parent="1" source="E3" target="E4" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#9673a6;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-E4-E5" edge="1" parent="1" source="E4" target="E5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#9673a6;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-P-P1" edge="1" parent="1" source="hub-P" target="P1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#b85450;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-P1-P2" edge="1" parent="1" source="P1" target="P2" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#b85450;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-P2-P3" edge="1" parent="1" source="P2" target="P3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#b85450;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-P1-P4" edge="1" parent="1" source="P1" target="P4" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#b85450;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-P4-P5" edge="1" parent="1" source="P4" target="P5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#b85450;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-P3-P5" edge="1" parent="1" source="P3" target="P5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#b85450;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-O-O1" edge="1" parent="1" source="hub-O" target="O1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#c97b30;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-O-O2" edge="1" parent="1" source="hub-O" target="O2" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#c97b30;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-O1-O3" edge="1" parent="1" source="O1" target="O3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#c97b30;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-O2-O3" edge="1" parent="1" source="O2" target="O3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#c97b30;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-O3-O4" edge="1" parent="1" source="O3" target="O4" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#c97b30;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-O4-O5" edge="1" parent="1" source="O4" target="O5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#c97b30;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-R-R1" edge="1" parent="1" source="hub-R" target="R1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-R1-R2" edge="1" parent="1" source="R1" target="R2" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-R2-R3" edge="1" parent="1" source="R2" target="R3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-R3-R4" edge="1" parent="1" source="R3" target="R4" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-R3-R5" edge="1" parent="1" source="R3" target="R5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-R4-R6" edge="1" parent="1" source="R4" target="R6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-R5-R6" edge="1" parent="1" source="R5" target="R6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-R6-R7" edge="1" parent="1" source="R6" target="R7" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#3f8f89;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-L-L1" edge="1" parent="1" source="hub-L" target="L1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-L-L2" edge="1" parent="1" source="hub-L" target="L2" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L2-L3" edge="1" parent="1" source="L2" target="L3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L3-L5" edge="1" parent="1" source="L3" target="L5" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L5-L7" edge="1" parent="1" source="L5" target="L7" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L7-L8" edge="1" parent="1" source="L7" target="L8" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L1-L4" edge="1" parent="1" source="L1" target="L4" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L4-L8" edge="1" parent="1" source="L4" target="L8" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L1-L6" edge="1" parent="1" source="L1" target="L6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L6-L8" edge="1" parent="1" source="L6" target="L8" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-L6-L7" edge="1" parent="1" source="L6" target="L7" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#d79b00;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-D-D1" edge="1" parent="1" source="hub-D" target="D1" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-D-D2" edge="1" parent="1" source="hub-D" target="D2" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-D-D4" edge="1" parent="1" source="hub-D" target="D4" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-D-D5" edge="1" parent="1" source="hub-D" target="D5" style="edgeStyle=none;curved=0;strokeWidth=2;opacity=55;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-D1-D3" edge="1" parent="1" source="D1" target="D3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-D2-D3" edge="1" parent="1" source="D2" target="D3" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-D3-D6" edge="1" parent="1" source="D3" target="D6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-D4-D6" edge="1" parent="1" source="D4" target="D6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-D5-D6" edge="1" parent="1" source="D5" target="D6" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge-D6-D7" edge="1" parent="1" source="D6" target="D7" style="edgeStyle=none;curved=0;rounded=1;strokeWidth=2;opacity=72;strokeColor=#666666;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bundle-deployment-apps" edge="1" parent="1" source="D7" target="hub-A" style="edgeStyle=none;curved=1;strokeColor=#666666;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1497.3" y="1132.5" />
+              <mxPoint x="2633.9" y="540.9" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hub-edge-A-A1" edge="1" parent="1" source="hub-A" target="A1" style="edgeStyle=none;curved=1;strokeColor=#444444;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-A-A2" edge="1" parent="1" source="hub-A" target="A2" style="edgeStyle=none;curved=1;strokeColor=#444444;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-A-A3" edge="1" parent="1" source="hub-A" target="A3" style="edgeStyle=none;curved=1;strokeColor=#444444;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-A-A4" edge="1" parent="1" source="hub-A" target="A4" style="edgeStyle=none;curved=1;strokeColor=#444444;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-edge-A-A5" edge="1" parent="1" source="hub-A" target="A5" style="edgeStyle=none;curved=1;strokeColor=#444444;strokeWidth=2;opacity=55;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="START" parent="1" vertex="1" value="&lt;b&gt;Robot Control Roadmap&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:16px&quot;&gt;Start near the center and follow each track outward&lt;/font&gt;&lt;br&gt;&lt;font style=&quot;font-size:13px;color:#5f6368&quot;&gt;Solid arrows: within-track prerequisites&lt;br&gt;Dashed arcs: bundled cross-track dependencies&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=28;fontStyle=1;fillColor=#ffffff;strokeColor=#202124;strokeWidth=4;shadow=1;spacing=18;">
+          <mxGeometry x="3155.0" y="3155.0" width="490.0" height="490.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-F" parent="1" vertex="1" value="&lt;b&gt;1. Foundations&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="3240.0" y="2529.0" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="F1" parent="1" vertex="1" value="Linear algebra and geometry" tooltip="Linear algebra and geometry" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="3085.0" y="1999.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="F6" parent="1" vertex="1" value="Programming, algorithms, and real-time computing" tooltip="Programming, algorithms, and real-time computing" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3415.0" y="1999.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="F2" parent="1" vertex="1" value="Calculus and differential equations" tooltip="Calculus and differential equations" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3085.0" y="1669.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="F3" parent="1" vertex="1" value="Probability, statistics, and stochastic processes" tooltip="Probability, statistics, and stochastic processes" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3415.0" y="1669.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="F4" parent="1" vertex="1" value="Numerical methods and optimization" tooltip="Numerical methods and optimization" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3085.0" y="1339.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="F5" parent="1" vertex="1" value="Signals, systems, and frequency response" tooltip="Signals, systems, and frequency response" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3415.0" y="1339.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-M" parent="1" vertex="1" value="&lt;b&gt;2. Robot Modeling&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="3767.1" y="2720.8" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M1" parent="1" vertex="1" value="Coordinate frames, SO(3), and SE(3)" tooltip="Coordinate frames, SO(3), and SE(3)" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3940.3" y="2162.9" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M4" parent="1" vertex="1" value="Classical and analytical mechanics" tooltip="Classical and analytical mechanics" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4124.2" y="2317.2" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M8" parent="1" vertex="1" value="Sensors, actuators, friction, and transmissions" tooltip="Sensors, actuators, friction, and transmissions" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4308.0" y="2471.4" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M2" parent="1" vertex="1" value="Forward and inverse kinematics" tooltip="Forward and inverse kinematics" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="4186.9" y="1939.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M5" parent="1" vertex="1" value="Rigid-body and multibody dynamics" tooltip="Rigid-body and multibody dynamics" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="4416.7" y="2131.9" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M3" parent="1" vertex="1" value="Jacobians, differential kinematics, and singularities" tooltip="Jacobians, differential kinematics, and singularities" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4341.6" y="1638.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M6" parent="1" vertex="1" value="Constrained, contact, and hybrid dynamics" tooltip="Constrained, contact, and hybrid dynamics" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4548.4" y="1811.6" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M7" parent="1" vertex="1" value="Continuous and discrete state-space models" tooltip="Continuous and discrete state-space models" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4755.3" y="1985.1" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="M9" parent="1" vertex="1" value="Simulation, calibration, and system identification" tooltip="Simulation, calibration, and system identification" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4886.9" y="1664.9" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-C" parent="1" vertex="1" value="&lt;b&gt;3A. Feedback and Control&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="4047.5" y="3206.6" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="C1" parent="1" vertex="1" value="Feedback, feedforward, and PID control" tooltip="Feedback, feedforward, and PID control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="4560.7" y="2960.3" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="C4" parent="1" vertex="1" value="Controllability and observability" tooltip="Controllability and observability" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4618.0" y="3285.3" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="C2" parent="1" vertex="1" value="Transfer functions and frequency-domain control" tooltip="Transfer functions and frequency-domain control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4885.7" y="2903.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="C3" parent="1" vertex="1" value="Stability, Lyapunov theory, and passivity" tooltip="Stability, Lyapunov theory, and passivity" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4943.0" y="3228.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="C5" parent="1" vertex="1" value="Linear state-space control" tooltip="Linear state-space control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="5239.3" y="3008.2" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="C6" parent="1" vertex="1" value="Nonlinear and geometric control" tooltip="Nonlinear and geometric control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="5564.3" y="2950.9" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="C7" parent="1" vertex="1" value="Robust and adaptive control" tooltip="Robust and adaptive control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="5889.3" y="2893.6" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-E" parent="1" vertex="1" value="&lt;b&gt;3B. State Estimation&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="3950.1" y="3759.0" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="E1" parent="1" vertex="1" value="Bayesian state estimation" tooltip="Bayesian state estimation" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="4427.8" y="4039.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="E2" parent="1" vertex="1" value="Observers and Kalman filtering" tooltip="Observers and Kalman filtering" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4713.6" y="4204.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="E3" parent="1" vertex="1" value="EKF, UKF, and particle filtering" tooltip="EKF, UKF, and particle filtering" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4999.4" y="4369.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="E4" parent="1" vertex="1" value="Smoothing and factor graphs" tooltip="Smoothing and factor graphs" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="5285.2" y="4534.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="E5" parent="1" vertex="1" value="Sensor fusion, localization, and SLAM" tooltip="Sensor fusion, localization, and SLAM" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="5570.9" y="4699.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-P" parent="1" vertex="1" value="&lt;b&gt;3C. Motion Planning&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="3520.5" y="4119.5" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="P1" parent="1" vertex="1" value="Configuration spaces and collision checking" tooltip="Configuration spaces and collision checking" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3715.1" y="4637.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="P2" parent="1" vertex="1" value="Graph search and sampling-based planning" tooltip="Graph search and sampling-based planning" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="3983.1" y="4890.6" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="P4" parent="1" vertex="1" value="Trajectory generation and time scaling" tooltip="Trajectory generation and time scaling" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3673.0" y="5003.5" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="P3" parent="1" vertex="1" value="Kinodynamic and belief-space planning" tooltip="Kinodynamic and belief-space planning" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4095.9" y="5200.7" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="P5" parent="1" vertex="1" value="Trajectory optimization" tooltip="Trajectory optimization" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="4053.7" y="5567.3" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-O" parent="1" vertex="1" value="&lt;b&gt;3D. Optimal Control&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#f5d6b3;strokeColor=#c97b30;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="2959.5" y="4119.5" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="O1" parent="1" vertex="1" value="Calculus of variations and Pontryagin principle" tooltip="Calculus of variations and Pontryagin principle" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f5d6b3;strokeColor=#c97b30;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2939.9" y="4693.4" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="O2" parent="1" vertex="1" value="Dynamic programming and Hamilton-Jacobi theory" tooltip="Dynamic programming and Hamilton-Jacobi theory" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f5d6b3;strokeColor=#c97b30;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2629.8" y="4580.5" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="O3" parent="1" vertex="1" value="LQR, iLQR, and DDP" tooltip="LQR, iLQR, and DDP" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f5d6b3;strokeColor=#c97b30;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2672.0" y="4947.1" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="O4" parent="1" vertex="1" value="Constrained and stochastic optimal control" tooltip="Constrained and stochastic optimal control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f5d6b3;strokeColor=#c97b30;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2559.1" y="5257.2" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="O5" parent="1" vertex="1" value="Linear, nonlinear, robust, and stochastic MPC" tooltip="Linear, nonlinear, robust, and stochastic MPC" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#f5d6b3;strokeColor=#c97b30;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="2446.3" y="5567.3" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-R" parent="1" vertex="1" value="&lt;b&gt;4. Robot-Specific Control&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="2529.9" y="3759.0" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="R1" parent="1" vertex="1" value="Joint-space tracking and actuator control" tooltip="Joint-space tracking and actuator control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2072.2" y="4039.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="R2" parent="1" vertex="1" value="Computed torque and inverse-dynamics control" tooltip="Computed torque and inverse-dynamics control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1786.4" y="4204.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="R3" parent="1" vertex="1" value="Task-space and operational-space control" tooltip="Task-space and operational-space control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1500.6" y="4369.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="R4" parent="1" vertex="1" value="Redundancy resolution and null-space control" tooltip="Redundancy resolution and null-space control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1297.3" y="4676.9" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="R5" parent="1" vertex="1" value="Force, impedance, and admittance control" tooltip="Force, impedance, and admittance control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1132.3" y="4391.1" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="R6" parent="1" vertex="1" value="Whole-body control and hierarchical QPs" tooltip="Whole-body control and hierarchical QPs" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="929.1" y="4699.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="R7" parent="1" vertex="1" value="Contact scheduling, grasping, and locomotion control" tooltip="Contact scheduling, grasping, and locomotion control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#d0e8e6;strokeColor=#3f8f89;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="643.3" y="4864.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-L" parent="1" vertex="1" value="&lt;b&gt;5. Learning-Based Control&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="2432.5" y="3206.6" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L1" parent="1" vertex="1" value="Supervised learning and function approximation" tooltip="Supervised learning and function approximation" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1882.0" y="3285.3" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L2" parent="1" vertex="1" value="MDPs, POMDPs, and Bellman equations" tooltip="MDPs, POMDPs, and Bellman equations" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="1939.3" y="2960.3" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L4" parent="1" vertex="1" value="Imitation and inverse reinforcement learning" tooltip="Imitation and inverse reinforcement learning" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1544.0" y="3301.9" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L6" parent="1" vertex="1" value="Learned dynamics, representations, and residual models" tooltip="Learned dynamics, representations, and residual models" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1585.7" y="3065.5" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L3" parent="1" vertex="1" value="Value iteration and policy iteration" tooltip="Value iteration and policy iteration" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1627.4" y="2829.2" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L5" parent="1" vertex="1" value="Reinforcement learning" tooltip="Reinforcement learning" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="1289.3" y="2845.7" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L7" parent="1" vertex="1" value="Model-based, model-free, and offline RL" tooltip="Model-based, model-free, and offline RL" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="948.7" y="2877.1" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="L8" parent="1" vertex="1" value="Hybrid learning and model-based control" tooltip="Hybrid learning and model-based control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffe6cc;strokeColor=#d79b00;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="610.7" y="2893.6" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-D" parent="1" vertex="1" value="&lt;b&gt;6. Safety and Deployment&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="2712.9" y="2720.8" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="D1" parent="1" vertex="1" value="Constraints, saturation, and anti-windup" tooltip="Constraints, saturation, and anti-windup" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2249.4" y="2423.2" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="D2" parent="1" vertex="1" value="Uncertainty, robustness, and risk" tooltip="Uncertainty, robustness, and risk" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2502.2" y="2211.1" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="D4" parent="1" vertex="1" value="Real-time optimization, latency, and embedded control" tooltip="Real-time optimization, latency, and embedded control" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2037.3" y="2170.4" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="D5" parent="1" vertex="1" value="Sim-to-real, domain randomization, and adaptation" tooltip="Sim-to-real, domain randomization, and adaptation" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="2290.1" y="1958.3" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="D3" parent="1" vertex="1" value="CLFs, CBFs, reachability, and safety filters" tooltip="CLFs, CBFs, reachability, and safety filters" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1951.6" y="1811.6" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="D6" parent="1" vertex="1" value="Verification, hardware-in-the-loop, and experiments" tooltip="Verification, hardware-in-the-loop, and experiments" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1739.4" y="1558.8" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="D7" parent="1" vertex="1" value="Deployment-ready robot autonomy" tooltip="Deployment-ready robot autonomy" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#e6e6e6;strokeColor=#666666;strokeWidth=3;shadow=1;spacing=8;">
+          <mxGeometry x="1527.3" y="1306.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="hub-A" parent="1" vertex="1" value="&lt;b&gt;7. Specialization Tracks&lt;/b&gt;" style="rounded=1;arcSize=28;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=18;fontStyle=1;fillColor=#ffffff;strokeColor=#444444;strokeWidth=3;shadow=1;spacing=10;">
+          <mxGeometry x="3240.0" y="549.0" width="320.0" height="102.0" as="geometry" />
+        </mxCell>
+        <mxCell id="A1" parent="1" vertex="1" value="Manipulation and grasping" tooltip="Manipulation and grasping" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="612.3" y="1512.1" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="A2" parent="1" vertex="1" value="Mobile robots and autonomous vehicles" tooltip="Mobile robots and autonomous vehicles" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="1763.2" y="502.8" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="A3" parent="1" vertex="1" value="Aerial robotics" tooltip="Aerial robotics" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="3250.0" y="139.0" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="A4" parent="1" vertex="1" value="Legged robots and humanoids" tooltip="Legged robots and humanoids" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="4736.8" y="502.8" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="A5" parent="1" vertex="1" value="Multi-robot and human-robot systems" tooltip="Multi-robot and human-robot systems" style="rounded=1;arcSize=18;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontSize=14;fillColor=#ffffff;strokeColor=#444444;strokeWidth=1.6;shadow=1;spacing=8;">
+          <mxGeometry x="5887.7" y="1512.1" width="300.0" height="82.0" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-0-START-F1" edge="1" parent="2" source="START" target="F1" style="edgeStyle=none;curved=1;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-1-START-F6" edge="1" parent="2" source="START" target="F6" style="edgeStyle=none;curved=1;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-2-F1-M1" edge="1" parent="2" source="F1" target="M1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-3-F2-M4" edge="1" parent="2" source="F2" target="M4" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-4-F5-M7" edge="1" parent="2" source="F5" target="M7" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-5-F4-M9" edge="1" parent="2" source="F4" target="M9" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-6-F6-M9" edge="1" parent="2" source="F6" target="M9" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-7-M7-C1" edge="1" parent="2" source="M7" target="C1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-8-M7-C4" edge="1" parent="2" source="M7" target="C4" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-9-F5-C2" edge="1" parent="2" source="F5" target="C2" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-10-F3-E1" edge="1" parent="2" source="F3" target="E1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-11-M7-E2" edge="1" parent="2" source="M7" target="E2" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-12-C4-E2" edge="1" parent="2" source="C4" target="E2" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-13-M8-E5" edge="1" parent="2" source="M8" target="E5" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-14-M2-P1" edge="1" parent="2" source="M2" target="P1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-15-M3-P4" edge="1" parent="2" source="M3" target="P4" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-16-M6-P3" edge="1" parent="2" source="M6" target="P3" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-17-E5-P3" edge="1" parent="2" source="E5" target="P3" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-18-F4-P5" edge="1" parent="2" source="F4" target="P5" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-19-F4-O1" edge="1" parent="2" source="F4" target="O1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-20-M7-O1" edge="1" parent="2" source="M7" target="O1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-21-M7-O2" edge="1" parent="2" source="M7" target="O2" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-22-C5-O3" edge="1" parent="2" source="C5" target="O3" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-23-P5-O4" edge="1" parent="2" source="P5" target="O4" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-24-E3-O4" edge="1" parent="2" source="E3" target="O4" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-25-C7-O5" edge="1" parent="2" source="C7" target="O5" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-26-M3-R3" edge="1" parent="2" source="M3" target="R3" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-27-M5-R2" edge="1" parent="2" source="M5" target="R2" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-28-M6-R5" edge="1" parent="2" source="M6" target="R5" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-29-C5-R1" edge="1" parent="2" source="C5" target="R1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-30-O4-R6" edge="1" parent="2" source="O4" target="R6" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-31-O5-R7" edge="1" parent="2" source="O5" target="R7" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-32-E3-R6" edge="1" parent="2" source="E3" target="R6" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-33-F3-L2" edge="1" parent="2" source="F3" target="L2" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-34-F4-L1" edge="1" parent="2" source="F4" target="L1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-35-F6-L1" edge="1" parent="2" source="F6" target="L1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-36-O2-L3" edge="1" parent="2" source="O2" target="L3" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-37-M9-L6" edge="1" parent="2" source="M9" target="L6" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-38-O5-L8" edge="1" parent="2" source="O5" target="L8" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-39-R6-L8" edge="1" parent="2" source="R6" target="L8" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-40-C7-D2" edge="1" parent="2" source="C7" target="D2" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-41-O5-D1" edge="1" parent="2" source="O5" target="D1" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-42-O5-D4" edge="1" parent="2" source="O5" target="D4" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-43-M9-D5" edge="1" parent="2" source="M9" target="D5" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-44-L8-D5" edge="1" parent="2" source="L8" target="D5" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-45-R7-D3" edge="1" parent="2" source="R7" target="D3" style="edgeStyle=none;curved=1;dashed=1;dashPattern=6 6;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-46-D7-A1" edge="1" parent="2" source="D7" target="A1" style="edgeStyle=none;curved=1;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-47-D7-A2" edge="1" parent="2" source="D7" target="A2" style="edgeStyle=none;curved=1;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-48-D7-A3" edge="1" parent="2" source="D7" target="A3" style="edgeStyle=none;curved=1;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-49-D7-A4" edge="1" parent="2" source="D7" target="A4" style="edgeStyle=none;curved=1;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="detail-50-D7-A5" edge="1" parent="2" source="D7" target="A5" style="edgeStyle=none;curved=1;strokeColor=#5f6368;strokeWidth=1.5;opacity=45;endArrow=blockThin;endFill=1;">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
