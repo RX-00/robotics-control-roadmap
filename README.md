@@ -74,6 +74,16 @@ The synchronizer uses only the Python standard library and never rewrites the Dr
 python scripts/sync_from_drawio.py --check
 ```
 
+### PNG Export
+
+Render the synchronized SVG as a PNG with an installed SVG renderer. The script uses `rsvg-convert`, Inkscape, or ImageMagick, in that order:
+
+```bash
+python scripts/svg_to_png.py images/robotics-control-roadmap.svg images/robotics-control-roadmap.png --width 3000
+```
+
+Omit the paths to use those same roadmap defaults. `--width` is optional and preserves the SVG aspect ratio.
+
 ## References
 
 The reference index is maintained in [`topics-and-references.md`](topics-and-references.md). References have not yet been curated.
