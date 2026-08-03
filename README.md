@@ -99,10 +99,9 @@ This project was inspired by:
 
 The repository retains `images/Control_Map_ver5.png` as a visual design reference. It is not an export of this roadmap.
 
-## Future Work
+## TODOs / Next Steps
 
-- Curate learning resources for every topic.
-- Add topic summaries, prerequisites, and learning outcomes.
-- Add interactive links or hover cards for books, lectures, and papers.
-- Review the taxonomy against respected robotics and control textbook tables of contents.
-- Gather feedback on topic scope and prerequisite edges from specialists in each track.
+- Get rid of numbering that's no longer used from past drafts (as seen in stuff like 3C, 3D, etc.)
+- Split up real-world deployment and safety as they're different popular topics these days
+- Separate contact-rich control and whole-body control
+- Eventually make whole thing into an interactivate webapp where you can easily zoom and parse, with popups for the references
