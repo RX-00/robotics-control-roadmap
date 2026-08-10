@@ -15,22 +15,24 @@ The organizing principle is conceptual prerequisite order, not historical chrono
 ## Canonical Content
 
 <!-- roadmap-canonical:start -->
-The canonical Draw.io source contains 59 topic nodes across 9 content areas:
+The canonical Draw.io source contains 59 topic nodes across 11 content areas:
 
-- 1. Mathematical and Computational Foundations
-- 2. Robot Modeling
-- 3A. Feedback and Control Theory
-- 3B. State Estimation
-- 3C. Motion Planning
-- 3D. Optimal Control
-- 4. Contact-Rich Robot and Whole-Body Control
-- 5. Learning and Learning-Based Control
-- 6. Safety and Real-World Deployment
+- Mathematical and Computational Foundations
+- Robot Modeling
+- Feedback and Control Theory
+- State Estimation
+- Motion Planning
+- Optimal Control
+- Whole-Body Control
+- Contact-Rich Control
+- Learning and Learning-Based Control
+- Safety
+- Real-World Deployment
 
-The synchronized semantic graph contains 60 nodes when the central roadmap node is included, and 99 directed prerequisite edges:
+The synchronized semantic graph contains 60 nodes when the central roadmap node is included, and 102 directed prerequisite edges:
 
-- 53 within-track edges; and
-- 46 cross-track or entry edges.
+- 50 within-track edges; and
+- 52 cross-track or entry edges.
 
 The graph is acyclic.
 <!-- roadmap-canonical:end -->
@@ -81,7 +83,7 @@ There is no package build or automated CI workflow at present.
 When changing roadmap content:
 
 1. Edit `robotics-control-roadmap.drawio` in diagrams.net.
-2. Keep existing semantic IDs stable. New topics should use a custom `roadmapId` such as `F7`; new section hubs should use `hub-X`.
+2. Keep existing semantic IDs stable. New topics should use a custom `roadmapId` such as `F7`; new section hubs should use `hub-X` and a unique, consecutive positive `roadmapOrder` value.
 3. Put within-track arrows on the visible **Radial atlas** layer and entry or cross-track arrows on the hidden detail layer.
 4. Run `python scripts/sync_from_drawio.py`.
 5. Inspect the radial SVG for overlap, clipping, and confusing edge crossings.

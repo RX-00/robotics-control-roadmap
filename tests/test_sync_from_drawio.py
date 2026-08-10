@@ -22,6 +22,44 @@ class SyncFromDrawioTests(unittest.TestCase):
             len(roadmap.semantic_edges),
             len(roadmap.internal_edges) + len(roadmap.detail_edges),
         )
+        self.assertEqual(
+            [group.order for group in roadmap.groups],
+            list(range(1, len(roadmap.groups) + 1)),
+        )
+
+    def test_section_hubs_require_explicit_consecutive_ordering(self) -> None:
+        tree = ET.parse(sync.DRAWIO_PATH)
+        hub = tree.find(".//mxCell[@id='hub-F']")
+        self.assertIsNotNone(hub)
+        assert hub is not None
+        del hub.attrib["roadmapOrder"]
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "missing-order.drawio"
+            tree.write(path, encoding="unicode")
+            with self.assertRaisesRegex(sync.RoadmapError, "roadmapOrder"):
+                sync.load_roadmap(path)
+
+    def test_hub_order_works_with_a_custom_semantic_id(self) -> None:
+        tree = ET.parse(sync.DRAWIO_PATH)
+        hub = tree.find(".//mxCell[@id='hub-F']")
+        self.assertIsNotNone(hub)
+        assert hub is not None
+        hub.set("id", "drawio-hub-foundations")
+        hub.set("roadmapId", "hub-F")
+        for edge in tree.findall(".//mxCell[@edge='1']"):
+            if edge.get("source") == "hub-F":
+                edge.set("source", "drawio-hub-foundations")
+            if edge.get("target") == "hub-F":
+                edge.set("target", "drawio-hub-foundations")
+
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory) / "custom-hub-id.drawio"
+            tree.write(path, encoding="unicode")
+            roadmap = sync.load_roadmap(path)
+
+        self.assertEqual(roadmap.groups[0].id, "F")
+        self.assertEqual(roadmap.groups[0].order, 1)
 
     def test_current_outputs_are_synchronized(self) -> None:
         roadmap = sync.load_roadmap()

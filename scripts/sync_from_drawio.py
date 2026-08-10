@@ -42,7 +42,6 @@ VISIBLE_LAYER_NAME = "Radial atlas"
 DETAIL_LAYER_NAME = "Detailed cross-domain prerequisites"
 TOPIC_ID_RE = re.compile(r"^([A-Z]+)([1-9][0-9]*)$")
 HUB_ID_RE = re.compile(r"^hub-([A-Z]+)$")
-SECTION_PREFIX_RE = re.compile(r"^(\d+)([A-Za-z]?)\.\s*")
 
 
 class RoadmapError(RuntimeError):
@@ -92,6 +91,7 @@ class Ring:
 @dataclass(frozen=True)
 class Group:
     id: str
+    order: int
     title: str
     hub: Node
     topics: tuple[Node, ...]
@@ -277,11 +277,27 @@ def _edge_points(record: CellRecord) -> tuple[tuple[float, float], ...]:
     return tuple(points)
 
 
-def _section_sort_key(group: Group) -> tuple[int, str, str]:
-    match = SECTION_PREFIX_RE.match(group.title)
-    if match:
-        return int(match.group(1)), match.group(2).upper(), group.id
-    return 10_000, "", group.id
+def _section_sort_key(group: Group) -> tuple[int, str]:
+    return group.order, group.id
+
+
+def _roadmap_order(record: CellRecord) -> int:
+    raw_order = record.attributes.get("roadmapOrder")
+    if raw_order is None:
+        raise RoadmapError(
+            f"Section hub {record.semantic_id} must define a roadmapOrder property"
+        )
+    try:
+        order = int(raw_order)
+    except ValueError as exc:
+        raise RoadmapError(
+            f"Section hub {record.semantic_id} has an invalid roadmapOrder {raw_order!r}"
+        ) from exc
+    if order <= 0 or str(order) != raw_order:
+        raise RoadmapError(
+            f"Section hub {record.semantic_id} must define roadmapOrder as a positive integer"
+        )
+    return order
 
 
 def _topic_sort_key(topic: Node) -> tuple[str, int]:
@@ -330,6 +346,7 @@ def load_roadmap(path: Path = DRAWIO_PATH) -> Roadmap:
         raise RoadmapError(f"The {DETAIL_LAYER_NAME!r} layer must remain hidden by default")
 
     semantic_by_actual: dict[str, str] = {}
+    visible_records_by_semantic_id: dict[str, CellRecord] = {}
     nodes: dict[str, Node] = {}
     rings: list[Ring] = []
     for record in records:
@@ -366,6 +383,7 @@ def load_roadmap(path: Path = DRAWIO_PATH) -> Roadmap:
             raise RoadmapError(f"Node {semantic_id} has an empty label")
         if semantic_id in nodes:
             raise RoadmapError(f"Duplicate semantic node ID {semantic_id}")
+        visible_records_by_semantic_id[semantic_id] = record
         nodes[semantic_id] = Node(
             semantic_id,
             label,
@@ -428,7 +446,16 @@ def load_roadmap(path: Path = DRAWIO_PATH) -> Roadmap:
             if edge.source in {topic.id for topic in topics}
             and edge.target in {topic.id for topic in topics}
         )
-        provisional_groups.append(Group(group_id, hub.label, hub, topics, internal))
+        provisional_groups.append(
+            Group(
+                group_id,
+                _roadmap_order(visible_records_by_semantic_id[hub.id]),
+                hub.label,
+                hub,
+                topics,
+                internal,
+            )
+        )
     groups = tuple(sorted(provisional_groups, key=_section_sort_key))
 
     try:
@@ -464,6 +491,13 @@ def validate(roadmap: Roadmap) -> None:
     group_ids = {group.id for group in roadmap.groups}
     if len(group_ids) != len(roadmap.groups):
         raise RoadmapError("Section hub IDs must be unique")
+    group_orders = {group.order for group in roadmap.groups}
+    if len(group_orders) != len(roadmap.groups):
+        raise RoadmapError("Section hub roadmapOrder values must be unique")
+    if group_orders != set(range(1, len(roadmap.groups) + 1)):
+        raise RoadmapError(
+            "Section hub roadmapOrder values must be consecutive starting at 1"
+        )
     for group in roadmap.groups:
         if not group.topics:
             raise RoadmapError(f"Section {group.id} has no topics")

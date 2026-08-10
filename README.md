@@ -43,17 +43,19 @@ The order is intentionally based on conceptual prerequisites rather than the his
 ## Roadmap Contents
 
 <!-- roadmap-contents:start -->
-The current atlas contains 59 topic nodes organized into 9 content areas:
+The current atlas contains 59 topic nodes organized into 11 content areas:
 
-- 1. Mathematical and Computational Foundations
-- 2. Robot Modeling
-- 3A. Feedback and Control Theory
-- 3B. State Estimation
-- 3C. Motion Planning
-- 3D. Optimal Control
-- 4. Contact-Rich Robot and Whole-Body Control
-- 5. Learning and Learning-Based Control
-- 6. Safety and Real-World Deployment
+- Mathematical and Computational Foundations
+- Robot Modeling
+- Feedback and Control Theory
+- State Estimation
+- Motion Planning
+- Optimal Control
+- Whole-Body Control
+- Contact-Rich Control
+- Learning and Learning-Based Control
+- Safety
+- Real-World Deployment
 <!-- roadmap-contents:end -->
 
 ## Editing and Synchronizing
@@ -67,6 +69,9 @@ python scripts/sync_from_drawio.py
 ```
 
 Existing semantic IDs such as `F1`, `R6`, and `hub-R` must remain stable. For a newly created node whose diagrams.net cell ID is arbitrary, add a custom `roadmapId` property such as `F7` or `hub-X`. New edge IDs may remain arbitrary. Topic reference content beneath the synchronized headings in [`topics-and-references.md`](topics-and-references.md) is preserved by stable ID markers.
+
+Section display order is defined by each hub's required `roadmapOrder` property,
+not by its visible label. Use consecutive positive integers beginning at `1`.
 
 The synchronizer uses only the Python standard library and never rewrites the Draw.io source. Verify that committed artifacts are current with:
 
@@ -101,7 +106,4 @@ The repository retains `images/Control_Map_ver5.png` as a visual design referenc
 
 ## TODOs / Next Steps
 
-- Get rid of numbering that's no longer used from past drafts (as seen in stuff like 3C, 3D, etc.)
-- Split up real-world deployment and safety as they're different popular topics these days
-- Separate contact-rich control and whole-body control
 - Eventually make whole thing into an interactivate webapp where you can easily zoom and parse, with popups for the references

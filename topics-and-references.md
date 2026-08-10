@@ -5,7 +5,7 @@ This index mirrors the 59 topic nodes in the robot-control roadmap. Topic headin
 <!-- roadmap-reference-index:end -->
 
 <!-- roadmap-group:F -->
-## 1. Mathematical and Computational Foundations
+## Mathematical and Computational Foundations
 
 <!-- roadmap-topic:F1 -->
 ### Linear algebra and geometry
@@ -54,7 +54,7 @@ References:
 - [CloudPendulum Onboarding](https://cloudpendulum.m2.chalmers.se/onboarding/) - Tutorials 3-5, "Do your first cloud experiment," "Implement your own control loop," and "VS Code Integration," for implementing and running control software against real hardware.
 
 <!-- roadmap-group:M -->
-## 2. Robot Modeling
+## Robot Modeling
 
 <!-- roadmap-topic:M1 -->
 ### Coordinate frames, SO(3), and SE(3)
@@ -125,7 +125,7 @@ References:
 - [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapter 18, "System Identification," especially parameter identification for mechanical systems, calibration, linear dynamical systems, neural models, and identification with contact.
 
 <!-- roadmap-group:C -->
-## 3A. Feedback and Control Theory
+## Feedback and Control Theory
 
 <!-- roadmap-topic:C1 -->
 ### Feedback, feedforward, and PID control
@@ -184,7 +184,7 @@ References:
 - [Feedback Systems](https://authors.library.caltech.edu/records/yzs24-xsx88) by Astrom and Murray - Chapter 12, "Robust Performance."
 
 <!-- roadmap-group:E -->
-## 3B. State Estimation
+## State Estimation
 
 <!-- roadmap-topic:E1 -->
 ### Bayesian state estimation
@@ -227,7 +227,7 @@ References:
 - [UCSD ECE276A: Sensing and Estimation in Robotics](https://natanaso.github.io/ece276a/schedule.html) - Lectures on motion/observation models, localization, odometry, factor-graph SLAM, and Bayes filtering.
 
 <!-- roadmap-group:P -->
-## 3C. Motion Planning
+## Motion Planning
 
 <!-- roadmap-topic:P1 -->
 ### Configuration spaces and collision checking
@@ -269,7 +269,7 @@ References:
 - [Numerical Optimal Control](https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online) - Lecture 18, "Direct Approaches."
 
 <!-- roadmap-group:O -->
-## 3D. Optimal Control
+## Optimal Control
 
 <!-- roadmap-topic:O1 -->
 ### Calculus of variations and Pontryagin principle
@@ -313,7 +313,7 @@ References:
 - [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapter 10 section "Model-Predictive Control" and Chapter 13 sections on stochastic and robust MPC.
 
 <!-- roadmap-group:R -->
-## 4. Contact-Rich Robot and Whole-Body Control
+## Whole-Body Control
 
 <!-- roadmap-topic:R1 -->
 ### Joint-space tracking and actuator control
@@ -346,15 +346,6 @@ References:
 - [MIT Robotic Manipulation](https://manipulation.mit.edu/) - Chapter 3 sections "Differential inverse kinematics" and "Differential inverse kinematics with constraints," including the Jacobian pseudoinverse and joint-centering objectives.
 - [Intelligent Robot Control lectures](https://cobotat.ijs.si/lectures/) - Lectures 3-4, "Control of Redundant Robots" and "Control of Redundant Robots Multiple Tasks."
 
-<!-- roadmap-topic:R5 -->
-### Force, impedance, and admittance control
-
-References:
-
-- [Modern Robotics](https://modernrobotics.northwestern.edu/nu-gm-book-resource/) - Sections 11.5-11.6, "Force Control" and "Hybrid Motion-Force Control."
-- [MIT Robotic Manipulation](https://manipulation.mit.edu/) - Chapter 8, "Manipulator Control," especially direct/indirect force control, hybrid position-force control, and joint/Cartesian stiffness control.
-- [Intelligent Robot Control lectures](https://cobotat.ijs.si/lectures/) - Lectures 5-7 on force, impedance, and admittance control.
-
 <!-- roadmap-topic:R6 -->
 ### Whole-body control and hierarchical QPs
 
@@ -363,7 +354,19 @@ References:
 - [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapter 5 section "Whole-Body Control," following the centroidal-dynamics and whole-body-planning sections.
 - [MeMory of Motion Summer School Materials](https://memory-of-motion.github.io/summer-school/materials) - TSID lecture slides, tutorials, and notebooks on joint-space and task-space inverse-dynamics control formulated as constrained optimization.
 
-<!-- roadmap-topic:R7 -->
+<!-- roadmap-group:I -->
+## Contact-Rich Control
+
+<!-- roadmap-topic:I1 -->
+### Force, impedance, and admittance control
+
+References:
+
+- [Modern Robotics](https://modernrobotics.northwestern.edu/nu-gm-book-resource/) - Sections 11.5-11.6, "Force Control" and "Hybrid Motion-Force Control."
+- [MIT Robotic Manipulation](https://manipulation.mit.edu/) - Chapter 8, "Manipulator Control," especially direct/indirect force control, hybrid position-force control, and joint/Cartesian stiffness control.
+- [Intelligent Robot Control lectures](https://cobotat.ijs.si/lectures/) - Lectures 5-7 on force, impedance, and admittance control.
+
+<!-- roadmap-topic:I2 -->
 ### Contact scheduling, grasping, and locomotion control
 
 References:
@@ -372,7 +375,7 @@ References:
 - [Modern Robotics](https://modernrobotics.northwestern.edu/nu-gm-book-resource/) - Chapter 12, "Grasping and Manipulation," including contact kinematics, friction, form closure, and force closure.
 
 <!-- roadmap-group:L -->
-## 5. Learning and Learning-Based Control
+## Learning and Learning-Based Control
 
 <!-- roadmap-topic:L1 -->
 ### Supervised learning and function approximation
@@ -439,7 +442,7 @@ References:
 - [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapters 10, 18, and 20 for trajectory optimization/MPC, learned control models, and model-free policy search.
 
 <!-- roadmap-group:D -->
-## 6. Safety and Real-World Deployment
+## Safety
 
 <!-- roadmap-topic:D1 -->
 ### Constraints, saturation, and anti-windup
@@ -464,22 +467,6 @@ References:
 
 - [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapter 9 sections "Barrier functions," "Finite-time Reachability," and "Control-Lyapunov Functions."
 
-<!-- roadmap-topic:D4 -->
-### Real-time optimization, latency, and embedded control
-
-References:
-
-- [UC Berkeley MPC Course Material](https://sites.google.com/berkeley.edu/mpc-lab/mpc-course-material) - *Predictive Control for Linear and Hybrid Systems*, particularly the material on explicit MPC and real-time implementation.
-- [CloudPendulum Onboarding](https://cloudpendulum.m2.chalmers.se/onboarding/) - Tutorial 4, "Implement your own control loop," for executing a custom controller against remote real-time hardware.
-
-<!-- roadmap-topic:D5 -->
-### Sim-to-real, domain randomization, and adaptation
-
-References:
-
-- [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapter 13 section "Domain randomization" and Chapter 18 sections on online estimation and adaptive control.
-- [UC Berkeley CS 285: Deep Reinforcement Learning](https://rail.eecs.berkeley.edu/deeprlcourse-fa23/) - Lecture 22, "Meta-Learning and Transfer Learning."
-
 <!-- roadmap-topic:D6 -->
 ### Verification, hardware-in-the-loop, and experiments
 
@@ -488,7 +475,26 @@ References:
 - [CloudPendulum Onboarding](https://cloudpendulum.m2.chalmers.se/onboarding/) - Tutorials 3, 7, and 8 on simulation/hardware experiments, repeatable disturbances, and controller benchmarking.
 - [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapter 9, "Lyapunov Analysis," for computational verification of stability, regions of attraction, robustness, and reachability.
 
-<!-- roadmap-topic:D7 -->
+<!-- roadmap-group:H -->
+## Real-World Deployment
+
+<!-- roadmap-topic:H1 -->
+### Real-time optimization, latency, and embedded control
+
+References:
+
+- [UC Berkeley MPC Course Material](https://sites.google.com/berkeley.edu/mpc-lab/mpc-course-material) - *Predictive Control for Linear and Hybrid Systems*, particularly the material on explicit MPC and real-time implementation.
+- [CloudPendulum Onboarding](https://cloudpendulum.m2.chalmers.se/onboarding/) - Tutorial 4, "Implement your own control loop," for executing a custom controller against remote real-time hardware.
+
+<!-- roadmap-topic:H2 -->
+### Sim-to-real, domain randomization, and adaptation
+
+References:
+
+- [Underactuated Robotics](https://underactuated.csail.mit.edu/) - Chapter 13 section "Domain randomization" and Chapter 18 sections on online estimation and adaptive control.
+- [UC Berkeley CS 285: Deep Reinforcement Learning](https://rail.eecs.berkeley.edu/deeprlcourse-fa23/) - Lecture 22, "Meta-Learning and Transfer Learning."
+
+<!-- roadmap-topic:H3 -->
 ### Deployment-ready robot autonomy
 
 References:
