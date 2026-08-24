@@ -1,0 +1,5887 @@
+{
+  "canvas": {
+    "background": "#fbfaf7",
+    "height": 6000.0,
+    "width": 6000.0
+  },
+  "groups": [
+    {
+      "fill": "#fff2cc",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 2840.0,
+          "y": 2129.0
+        },
+        "groupId": "F",
+        "id": "hub-F",
+        "kind": "hub",
+        "label": "Mathematical and Computational Foundations",
+        "labelLines": [
+          "Mathematical and Computational Foundations"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#fff2cc",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#d6b656",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "F",
+      "order": 1,
+      "stroke": "#d6b656",
+      "title": "Mathematical and Computational Foundations",
+      "topicIds": [
+        "F1",
+        "F2",
+        "F3",
+        "F4",
+        "F5",
+        "F6"
+      ]
+    },
+    {
+      "fill": "#d5e8d4",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 3367.1,
+          "y": 2320.8
+        },
+        "groupId": "M",
+        "id": "hub-M",
+        "kind": "hub",
+        "label": "Robot Modeling",
+        "labelLines": [
+          "Robot Modeling"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#d5e8d4",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#82b366",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "M",
+      "order": 2,
+      "stroke": "#82b366",
+      "title": "Robot Modeling",
+      "topicIds": [
+        "M1",
+        "M2",
+        "M3",
+        "M4",
+        "M5",
+        "M6",
+        "M7",
+        "M8",
+        "M9"
+      ]
+    },
+    {
+      "fill": "#dae8fc",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 3647.5,
+          "y": 2806.6
+        },
+        "groupId": "C",
+        "id": "hub-C",
+        "kind": "hub",
+        "label": "Feedback and Control Theory",
+        "labelLines": [
+          "Feedback and Control Theory"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#dae8fc",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#6c8ebf",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "C",
+      "order": 3,
+      "stroke": "#6c8ebf",
+      "title": "Feedback and Control Theory",
+      "topicIds": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5",
+        "C6",
+        "C7"
+      ]
+    },
+    {
+      "fill": "#e1d5e7",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 3550.1,
+          "y": 3359.0
+        },
+        "groupId": "E",
+        "id": "hub-E",
+        "kind": "hub",
+        "label": "State Estimation",
+        "labelLines": [
+          "State Estimation"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#e1d5e7",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#9673a6",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "E",
+      "order": 4,
+      "stroke": "#9673a6",
+      "title": "State Estimation",
+      "topicIds": [
+        "E1",
+        "E2",
+        "E3",
+        "E4",
+        "E5"
+      ]
+    },
+    {
+      "fill": "#f8cecc",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 3120.5,
+          "y": 3719.5
+        },
+        "groupId": "P",
+        "id": "hub-P",
+        "kind": "hub",
+        "label": "Motion Planning",
+        "labelLines": [
+          "Motion Planning"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#f8cecc",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#b85450",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "P",
+      "order": 5,
+      "stroke": "#b85450",
+      "title": "Motion Planning",
+      "topicIds": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    },
+    {
+      "fill": "#f5d6b3",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 2559.5,
+          "y": 3719.5
+        },
+        "groupId": "O",
+        "id": "hub-O",
+        "kind": "hub",
+        "label": "Optimal Control",
+        "labelLines": [
+          "Optimal Control"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#f5d6b3",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#c97b30",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "O",
+      "order": 6,
+      "stroke": "#c97b30",
+      "title": "Optimal Control",
+      "topicIds": [
+        "O1",
+        "O2",
+        "O3",
+        "O4",
+        "O5"
+      ]
+    },
+    {
+      "fill": "#d0e8e6",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 2129.9,
+          "y": 3359.0
+        },
+        "groupId": "R",
+        "id": "hub-R",
+        "kind": "hub",
+        "label": "Whole-Body Control",
+        "labelLines": [
+          "Whole-Body Control"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#d0e8e6",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#3f8f89",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "R",
+      "order": 7,
+      "stroke": "#3f8f89",
+      "title": "Whole-Body Control",
+      "topicIds": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R6"
+      ]
+    },
+    {
+      "fill": "#b7e1dc",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 1750.0,
+          "y": 3359.0
+        },
+        "groupId": "I",
+        "id": "hub-I",
+        "kind": "hub",
+        "label": "Contact-Rich Control",
+        "labelLines": [
+          "Contact-Rich Control"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#b7e1dc",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#2f8f83",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "I",
+      "order": 8,
+      "stroke": "#2f8f83",
+      "title": "Contact-Rich Control",
+      "topicIds": [
+        "I1",
+        "I2"
+      ]
+    },
+    {
+      "fill": "#ffe6cc",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 2032.5,
+          "y": 2806.6
+        },
+        "groupId": "L",
+        "id": "hub-L",
+        "kind": "hub",
+        "label": "Learning and Learning-Based Control",
+        "labelLines": [
+          "Learning and Learning-Based Control"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#ffe6cc",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#d79b00",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "L",
+      "order": 9,
+      "stroke": "#d79b00",
+      "title": "Learning and Learning-Based Control",
+      "topicIds": [
+        "L1",
+        "L2",
+        "L3",
+        "L4",
+        "L5",
+        "L6",
+        "L7",
+        "L8"
+      ]
+    },
+    {
+      "fill": "#e6e6e6",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 2312.9,
+          "y": 2320.8
+        },
+        "groupId": "D",
+        "id": "hub-D",
+        "kind": "hub",
+        "label": "Safety",
+        "labelLines": [
+          "Safety"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#e6e6e6",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#666666",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "D",
+      "order": 10,
+      "stroke": "#666666",
+      "title": "Safety",
+      "topicIds": [
+        "D1",
+        "D2",
+        "D3",
+        "D6"
+      ]
+    },
+    {
+      "fill": "#d9eaf7",
+      "hub": {
+        "checkpoint": false,
+        "geometry": {
+          "height": 102.0,
+          "width": 320.0,
+          "x": 1600.0,
+          "y": 2120.0
+        },
+        "groupId": "H",
+        "id": "hub-H",
+        "kind": "hub",
+        "label": "Real-World Deployment",
+        "labelLines": [
+          "Real-World Deployment"
+        ],
+        "style": {
+          "align": "center",
+          "arcSize": "28",
+          "fillColor": "#d9eaf7",
+          "fontSize": "18",
+          "fontStyle": "1",
+          "html": "1",
+          "rounded": "1",
+          "shadow": "1",
+          "spacing": "10",
+          "strokeColor": "#4a86c5",
+          "strokeWidth": "3",
+          "verticalAlign": "middle",
+          "whiteSpace": "wrap"
+        }
+      },
+      "id": "H",
+      "order": 11,
+      "stroke": "#4a86c5",
+      "title": "Real-World Deployment",
+      "topicIds": [
+        "H1",
+        "H2",
+        "H3"
+      ]
+    }
+  ],
+  "prerequisiteEdges": [
+    {
+      "id": "edge-F1-F2",
+      "points": [],
+      "source": "F1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F2"
+    },
+    {
+      "id": "edge-F1-F3",
+      "points": [],
+      "source": "F1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F3"
+    },
+    {
+      "id": "edge-F2-F4",
+      "points": [],
+      "source": "F2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F4"
+    },
+    {
+      "id": "edge-F2-F5",
+      "points": [],
+      "source": "F2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F5"
+    },
+    {
+      "id": "edge-M1-M2",
+      "points": [],
+      "source": "M1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M2"
+    },
+    {
+      "id": "edge-M2-M3",
+      "points": [],
+      "source": "M2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M3"
+    },
+    {
+      "id": "edge-M4-M5",
+      "points": [],
+      "source": "M4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M5"
+    },
+    {
+      "id": "edge-M5-M6",
+      "points": [],
+      "source": "M5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M6"
+    },
+    {
+      "id": "edge-M5-M7",
+      "points": [],
+      "source": "M5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M7"
+    },
+    {
+      "id": "edge-M7-M9",
+      "points": [],
+      "source": "M7",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M9"
+    },
+    {
+      "id": "edge-M8-M9",
+      "points": [],
+      "source": "M8",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M9"
+    },
+    {
+      "id": "edge-C1-C2",
+      "points": [],
+      "source": "C1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C2"
+    },
+    {
+      "id": "edge-C1-C3",
+      "points": [],
+      "source": "C1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C3"
+    },
+    {
+      "id": "edge-C2-C5",
+      "points": [],
+      "source": "C2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C5"
+    },
+    {
+      "id": "edge-C3-C5",
+      "points": [],
+      "source": "C3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C5"
+    },
+    {
+      "id": "edge-C4-C5",
+      "points": [],
+      "source": "C4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C5"
+    },
+    {
+      "id": "edge-C5-C6",
+      "points": [],
+      "source": "C5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C6"
+    },
+    {
+      "id": "edge-C6-C7",
+      "points": [],
+      "source": "C6",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C7"
+    },
+    {
+      "id": "edge-E1-E2",
+      "points": [],
+      "source": "E1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E2"
+    },
+    {
+      "id": "edge-E2-E3",
+      "points": [],
+      "source": "E2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E3"
+    },
+    {
+      "id": "edge-E3-E4",
+      "points": [],
+      "source": "E3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E4"
+    },
+    {
+      "id": "edge-E4-E5",
+      "points": [],
+      "source": "E4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E5"
+    },
+    {
+      "id": "edge-P1-P2",
+      "points": [],
+      "source": "P1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P2"
+    },
+    {
+      "id": "edge-P2-P3",
+      "points": [],
+      "source": "P2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P3"
+    },
+    {
+      "id": "edge-P1-P4",
+      "points": [],
+      "source": "P1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P4"
+    },
+    {
+      "id": "edge-P4-P5",
+      "points": [],
+      "source": "P4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P5"
+    },
+    {
+      "id": "edge-P3-P5",
+      "points": [],
+      "source": "P3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P5"
+    },
+    {
+      "id": "edge-O1-O3",
+      "points": [],
+      "source": "O1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O3"
+    },
+    {
+      "id": "edge-O2-O3",
+      "points": [],
+      "source": "O2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O3"
+    },
+    {
+      "id": "edge-O3-O4",
+      "points": [],
+      "source": "O3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O4"
+    },
+    {
+      "id": "edge-O4-O5",
+      "points": [],
+      "source": "O4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O5"
+    },
+    {
+      "id": "edge-R1-R2",
+      "points": [],
+      "source": "R1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R2"
+    },
+    {
+      "id": "edge-R2-R3",
+      "points": [],
+      "source": "R2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R3"
+    },
+    {
+      "id": "edge-R3-R4",
+      "points": [],
+      "source": "R3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R4"
+    },
+    {
+      "id": "edge-R4-R6",
+      "points": [],
+      "source": "R4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R6"
+    },
+    {
+      "id": "edge-I1-I2",
+      "points": [],
+      "source": "I1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#2f8f83",
+        "strokeWidth": "2"
+      },
+      "target": "I2"
+    },
+    {
+      "id": "edge-L2-L3",
+      "points": [],
+      "source": "L2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L3"
+    },
+    {
+      "id": "edge-L3-L5",
+      "points": [],
+      "source": "L3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L5"
+    },
+    {
+      "id": "edge-L5-L7",
+      "points": [],
+      "source": "L5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L7"
+    },
+    {
+      "id": "edge-L7-L8",
+      "points": [],
+      "source": "L7",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "edge-L1-L4",
+      "points": [],
+      "source": "L1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L4"
+    },
+    {
+      "id": "edge-L4-L8",
+      "points": [],
+      "source": "L4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "edge-L1-L6",
+      "points": [],
+      "source": "L1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L6"
+    },
+    {
+      "id": "edge-L6-L8",
+      "points": [],
+      "source": "L6",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "edge-L6-L7",
+      "points": [],
+      "source": "L6",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L7"
+    },
+    {
+      "id": "edge-D1-D3",
+      "points": [],
+      "source": "D1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D3"
+    },
+    {
+      "id": "edge-D2-D3",
+      "points": [],
+      "source": "D2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D3"
+    },
+    {
+      "id": "edge-D3-D6",
+      "points": [],
+      "source": "D3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D6"
+    },
+    {
+      "id": "edge-H1-H3",
+      "points": [],
+      "source": "H1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "2"
+      },
+      "target": "H3"
+    },
+    {
+      "id": "edge-H2-H3",
+      "points": [],
+      "source": "H2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "2"
+      },
+      "target": "H3"
+    },
+    {
+      "id": "detail-0-START-F1",
+      "points": [],
+      "source": "START",
+      "style": {
+        "curved": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "F1"
+    },
+    {
+      "id": "detail-1-START-F6",
+      "points": [],
+      "source": "START",
+      "style": {
+        "curved": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "F6"
+    },
+    {
+      "id": "detail-2-F1-M1",
+      "points": [],
+      "source": "F1",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "M1"
+    },
+    {
+      "id": "detail-3-F2-M4",
+      "points": [],
+      "source": "F2",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "M4"
+    },
+    {
+      "id": "detail-4-F5-M7",
+      "points": [],
+      "source": "F5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "M7"
+    },
+    {
+      "id": "detail-5-F4-M9",
+      "points": [],
+      "source": "F4",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "M9"
+    },
+    {
+      "id": "detail-6-F6-M9",
+      "points": [],
+      "source": "F6",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "M9"
+    },
+    {
+      "id": "detail-7-M7-C1",
+      "points": [],
+      "source": "M7",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "C1"
+    },
+    {
+      "id": "detail-8-M7-C4",
+      "points": [],
+      "source": "M7",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "C4"
+    },
+    {
+      "id": "detail-9-F5-C2",
+      "points": [],
+      "source": "F5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "C2"
+    },
+    {
+      "id": "detail-10-F3-E1",
+      "points": [],
+      "source": "F3",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "E1"
+    },
+    {
+      "id": "detail-11-M7-E2",
+      "points": [],
+      "source": "M7",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "E2"
+    },
+    {
+      "id": "detail-12-C4-E2",
+      "points": [],
+      "source": "C4",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "E2"
+    },
+    {
+      "id": "detail-13-M8-E5",
+      "points": [],
+      "source": "M8",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "E5"
+    },
+    {
+      "id": "detail-14-M2-P1",
+      "points": [],
+      "source": "M2",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "P1"
+    },
+    {
+      "id": "detail-15-M3-P4",
+      "points": [],
+      "source": "M3",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "P4"
+    },
+    {
+      "id": "detail-16-M6-P3",
+      "points": [],
+      "source": "M6",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "P3"
+    },
+    {
+      "id": "detail-17-E5-P3",
+      "points": [],
+      "source": "E5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "P3"
+    },
+    {
+      "id": "detail-18-F4-P5",
+      "points": [],
+      "source": "F4",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "P5"
+    },
+    {
+      "id": "detail-19-F4-O1",
+      "points": [],
+      "source": "F4",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "O1"
+    },
+    {
+      "id": "detail-20-M7-O1",
+      "points": [],
+      "source": "M7",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "O1"
+    },
+    {
+      "id": "detail-21-M7-O2",
+      "points": [],
+      "source": "M7",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "O2"
+    },
+    {
+      "id": "detail-22-C5-O3",
+      "points": [],
+      "source": "C5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "O3"
+    },
+    {
+      "id": "detail-23-P5-O4",
+      "points": [],
+      "source": "P5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "O4"
+    },
+    {
+      "id": "detail-24-E3-O4",
+      "points": [],
+      "source": "E3",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "O4"
+    },
+    {
+      "id": "detail-25-C7-O5",
+      "points": [],
+      "source": "C7",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "O5"
+    },
+    {
+      "id": "detail-26-M3-R3",
+      "points": [],
+      "source": "M3",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "R3"
+    },
+    {
+      "id": "detail-27-M5-R2",
+      "points": [],
+      "source": "M5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "R2"
+    },
+    {
+      "id": "detail-28-M6-I1",
+      "points": [],
+      "source": "M6",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "I1"
+    },
+    {
+      "id": "detail-29-C5-R1",
+      "points": [],
+      "source": "C5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "R1"
+    },
+    {
+      "id": "detail-30-O4-R6",
+      "points": [],
+      "source": "O4",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "R6"
+    },
+    {
+      "id": "detail-31-O5-I2",
+      "points": [],
+      "source": "O5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "I2"
+    },
+    {
+      "id": "detail-32-E3-R6",
+      "points": [],
+      "source": "E3",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "R6"
+    },
+    {
+      "id": "detail-33-F3-L2",
+      "points": [],
+      "source": "F3",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "L2"
+    },
+    {
+      "id": "detail-34-F4-L1",
+      "points": [],
+      "source": "F4",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "L1"
+    },
+    {
+      "id": "detail-35-F6-L1",
+      "points": [],
+      "source": "F6",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "L1"
+    },
+    {
+      "id": "detail-36-O2-L3",
+      "points": [],
+      "source": "O2",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "L3"
+    },
+    {
+      "id": "detail-37-M9-L6",
+      "points": [],
+      "source": "M9",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "L6"
+    },
+    {
+      "id": "detail-38-O5-L8",
+      "points": [],
+      "source": "O5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "detail-39-R6-L8",
+      "points": [],
+      "source": "R6",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "detail-40-C7-D2",
+      "points": [],
+      "source": "C7",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "D2"
+    },
+    {
+      "id": "detail-41-O5-D1",
+      "points": [],
+      "source": "O5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "D1"
+    },
+    {
+      "id": "detail-42-O5-H1",
+      "points": [],
+      "source": "O5",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "H1"
+    },
+    {
+      "id": "detail-43-M9-H2",
+      "points": [],
+      "source": "M9",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "H2"
+    },
+    {
+      "id": "detail-44-L8-H2",
+      "points": [],
+      "source": "L8",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "H2"
+    },
+    {
+      "id": "detail-45-I2-D3",
+      "points": [],
+      "source": "I2",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "D3"
+    },
+    {
+      "id": "detail-46-R3-I1",
+      "points": [],
+      "source": "R3",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "I1"
+    },
+    {
+      "id": "detail-47-I1-R6",
+      "points": [],
+      "source": "I1",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "R6"
+    },
+    {
+      "id": "detail-48-R6-I2",
+      "points": [],
+      "source": "R6",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "I2"
+    },
+    {
+      "id": "detail-49-H1-D6",
+      "points": [],
+      "source": "H1",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "D6"
+    },
+    {
+      "id": "detail-50-H2-D6",
+      "points": [],
+      "source": "H2",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "D6"
+    },
+    {
+      "id": "detail-51-D6-H3",
+      "points": [],
+      "source": "D6",
+      "style": {
+        "curved": "1",
+        "dashPattern": "6 6",
+        "dashed": "1",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "45",
+        "strokeColor": "#5f6368",
+        "strokeWidth": "1.5"
+      },
+      "target": "H3"
+    }
+  ],
+  "rings": [
+    {
+      "geometry": {
+        "height": 1640.0,
+        "width": 1640.0,
+        "x": 2180.0,
+        "y": 2180.0
+      },
+      "id": "ring-820",
+      "style": {
+        "ellipse": "1",
+        "fillColor": "none",
+        "html": "1",
+        "movable": "0",
+        "opacity": "35",
+        "resizable": "0",
+        "rotatable": "0",
+        "strokeColor": "#9aa0a6",
+        "strokeWidth": "1",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "geometry": {
+        "height": 2720.0,
+        "width": 2720.0,
+        "x": 1640.0,
+        "y": 1640.0
+      },
+      "id": "ring-1360",
+      "style": {
+        "ellipse": "1",
+        "fillColor": "none",
+        "html": "1",
+        "movable": "0",
+        "opacity": "24",
+        "resizable": "0",
+        "rotatable": "0",
+        "strokeColor": "#9aa0a6",
+        "strokeWidth": "1",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "geometry": {
+        "height": 4040.0,
+        "width": 4040.0,
+        "x": 980.0,
+        "y": 980.0
+      },
+      "id": "ring-2020",
+      "style": {
+        "ellipse": "1",
+        "fillColor": "none",
+        "html": "1",
+        "movable": "0",
+        "opacity": "18",
+        "resizable": "0",
+        "rotatable": "0",
+        "strokeColor": "#9aa0a6",
+        "strokeWidth": "1",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "geometry": {
+        "height": 5360.0,
+        "width": 5360.0,
+        "x": 320.0,
+        "y": 320.0
+      },
+      "id": "ring-2680",
+      "style": {
+        "ellipse": "1",
+        "fillColor": "none",
+        "html": "1",
+        "movable": "0",
+        "opacity": "14",
+        "resizable": "0",
+        "rotatable": "0",
+        "strokeColor": "#9aa0a6",
+        "strokeWidth": "1",
+        "whiteSpace": "wrap"
+      }
+    }
+  ],
+  "schemaVersion": 1,
+  "start": {
+    "checkpoint": false,
+    "geometry": {
+      "height": 490.0,
+      "width": 490.0,
+      "x": 2755.0,
+      "y": 2755.0
+    },
+    "groupId": null,
+    "id": "START",
+    "kind": "start",
+    "label": "Robot Control Roadmap Start near the center and follow each track outward Solid arrows: within-track prerequisites Cross-track links: see the prerequisite graph",
+    "labelLines": [
+      "Robot Control Roadmap",
+      "Start near the center and follow each track outward",
+      "Solid arrows: within-track prerequisites",
+      "Cross-track links: see the prerequisite graph"
+    ],
+    "style": {
+      "align": "center",
+      "ellipse": "1",
+      "fillColor": "#ffffff",
+      "fontSize": "28",
+      "fontStyle": "1",
+      "html": "1",
+      "shadow": "1",
+      "spacing": "18",
+      "strokeColor": "#202124",
+      "strokeWidth": "4",
+      "verticalAlign": "middle",
+      "whiteSpace": "wrap"
+    }
+  },
+  "topics": [
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2685.0,
+        "y": 1599.0
+      },
+      "groupId": "F",
+      "id": "F1",
+      "kind": "topic",
+      "label": "Linear algebra and geometry",
+      "labelLines": [
+        "Linear algebra and geometry"
+      ],
+      "resources": [
+        {
+          "detail": "Chapters 2-4, \"Linear Algebra,\" \"Analytic Geometry,\" and \"Matrix Decompositions.\"",
+          "title": "Mathematics for Machine Learning",
+          "url": "https://mml-book.github.io/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#fff2cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2685.0,
+        "y": 1269.0
+      },
+      "groupId": "F",
+      "id": "F2",
+      "kind": "topic",
+      "label": "Calculus and differential equations",
+      "labelLines": [
+        "Calculus and differential equations"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 5, \"Vector Calculus.\"",
+          "title": "Mathematics for Machine Learning",
+          "url": "https://mml-book.github.io/"
+        },
+        {
+          "detail": "Units I-IV on first-order equations, second-order equations, Fourier/Laplace methods, and first-order systems.",
+          "title": "MIT OpenCourseWare 18.03SC: Differential Equations",
+          "url": "https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#fff2cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3015.0,
+        "y": 1269.0
+      },
+      "groupId": "F",
+      "id": "F3",
+      "kind": "topic",
+      "label": "Probability, statistics, and stochastic processes",
+      "labelLines": [
+        "Probability, statistics, and stochastic processes"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 6, \"Probability and Distributions.\"",
+          "title": "Mathematics for Machine Learning",
+          "url": "https://mml-book.github.io/"
+        },
+        {
+          "detail": "Chapter 6, \"Model Systems with Stochasticity,\" especially \"The Master Equation,\" \"Stationary Distributions,\" and \"Finite Markov Decision Processes.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#fff2cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2685.0,
+        "y": 939.0
+      },
+      "groupId": "F",
+      "id": "F4",
+      "kind": "topic",
+      "label": "Numerical methods and optimization",
+      "labelLines": [
+        "Numerical methods and optimization"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures 1-19, covering convex sets and functions, problem formulation, duality, approximation, statistical estimation, and interior-point methods.",
+          "title": "Stanford EE364A: Convex Optimization I",
+          "url": "https://see.stanford.edu/Course/EE364A"
+        },
+        {
+          "detail": "Lectures 2-8 on Newton-type methods, nonlinear optimization, constrained optimization, and derivative calculation.",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#fff2cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3015.0,
+        "y": 939.0
+      },
+      "groupId": "F",
+      "id": "F5",
+      "kind": "topic",
+      "label": "Signals, systems, and frequency response",
+      "labelLines": [
+        "Signals, systems, and frequency response"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures 1-11, especially continuous/discrete LTI systems, Fourier representations, frequency response, and Bode plots.",
+          "title": "MIT OpenCourseWare 6.003: Signals and Systems",
+          "url": "https://ocw.mit.edu/courses/6-003-signals-and-systems-fall-2011/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#fff2cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3015.0,
+        "y": 1599.0
+      },
+      "groupId": "F",
+      "id": "F6",
+      "kind": "topic",
+      "label": "Programming, algorithms, and real-time computing",
+      "labelLines": [
+        "Programming, algorithms, and real-time computing"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures and problem sets on algorithmic analysis, data structures, graph search, and dynamic programming.",
+          "title": "MIT OpenCourseWare 6.006: Introduction to Algorithms",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-fall-2011/"
+        },
+        {
+          "detail": "Tutorials 3-5, \"Do your first cloud experiment,\" \"Implement your own control loop,\" and \"VS Code Integration,\" for implementing and running control software against real hardware.",
+          "title": "CloudPendulum Onboarding",
+          "url": "https://cloudpendulum.m2.chalmers.se/onboarding/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#fff2cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3540.3,
+        "y": 1762.9
+      },
+      "groupId": "M",
+      "id": "M1",
+      "kind": "topic",
+      "label": "Coordinate frames, SO(3), and SE(3)",
+      "labelLines": [
+        "Coordinate frames, SO(3), and SE(3)"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 3, \"Rigid-Body Motions,\" especially Sections 3.2-3.4 on rotation matrices, angular velocity, homogeneous transformations, twists, and wrenches.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3786.9,
+        "y": 1539.0
+      },
+      "groupId": "M",
+      "id": "M2",
+      "kind": "topic",
+      "label": "Forward and inverse kinematics",
+      "labelLines": [
+        "Forward and inverse kinematics"
+      ],
+      "resources": [
+        {
+          "detail": "Chapters 4 and 6, \"Forward Kinematics\" and \"Inverse Kinematics.\"",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3941.6,
+        "y": 1238.0
+      },
+      "groupId": "M",
+      "id": "M3",
+      "kind": "topic",
+      "label": "Jacobians, differential kinematics, and singularities",
+      "labelLines": [
+        "Jacobians, differential kinematics, and singularities"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 5, \"Velocity Kinematics and Statics,\" especially Sections 5.1, 5.3, and 5.4 on Jacobians, singularities, and manipulability.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3724.2,
+        "y": 1917.2
+      },
+      "groupId": "M",
+      "id": "M4",
+      "kind": "topic",
+      "label": "Classical and analytical mechanics",
+      "labelLines": [
+        "Classical and analytical mechanics"
+      ],
+      "resources": [
+        {
+          "detail": "Appendix B, \"Multi-Body Dynamics,\" especially \"Deriving the equations of motion,\" \"The Manipulator Equations,\" and \"Variational mechanics.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4016.7,
+        "y": 1731.9
+      },
+      "groupId": "M",
+      "id": "M5",
+      "kind": "topic",
+      "label": "Rigid-body and multibody dynamics",
+      "labelLines": [
+        "Rigid-body and multibody dynamics"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 8, \"Dynamics of Open Chains.\"",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        },
+        {
+          "detail": "Appendix B, \"Multi-Body Dynamics,\" especially the manipulator equations and recursive dynamics algorithms.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4148.4,
+        "y": 1411.6
+      },
+      "groupId": "M",
+      "id": "M6",
+      "kind": "topic",
+      "label": "Constrained, contact, and hybrid dynamics",
+      "labelLines": [
+        "Constrained, contact, and hybrid dynamics"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 17, \"Planning and Control through Contact,\" and Appendix B, \"The Dynamics of Contact,\" including impulsive collision, time-stepping, and complementarity formulations.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "\"Contact Models\" lecture materials and associated Pinocchio tutorials.",
+          "title": "MeMory of Motion Summer School Materials",
+          "url": "https://memory-of-motion.github.io/summer-school/materials"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4355.3,
+        "y": 1585.1
+      },
+      "groupId": "M",
+      "id": "M7",
+      "kind": "topic",
+      "label": "Continuous and discrete state-space models",
+      "labelLines": [
+        "Continuous and discrete state-space models"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures 9 and 14-15 on discrete-time optimal control, continuous-time optimal control, and numerical simulation.",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3908.0,
+        "y": 2071.4
+      },
+      "groupId": "M",
+      "id": "M8",
+      "kind": "topic",
+      "label": "Sensors, actuators, friction, and transmissions",
+      "labelLines": [
+        "Sensors, actuators, friction, and transmissions"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 2, \"Actuators and Drive Systems.\"",
+          "title": "MIT OpenCourseWare 2.12: Introduction to Robotics",
+          "url": "https://ocw.mit.edu/courses/2-12-introduction-to-robotics-fall-2005/pages/lecture-notes/"
+        },
+        {
+          "detail": "Chapter 2, \"Let's get you a robot,\" especially \"Arms,\" \"An aside: link dynamics with a transmission,\" \"Sensors,\" and \"Putting it all together.\"",
+          "title": "MIT Robotic Manipulation",
+          "url": "https://manipulation.mit.edu/"
+        },
+        {
+          "detail": "Tutorials 3-4 on running a sensor-driven pendulum experiment and implementing a hardware control loop.",
+          "title": "CloudPendulum Onboarding",
+          "url": "https://cloudpendulum.m2.chalmers.se/onboarding/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4486.9,
+        "y": 1264.9
+      },
+      "groupId": "M",
+      "id": "M9",
+      "kind": "topic",
+      "label": "Simulation, calibration, and system identification",
+      "labelLines": [
+        "Simulation, calibration, and system identification"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 18, \"System Identification,\" especially parameter identification for mechanical systems, calibration, linear dynamical systems, neural models, and identification with contact.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d5e8d4",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#82b366",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4160.7,
+        "y": 2560.3
+      },
+      "groupId": "C",
+      "id": "C1",
+      "kind": "topic",
+      "label": "Feedback, feedforward, and PID control",
+      "labelLines": [
+        "Feedback, feedforward, and PID control"
+      ],
+      "resources": [
+        {
+          "detail": "Sections 11.1-11.2, \"Control System Overview\" and \"Error Response.\"",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#dae8fc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4485.7,
+        "y": 2503.0
+      },
+      "groupId": "C",
+      "id": "C2",
+      "kind": "topic",
+      "label": "Transfer functions and frequency-domain control",
+      "labelLines": [
+        "Transfer functions and frequency-domain control"
+      ],
+      "resources": [],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#dae8fc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4543.0,
+        "y": 2828.0
+      },
+      "groupId": "C",
+      "id": "C3",
+      "kind": "topic",
+      "label": "Stability, Lyapunov theory, and passivity",
+      "labelLines": [
+        "Stability, Lyapunov theory, and passivity"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 9, \"Lyapunov Analysis,\" including Lyapunov functions, invariance, regions of attraction, robustness, and control-Lyapunov functions.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lectures 1-7 on nonlinear-system stability, Lyapunov methods, input-output stability, and passivity.",
+          "title": "Nagoya University OpenCourseWare: Advanced Nonlinear Control",
+          "url": "https://ocw.nagoya-u.jp/en/courses/0060-Advanced-Nonlinear-Control-2011/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#dae8fc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4218.0,
+        "y": 2885.3
+      },
+      "groupId": "C",
+      "id": "C4",
+      "kind": "topic",
+      "label": "Controllability and observability",
+      "labelLines": [
+        "Controllability and observability"
+      ],
+      "resources": [],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#dae8fc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4839.3,
+        "y": 2608.2
+      },
+      "groupId": "C",
+      "id": "C5",
+      "kind": "topic",
+      "label": "Linear state-space control",
+      "labelLines": [
+        "Linear state-space control"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 8, \"Linear Quadratic Regulators,\" including finite-horizon, time-varying, tracking, constrained, and manifold variants.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#dae8fc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 5164.3,
+        "y": 2550.9
+      },
+      "groupId": "C",
+      "id": "C6",
+      "kind": "topic",
+      "label": "Nonlinear and geometric control",
+      "labelLines": [
+        "Nonlinear and geometric control"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 3 sections \"Partial feedback linearization\" and \"Swing-up control,\" plus Chapter 9, \"Lyapunov Analysis.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Chapters 3 and 11 for Lie-group rigid-body representations and nonlinear robot motion control.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        },
+        {
+          "detail": "Course material on control systems on manifolds, Lie groups, nonlinear controllability, nonholonomic/mechanical systems, and feedback linearization.",
+          "title": "University of Illinois ECE 557: Geometric Control",
+          "url": "https://publish.illinois.edu/geometric-control/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#dae8fc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 5489.3,
+        "y": 2493.6
+      },
+      "groupId": "C",
+      "id": "C7",
+      "kind": "topic",
+      "label": "Robust and adaptive control",
+      "labelLines": [
+        "Robust and adaptive control"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 13, \"Robust and Stochastic Control,\" especially worst-case control, H-infinity control, structured uncertainty, adaptive control, and LPV control.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#dae8fc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4027.8,
+        "y": 3639.0
+      },
+      "groupId": "E",
+      "id": "E1",
+      "kind": "topic",
+      "label": "Bayesian state estimation",
+      "labelLines": [
+        "Bayesian state estimation"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 19, \"State Estimation,\" especially \"Recursive Bayesian Filters.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e1d5e7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4313.6,
+        "y": 3804.0
+      },
+      "groupId": "E",
+      "id": "E2",
+      "kind": "topic",
+      "label": "Observers and Kalman filtering",
+      "labelLines": [
+        "Observers and Kalman filtering"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 19 section \"Observers and the Kalman Filter.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e1d5e7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4599.4,
+        "y": 3969.0
+      },
+      "groupId": "E",
+      "id": "E3",
+      "kind": "topic",
+      "label": "EKF, UKF, and particle filtering",
+      "labelLines": [
+        "EKF, UKF, and particle filtering"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 19 section \"Recursive Bayesian Filters,\" including unscented Kalman and particle filters.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e1d5e7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 4885.2,
+        "y": 4134.0
+      },
+      "groupId": "E",
+      "id": "E4",
+      "kind": "topic",
+      "label": "Smoothing and factor graphs",
+      "labelLines": [
+        "Smoothing and factor graphs"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 19 section \"Smoothing.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lectures on factor-graph SLAM, Bayes filters, and smoothing.",
+          "title": "UCSD ECE276A: Sensing and Estimation in Robotics",
+          "url": "https://natanaso.github.io/ece276a/schedule.html"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e1d5e7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 5170.9,
+        "y": 4299.0
+      },
+      "groupId": "E",
+      "id": "E5",
+      "kind": "topic",
+      "label": "Sensor fusion, localization, and SLAM",
+      "labelLines": [
+        "Sensor fusion, localization, and SLAM"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures on motion/observation models, localization, odometry, factor-graph SLAM, and Bayes filtering.",
+          "title": "UCSD ECE276A: Sensing and Estimation in Robotics",
+          "url": "https://natanaso.github.io/ece276a/schedule.html"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e1d5e7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3315.1,
+        "y": 4237.0
+      },
+      "groupId": "P",
+      "id": "P1",
+      "kind": "topic",
+      "label": "Configuration spaces and collision checking",
+      "labelLines": [
+        "Configuration spaces and collision checking"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 2, \"Configuration Space,\" and Chapter 10, \"Motion Planning.\"",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f8cecc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#b85450",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3583.1,
+        "y": 4490.6
+      },
+      "groupId": "P",
+      "id": "P2",
+      "kind": "topic",
+      "label": "Graph search and sampling-based planning",
+      "labelLines": [
+        "Graph search and sampling-based planning"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 12, \"Sampling-based motion planning,\" including incremental search, PRMs, and RRTs.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f8cecc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#b85450",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3695.9,
+        "y": 4800.7
+      },
+      "groupId": "P",
+      "id": "P3",
+      "kind": "topic",
+      "label": "Kinodynamic and belief-space planning",
+      "labelLines": [
+        "Kinodynamic and belief-space planning"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 12 section \"RRTs for robots with dynamics\" and Chapter 14, \"Feedback Motion Planning.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f8cecc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#b85450",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3273.0,
+        "y": 4603.5
+      },
+      "groupId": "P",
+      "id": "P4",
+      "kind": "topic",
+      "label": "Trajectory generation and time scaling",
+      "labelLines": [
+        "Trajectory generation and time scaling"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 9, \"Trajectory Generation,\" including point-to-point trajectories, time scaling, and time-optimal time scaling.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f8cecc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#b85450",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 3653.7,
+        "y": 5167.3
+      },
+      "groupId": "P",
+      "id": "P5",
+      "kind": "topic",
+      "label": "Trajectory optimization",
+      "labelLines": [
+        "Trajectory optimization"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 10, \"Trajectory Optimization,\" especially direct transcription, direct shooting, direct collocation, and practical solution techniques.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lecture 18, \"Direct Approaches.\"",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f8cecc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#b85450",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2539.9,
+        "y": 4293.4
+      },
+      "groupId": "O",
+      "id": "O1",
+      "kind": "topic",
+      "label": "Calculus of variations and Pontryagin principle",
+      "labelLines": [
+        "Calculus of variations and Pontryagin principle"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures 14 and 17, \"Continuous time optimal control\" and \"Pontryagin and the indirect approach.\"",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        },
+        {
+          "detail": "Chapter 10 section \"Pontryagin's Minimum Principle.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f5d6b3",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2229.8,
+        "y": 4180.5
+      },
+      "groupId": "O",
+      "id": "O2",
+      "kind": "topic",
+      "label": "Dynamic programming and Hamilton-Jacobi theory",
+      "labelLines": [
+        "Dynamic programming and Hamilton-Jacobi theory"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures 11-12 and 16 on dynamic programming and the Hamilton-Jacobi-Bellman equation.",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        },
+        {
+          "detail": "Chapter 7, \"Dynamic Programming,\" including continuous dynamic programming and the HJB equation.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f5d6b3",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2272.0,
+        "y": 4547.1
+      },
+      "groupId": "O",
+      "id": "O3",
+      "kind": "topic",
+      "label": "LQR, iLQR, and DDP",
+      "labelLines": [
+        "LQR, iLQR, and DDP"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 8, \"Linear Quadratic Regulators,\" and Chapter 10 section \"Iterative LQR and Differential Dynamic Programming.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lecture 13, \"Differential Dynamic Programming.\"",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f5d6b3",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2159.1,
+        "y": 4857.2
+      },
+      "groupId": "O",
+      "id": "O4",
+      "kind": "topic",
+      "label": "Constrained and stochastic optimal control",
+      "labelLines": [
+        "Constrained and stochastic optimal control"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 13, \"Robust and Stochastic Control,\" especially costs and constraints for stochastic systems, stochastic LQR/MPC, and risk metrics.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lectures 6-7 on equality/inequality constrained optimization and Lectures 9-18 on optimal-control formulations.",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f5d6b3",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2046.3,
+        "y": 5167.3
+      },
+      "groupId": "O",
+      "id": "O5",
+      "kind": "topic",
+      "label": "Linear, nonlinear, robust, and stochastic MPC",
+      "labelLines": [
+        "Linear, nonlinear, robust, and stochastic MPC"
+      ],
+      "resources": [
+        {
+          "detail": "Borrelli, Bemporad, and Morari, *Predictive Control for Linear and Hybrid Systems*, including stability, feasibility, robustness, explicit MPC, and real-time implementation.",
+          "title": "UC Berkeley MPC Course Material",
+          "url": "https://sites.google.com/berkeley.edu/mpc-lab/mpc-course-material"
+        },
+        {
+          "detail": "Lecture 19, \"Model predictive control.\"",
+          "title": "Numerical Optimal Control",
+          "url": "https://www.syscop.de/teaching/ss2020/numerical-optimal-control-online"
+        },
+        {
+          "detail": "Chapter 10 section \"Model-Predictive Control\" and Chapter 13 sections on stochastic and robust MPC.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#f5d6b3",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1672.2,
+        "y": 3639.0
+      },
+      "groupId": "R",
+      "id": "R1",
+      "kind": "topic",
+      "label": "Joint-space tracking and actuator control",
+      "labelLines": [
+        "Joint-space tracking and actuator control"
+      ],
+      "resources": [
+        {
+          "detail": "Sections 11.2 and 11.4, \"Error Response\" and \"Motion Control with Torque or Force Inputs,\" including joint-space PID and feedforward control.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d0e8e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1386.4,
+        "y": 3804.0
+      },
+      "groupId": "R",
+      "id": "R2",
+      "kind": "topic",
+      "label": "Computed torque and inverse-dynamics control",
+      "labelLines": [
+        "Computed torque and inverse-dynamics control"
+      ],
+      "resources": [
+        {
+          "detail": "Section 11.4, \"Motion Control with Torque or Force Inputs,\" especially the computed-torque controller and computed-torque plus feedforward control.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d0e8e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1100.6,
+        "y": 3969.0
+      },
+      "groupId": "R",
+      "id": "R3",
+      "kind": "topic",
+      "label": "Task-space and operational-space control",
+      "labelLines": [
+        "Task-space and operational-space control"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 3 section \"Task-space partial feedback linearization.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "TSID lecture slides and notebooks on task-space inverse dynamics.",
+          "title": "MeMory of Motion Summer School Materials",
+          "url": "https://memory-of-motion.github.io/summer-school/materials"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d0e8e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 897.3,
+        "y": 4276.9
+      },
+      "groupId": "R",
+      "id": "R4",
+      "kind": "topic",
+      "label": "Redundancy resolution and null-space control",
+      "labelLines": [
+        "Redundancy resolution and null-space control"
+      ],
+      "resources": [
+        {
+          "detail": "Sections 5.3-5.4, \"Singularities\" and \"Manipulability,\" and Chapter 6, \"Inverse Kinematics,\" for Jacobian pseudoinverses and redundant inverse kinematics.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        },
+        {
+          "detail": "Chapter 3 sections \"Differential inverse kinematics\" and \"Differential inverse kinematics with constraints,\" including the Jacobian pseudoinverse and joint-centering objectives.",
+          "title": "MIT Robotic Manipulation",
+          "url": "https://manipulation.mit.edu/"
+        },
+        {
+          "detail": "Lectures 3-4, \"Control of Redundant Robots\" and \"Control of Redundant Robots Multiple Tasks.\"",
+          "title": "Intelligent Robot Control lectures",
+          "url": "https://cobotat.ijs.si/lectures/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d0e8e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 529.1,
+        "y": 4299.0
+      },
+      "groupId": "R",
+      "id": "R6",
+      "kind": "topic",
+      "label": "Whole-body control and hierarchical QPs",
+      "labelLines": [
+        "Whole-body control and hierarchical QPs"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 5 section \"Whole-Body Control,\" following the centroidal-dynamics and whole-body-planning sections.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "TSID lecture slides, tutorials, and notebooks on joint-space and task-space inverse-dynamics control formulated as constrained optimization.",
+          "title": "MeMory of Motion Summer School Materials",
+          "url": "https://memory-of-motion.github.io/summer-school/materials"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d0e8e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 732.3,
+        "y": 3991.1
+      },
+      "groupId": "I",
+      "id": "I1",
+      "kind": "topic",
+      "label": "Force, impedance, and admittance control",
+      "labelLines": [
+        "Force, impedance, and admittance control"
+      ],
+      "resources": [
+        {
+          "detail": "Sections 11.5-11.6, \"Force Control\" and \"Hybrid Motion-Force Control.\"",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        },
+        {
+          "detail": "Chapter 8, \"Manipulator Control,\" especially direct/indirect force control, hybrid position-force control, and joint/Cartesian stiffness control.",
+          "title": "MIT Robotic Manipulation",
+          "url": "https://manipulation.mit.edu/"
+        },
+        {
+          "detail": "Lectures 5-7 on force, impedance, and admittance control.",
+          "title": "Intelligent Robot Control lectures",
+          "url": "https://cobotat.ijs.si/lectures/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#b7e1dc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#2f8f83",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 243.3,
+        "y": 4464.0
+      },
+      "groupId": "I",
+      "id": "I2",
+      "kind": "topic",
+      "label": "Contact scheduling, grasping, and locomotion control",
+      "labelLines": [
+        "Contact scheduling, grasping, and locomotion control"
+      ],
+      "resources": [
+        {
+          "detail": "Chapters 4-5 and 17, \"Simple Models of Walking and Running,\" \"Highly-articulated Legged Robots,\" and \"Planning and Control through Contact.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Chapter 12, \"Grasping and Manipulation,\" including contact kinematics, friction, form closure, and force closure.",
+          "title": "Modern Robotics",
+          "url": "https://modernrobotics.northwestern.edu/nu-gm-book-resource/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#b7e1dc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#2f8f83",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1482.0,
+        "y": 2885.3
+      },
+      "groupId": "L",
+      "id": "L1",
+      "kind": "topic",
+      "label": "Supervised learning and function approximation",
+      "labelLines": [
+        "Supervised learning and function approximation"
+      ],
+      "resources": [
+        {
+          "detail": "Chapters 2-7, covering supervised learning, shallow/deep networks, loss functions, model fitting, and gradient computation.",
+          "title": "Understanding Deep Learning",
+          "url": "https://udlbook.github.io/udlbook/"
+        },
+        {
+          "detail": "Lecture 1, \"Intro to Deep Learning,\" and Software Lab 1, \"Deep Learning in Python.\"",
+          "title": "MIT 6.S191: Introduction to Deep Learning",
+          "url": "https://introtodeeplearning.com/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1539.3,
+        "y": 2560.3
+      },
+      "groupId": "L",
+      "id": "L2",
+      "kind": "topic",
+      "label": "MDPs, POMDPs, and Bellman equations",
+      "labelLines": [
+        "MDPs, POMDPs, and Bellman equations"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 6 section \"Finite Markov Decision Processes,\" Chapter 7 on Bellman/HJB equations, and Chapter 15 section \"Partially-observable Markov Decision Processes.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1227.4,
+        "y": 2429.2
+      },
+      "groupId": "L",
+      "id": "L3",
+      "kind": "topic",
+      "label": "Value iteration and policy iteration",
+      "labelLines": [
+        "Value iteration and policy iteration"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 7 sections on numerical value iteration and Chapter 11 section \"Policy Iteration.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lectures 7-8, \"Value Function Methods\" and \"Deep RL with Q-Functions.\"",
+          "title": "UC Berkeley CS 285: Deep Reinforcement Learning",
+          "url": "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1144.0,
+        "y": 2901.9
+      },
+      "groupId": "L",
+      "id": "L4",
+      "kind": "topic",
+      "label": "Imitation and inverse reinforcement learning",
+      "labelLines": [
+        "Imitation and inverse reinforcement learning"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 21, \"Imitation Learning,\" including behavior cloning, distribution shift, visuomotor policies, and inverse reinforcement learning.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lecture 2, \"Supervised Learning of Behaviors,\" and Lecture 20, \"Inverse Reinforcement Learning.\"",
+          "title": "UC Berkeley CS 285: Deep Reinforcement Learning",
+          "url": "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 889.3,
+        "y": 2445.7
+      },
+      "groupId": "L",
+      "id": "L5",
+      "kind": "topic",
+      "label": "Reinforcement learning",
+      "labelLines": [
+        "Reinforcement learning"
+      ],
+      "resources": [
+        {
+          "detail": "Lecture 5, \"Deep Reinforcement Learning.\"",
+          "title": "MIT 6.S191: Introduction to Deep Learning",
+          "url": "https://introtodeeplearning.com/"
+        },
+        {
+          "detail": "Chapter 19, \"Deep Reinforcement Learning.\"",
+          "title": "Understanding Deep Learning",
+          "url": "https://udlbook.github.io/udlbook/"
+        },
+        {
+          "detail": "Chapter 20, \"Model-Free Policy Search.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1185.7,
+        "y": 2665.5
+      },
+      "groupId": "L",
+      "id": "L6",
+      "kind": "topic",
+      "label": "Learned dynamics, representations, and residual models",
+      "labelLines": [
+        "Learned dynamics, representations, and residual models"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 18 sections \"Learning models for control,\" \"Residual physics models with linear function approximators,\" and \"Neural network models.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Chapters 11-14 on residual networks, transformers, graph neural networks, and unsupervised representation learning.",
+          "title": "Understanding Deep Learning",
+          "url": "https://udlbook.github.io/udlbook/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 548.7,
+        "y": 2477.1
+      },
+      "groupId": "L",
+      "id": "L7",
+      "kind": "topic",
+      "label": "Model-based, model-free, and offline RL",
+      "labelLines": [
+        "Model-based, model-free, and offline RL"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures 4-9 on model-free RL, Lectures 11-12 on model-based RL, and Lectures 15-16 on offline RL.",
+          "title": "UC Berkeley CS 285: Deep Reinforcement Learning",
+          "url": "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 210.7,
+        "y": 2493.6
+      },
+      "groupId": "L",
+      "id": "L8",
+      "kind": "topic",
+      "label": "Hybrid learning and model-based control",
+      "labelLines": [
+        "Hybrid learning and model-based control"
+      ],
+      "resources": [
+        {
+          "detail": "Lectures 10-12, \"Optimal Control and Planning,\" \"Model-Based Reinforcement Learning,\" and \"Model-Based Policy Learning.\"",
+          "title": "UC Berkeley CS 285: Deep Reinforcement Learning",
+          "url": "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/"
+        },
+        {
+          "detail": "Chapters 10, 18, and 20 for trajectory optimization/MPC, learned control models, and model-free policy search.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#ffe6cc",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1849.4,
+        "y": 2023.2
+      },
+      "groupId": "D",
+      "id": "D1",
+      "kind": "topic",
+      "label": "Constraints, saturation, and anti-windup",
+      "labelLines": [
+        "Constraints, saturation, and anti-windup"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 1 section \"Input and State Constraints.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e6e6e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#666666",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 2102.2,
+        "y": 1811.1
+      },
+      "groupId": "D",
+      "id": "D2",
+      "kind": "topic",
+      "label": "Uncertainty, robustness, and risk",
+      "labelLines": [
+        "Uncertainty, robustness, and risk"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 13, \"Robust and Stochastic Control,\" including stochastic models, worst-case control, model uncertainty, H-infinity control, domain randomization, and alternative risk metrics.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e6e6e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#666666",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1551.6,
+        "y": 1411.6
+      },
+      "groupId": "D",
+      "id": "D3",
+      "kind": "topic",
+      "label": "CLFs, CBFs, reachability, and safety filters",
+      "labelLines": [
+        "CLFs, CBFs, reachability, and safety filters"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 9 sections \"Barrier functions,\" \"Finite-time Reachability,\" and \"Control-Lyapunov Functions.\"",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e6e6e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#666666",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1339.4,
+        "y": 1158.8
+      },
+      "groupId": "D",
+      "id": "D6",
+      "kind": "topic",
+      "label": "Verification, hardware-in-the-loop, and experiments",
+      "labelLines": [
+        "Verification, hardware-in-the-loop, and experiments"
+      ],
+      "resources": [
+        {
+          "detail": "Tutorials 3, 7, and 8 on simulation/hardware experiments, repeatable disturbances, and controller benchmarking.",
+          "title": "CloudPendulum Onboarding",
+          "url": "https://cloudpendulum.m2.chalmers.se/onboarding/"
+        },
+        {
+          "detail": "Chapter 9, \"Lyapunov Analysis,\" for computational verification of stability, regions of attraction, robustness, and reachability.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#e6e6e6",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#666666",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1637.3,
+        "y": 1770.4
+      },
+      "groupId": "H",
+      "id": "H1",
+      "kind": "topic",
+      "label": "Real-time optimization, latency, and embedded control",
+      "labelLines": [
+        "Real-time optimization, latency, and embedded control"
+      ],
+      "resources": [
+        {
+          "detail": "*Predictive Control for Linear and Hybrid Systems*, particularly the material on explicit MPC and real-time implementation.",
+          "title": "UC Berkeley MPC Course Material",
+          "url": "https://sites.google.com/berkeley.edu/mpc-lab/mpc-course-material"
+        },
+        {
+          "detail": "Tutorial 4, \"Implement your own control loop,\" for executing a custom controller against remote real-time hardware.",
+          "title": "CloudPendulum Onboarding",
+          "url": "https://cloudpendulum.m2.chalmers.se/onboarding/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d9eaf7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": false,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1890.1,
+        "y": 1558.3
+      },
+      "groupId": "H",
+      "id": "H2",
+      "kind": "topic",
+      "label": "Sim-to-real, domain randomization, and adaptation",
+      "labelLines": [
+        "Sim-to-real, domain randomization, and adaptation"
+      ],
+      "resources": [
+        {
+          "detail": "Chapter 13 section \"Domain randomization\" and Chapter 18 sections on online estimation and adaptive control.",
+          "title": "Underactuated Robotics",
+          "url": "https://underactuated.csail.mit.edu/"
+        },
+        {
+          "detail": "Lecture 22, \"Meta-Learning and Transfer Learning.\"",
+          "title": "UC Berkeley CS 285: Deep Reinforcement Learning",
+          "url": "https://rail.eecs.berkeley.edu/deeprlcourse-fa23/"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d9eaf7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "1.6",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    },
+    {
+      "checkpoint": true,
+      "geometry": {
+        "height": 82.0,
+        "width": 300.0,
+        "x": 1127.3,
+        "y": 906.0
+      },
+      "groupId": "H",
+      "id": "H3",
+      "kind": "topic",
+      "label": "Deployment-ready robot autonomy",
+      "labelLines": [
+        "Deployment-ready robot autonomy"
+      ],
+      "resources": [
+        {
+          "detail": "Tutorials 3-8 provide an end-to-end progression from simulation and hardware control loops through Gymnasium integration, disturbances, and benchmarking on real hardware.",
+          "title": "CloudPendulum Onboarding",
+          "url": "https://cloudpendulum.m2.chalmers.se/onboarding/"
+        },
+        {
+          "detail": "Lecture and tutorial materials on Pinocchio, TSID, contact models, numerical optimal control, and Crocoddyl.",
+          "title": "MeMory of Motion Summer School Materials",
+          "url": "https://memory-of-motion.github.io/summer-school/materials"
+        }
+      ],
+      "style": {
+        "align": "center",
+        "arcSize": "18",
+        "fillColor": "#d9eaf7",
+        "fontSize": "14",
+        "html": "1",
+        "rounded": "1",
+        "shadow": "1",
+        "spacing": "8",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "3",
+        "verticalAlign": "middle",
+        "whiteSpace": "wrap"
+      }
+    }
+  ],
+  "visibleEdges": [
+    {
+      "id": "spoke-F",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-F"
+    },
+    {
+      "id": "spoke-M",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-M"
+    },
+    {
+      "id": "spoke-C",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-C"
+    },
+    {
+      "id": "spoke-E",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-E"
+    },
+    {
+      "id": "spoke-P",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-P"
+    },
+    {
+      "id": "spoke-O",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-O"
+    },
+    {
+      "id": "spoke-R",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-R"
+    },
+    {
+      "id": "spoke-I",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-I"
+    },
+    {
+      "id": "spoke-L",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-L"
+    },
+    {
+      "id": "spoke-D",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-D"
+    },
+    {
+      "id": "spoke-H",
+      "points": [],
+      "source": "START",
+      "style": {
+        "edgeStyle": "none",
+        "endArrow": "none",
+        "opacity": "18",
+        "strokeWidth": "5"
+      },
+      "target": "hub-H"
+    },
+    {
+      "id": "hub-edge-F-F1",
+      "points": [],
+      "source": "hub-F",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F1"
+    },
+    {
+      "id": "hub-edge-F-F6",
+      "points": [],
+      "source": "hub-F",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F6"
+    },
+    {
+      "id": "edge-F1-F2",
+      "points": [],
+      "source": "F1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F2"
+    },
+    {
+      "id": "edge-F1-F3",
+      "points": [],
+      "source": "F1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F3"
+    },
+    {
+      "id": "edge-F2-F4",
+      "points": [],
+      "source": "F2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F4"
+    },
+    {
+      "id": "edge-F2-F5",
+      "points": [],
+      "source": "F2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d6b656",
+        "strokeWidth": "2"
+      },
+      "target": "F5"
+    },
+    {
+      "id": "hub-edge-M-M1",
+      "points": [],
+      "source": "hub-M",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M1"
+    },
+    {
+      "id": "hub-edge-M-M4",
+      "points": [],
+      "source": "hub-M",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M4"
+    },
+    {
+      "id": "hub-edge-M-M8",
+      "points": [],
+      "source": "hub-M",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M8"
+    },
+    {
+      "id": "edge-M1-M2",
+      "points": [],
+      "source": "M1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M2"
+    },
+    {
+      "id": "edge-M2-M3",
+      "points": [],
+      "source": "M2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M3"
+    },
+    {
+      "id": "edge-M4-M5",
+      "points": [],
+      "source": "M4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M5"
+    },
+    {
+      "id": "edge-M5-M6",
+      "points": [],
+      "source": "M5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M6"
+    },
+    {
+      "id": "edge-M5-M7",
+      "points": [],
+      "source": "M5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M7"
+    },
+    {
+      "id": "edge-M7-M9",
+      "points": [],
+      "source": "M7",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M9"
+    },
+    {
+      "id": "edge-M8-M9",
+      "points": [],
+      "source": "M8",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#82b366",
+        "strokeWidth": "2"
+      },
+      "target": "M9"
+    },
+    {
+      "id": "hub-edge-C-C1",
+      "points": [],
+      "source": "hub-C",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C1"
+    },
+    {
+      "id": "hub-edge-C-C4",
+      "points": [],
+      "source": "hub-C",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C4"
+    },
+    {
+      "id": "edge-C1-C2",
+      "points": [],
+      "source": "C1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C2"
+    },
+    {
+      "id": "edge-C1-C3",
+      "points": [],
+      "source": "C1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C3"
+    },
+    {
+      "id": "edge-C2-C5",
+      "points": [],
+      "source": "C2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C5"
+    },
+    {
+      "id": "edge-C3-C5",
+      "points": [],
+      "source": "C3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C5"
+    },
+    {
+      "id": "edge-C4-C5",
+      "points": [],
+      "source": "C4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C5"
+    },
+    {
+      "id": "edge-C5-C6",
+      "points": [],
+      "source": "C5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C6"
+    },
+    {
+      "id": "edge-C6-C7",
+      "points": [],
+      "source": "C6",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#6c8ebf",
+        "strokeWidth": "2"
+      },
+      "target": "C7"
+    },
+    {
+      "id": "hub-edge-E-E1",
+      "points": [],
+      "source": "hub-E",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E1"
+    },
+    {
+      "id": "edge-E1-E2",
+      "points": [],
+      "source": "E1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E2"
+    },
+    {
+      "id": "edge-E2-E3",
+      "points": [],
+      "source": "E2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E3"
+    },
+    {
+      "id": "edge-E3-E4",
+      "points": [],
+      "source": "E3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E4"
+    },
+    {
+      "id": "edge-E4-E5",
+      "points": [],
+      "source": "E4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#9673a6",
+        "strokeWidth": "2"
+      },
+      "target": "E5"
+    },
+    {
+      "id": "hub-edge-P-P1",
+      "points": [],
+      "source": "hub-P",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P1"
+    },
+    {
+      "id": "edge-P1-P2",
+      "points": [],
+      "source": "P1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P2"
+    },
+    {
+      "id": "edge-P2-P3",
+      "points": [],
+      "source": "P2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P3"
+    },
+    {
+      "id": "edge-P1-P4",
+      "points": [],
+      "source": "P1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P4"
+    },
+    {
+      "id": "edge-P4-P5",
+      "points": [],
+      "source": "P4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P5"
+    },
+    {
+      "id": "edge-P3-P5",
+      "points": [],
+      "source": "P3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#b85450",
+        "strokeWidth": "2"
+      },
+      "target": "P5"
+    },
+    {
+      "id": "hub-edge-O-O1",
+      "points": [],
+      "source": "hub-O",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O1"
+    },
+    {
+      "id": "hub-edge-O-O2",
+      "points": [],
+      "source": "hub-O",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O2"
+    },
+    {
+      "id": "edge-O1-O3",
+      "points": [],
+      "source": "O1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O3"
+    },
+    {
+      "id": "edge-O2-O3",
+      "points": [],
+      "source": "O2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O3"
+    },
+    {
+      "id": "edge-O3-O4",
+      "points": [],
+      "source": "O3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O4"
+    },
+    {
+      "id": "edge-O4-O5",
+      "points": [],
+      "source": "O4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#c97b30",
+        "strokeWidth": "2"
+      },
+      "target": "O5"
+    },
+    {
+      "id": "hub-edge-R-R1",
+      "points": [],
+      "source": "hub-R",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R1"
+    },
+    {
+      "id": "edge-R1-R2",
+      "points": [],
+      "source": "R1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R2"
+    },
+    {
+      "id": "edge-R2-R3",
+      "points": [],
+      "source": "R2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R3"
+    },
+    {
+      "id": "edge-R3-R4",
+      "points": [],
+      "source": "R3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R4"
+    },
+    {
+      "id": "edge-R4-R6",
+      "points": [],
+      "source": "R4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#3f8f89",
+        "strokeWidth": "2"
+      },
+      "target": "R6"
+    },
+    {
+      "id": "hub-edge-I-I1",
+      "points": [],
+      "source": "hub-I",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#2f8f83",
+        "strokeWidth": "2"
+      },
+      "target": "I1"
+    },
+    {
+      "id": "edge-I1-I2",
+      "points": [],
+      "source": "I1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#2f8f83",
+        "strokeWidth": "2"
+      },
+      "target": "I2"
+    },
+    {
+      "id": "hub-edge-L-L1",
+      "points": [],
+      "source": "hub-L",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L1"
+    },
+    {
+      "id": "hub-edge-L-L2",
+      "points": [],
+      "source": "hub-L",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L2"
+    },
+    {
+      "id": "edge-L2-L3",
+      "points": [],
+      "source": "L2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L3"
+    },
+    {
+      "id": "edge-L3-L5",
+      "points": [],
+      "source": "L3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L5"
+    },
+    {
+      "id": "edge-L5-L7",
+      "points": [],
+      "source": "L5",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L7"
+    },
+    {
+      "id": "edge-L7-L8",
+      "points": [],
+      "source": "L7",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "edge-L1-L4",
+      "points": [],
+      "source": "L1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L4"
+    },
+    {
+      "id": "edge-L4-L8",
+      "points": [],
+      "source": "L4",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "edge-L1-L6",
+      "points": [],
+      "source": "L1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L6"
+    },
+    {
+      "id": "edge-L6-L8",
+      "points": [],
+      "source": "L6",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L8"
+    },
+    {
+      "id": "edge-L6-L7",
+      "points": [],
+      "source": "L6",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#d79b00",
+        "strokeWidth": "2"
+      },
+      "target": "L7"
+    },
+    {
+      "id": "hub-edge-D-D1",
+      "points": [],
+      "source": "hub-D",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D1"
+    },
+    {
+      "id": "hub-edge-D-D2",
+      "points": [],
+      "source": "hub-D",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D2"
+    },
+    {
+      "id": "hub-edge-H-H1",
+      "points": [],
+      "source": "hub-H",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "2"
+      },
+      "target": "H1"
+    },
+    {
+      "id": "hub-edge-H-H2",
+      "points": [],
+      "source": "hub-H",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "55",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "2"
+      },
+      "target": "H2"
+    },
+    {
+      "id": "edge-D1-D3",
+      "points": [],
+      "source": "D1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D3"
+    },
+    {
+      "id": "edge-D2-D3",
+      "points": [],
+      "source": "D2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D3"
+    },
+    {
+      "id": "edge-D3-D6",
+      "points": [],
+      "source": "D3",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#666666",
+        "strokeWidth": "2"
+      },
+      "target": "D6"
+    },
+    {
+      "id": "edge-H1-H3",
+      "points": [],
+      "source": "H1",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "2"
+      },
+      "target": "H3"
+    },
+    {
+      "id": "edge-H2-H3",
+      "points": [],
+      "source": "H2",
+      "style": {
+        "curved": "0",
+        "edgeStyle": "none",
+        "endArrow": "blockThin",
+        "endFill": "1",
+        "opacity": "72",
+        "rounded": "1",
+        "strokeColor": "#4a86c5",
+        "strokeWidth": "2"
+      },
+      "target": "H3"
+    }
+  ]
+}

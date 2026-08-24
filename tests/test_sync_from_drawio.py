@@ -1,4 +1,5 @@
 import base64
+import json
 from pathlib import Path
 import tempfile
 import unittest
@@ -66,6 +67,50 @@ class SyncFromDrawioTests(unittest.TestCase):
 
         for path, expected in sync.build_outputs(roadmap).items():
             self.assertEqual(path.read_text(encoding="utf-8"), expected, path.name)
+
+    def test_generated_website_data_preserves_the_canonical_graph(self) -> None:
+        roadmap = sync.load_roadmap()
+        outputs = sync.build_outputs(roadmap)
+        data = json.loads(outputs[sync.WEBSITE_DATA_PATH])
+
+        self.assertEqual(data["schemaVersion"], 1)
+        self.assertEqual(data["canvas"]["width"], roadmap.canvas_width)
+        self.assertEqual(data["canvas"]["height"], roadmap.canvas_height)
+        self.assertEqual(
+            [topic["id"] for topic in data["topics"]],
+            [topic.id for topic in roadmap.topics],
+        )
+        self.assertEqual(
+            [(edge["source"], edge["target"]) for edge in data["visibleEdges"]],
+            [(edge.source, edge.target) for edge in roadmap.visible_edges],
+        )
+        self.assertEqual(
+            [(edge["source"], edge["target"]) for edge in data["prerequisiteEdges"]],
+            [(edge.source, edge.target) for edge in roadmap.semantic_edges],
+        )
+        self.assertEqual(
+            {topic["id"] for topic in data["topics"]},
+            {topic.id for topic in roadmap.topics},
+        )
+        self.assertTrue(any(topic["resources"] for topic in data["topics"]))
+
+    def test_generated_website_data_is_deterministic(self) -> None:
+        roadmap = sync.load_roadmap()
+        references = sync.sync_references(
+            sync.REFERENCES_PATH.read_text(encoding="utf-8"), roadmap
+        )
+        self.assertEqual(
+            sync.render_website_data(roadmap, references),
+            sync.render_website_data(roadmap, references),
+        )
+
+    def test_malformed_website_data_is_rejected(self) -> None:
+        roadmap = sync.load_roadmap()
+        data = json.loads(sync.render_website_data(roadmap, sync.REFERENCES_PATH.read_text()))
+        data["topics"].pop()
+
+        with self.assertRaisesRegex(sync.RoadmapError, "topic IDs"):
+            sync.validate_website_data(data, roadmap)
 
     def test_compressed_drawio_pages_are_supported(self) -> None:
         source = ET.parse(sync.DRAWIO_PATH)

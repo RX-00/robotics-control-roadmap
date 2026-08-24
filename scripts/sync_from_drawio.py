@@ -19,6 +19,7 @@ import base64
 from dataclasses import dataclass
 from html import escape
 from html.parser import HTMLParser
+import json
 from math import ceil
 from pathlib import Path
 import re
@@ -37,6 +38,7 @@ MERMAID_PATH = ROOT / "roadmap-prerequisites.mmd"
 README_PATH = ROOT / "README.md"
 UNDERSTANDING_PATH = ROOT / "docs" / "repo-understanding.md"
 REFERENCES_PATH = ROOT / "topics-and-references.md"
+WEBSITE_DATA_PATH = ROOT / "website" / "src" / "generated" / "roadmap.json"
 
 VISIBLE_LAYER_NAME = "Radial atlas"
 DETAIL_LAYER_NAME = "Detailed cross-domain prerequisites"
@@ -1020,7 +1022,156 @@ def sync_references(text: str, roadmap: Roadmap) -> str:
     return "\n".join(lines).rstrip() + "\n"
 
 
+def _resource_payloads(body: str) -> list[dict[str, str]]:
+    """Extract the existing Markdown resource links for the website.
+
+    Topic prose stays in topics-and-references.md.  V1 deliberately exposes
+    only its explicitly curated link bullets rather than inventing summaries.
+    """
+    resources: list[dict[str, str]] = []
+    link_pattern = re.compile(
+        r"^- \[([^\]]+)\]\(([^\s)]+)(?:\s+\"[^\"]*\")?\)(?:\s+-\s*(.*))?$"
+    )
+    for line in body.splitlines():
+        match = link_pattern.match(line.strip())
+        if match is None:
+            continue
+        title, url, detail = match.groups()
+        resource = {"title": title.strip(), "url": url.strip()}
+        if detail and detail.strip():
+            resource["detail"] = detail.strip()
+        resources.append(resource)
+    return resources
+
+
+def _node_payload(node: Node) -> dict[str, object]:
+    return {
+        "id": node.id,
+        "label": node.label,
+        "labelLines": list(node.label_lines),
+        "kind": node.kind,
+        "groupId": node.group_id,
+        "geometry": {
+            "x": node.geometry.x,
+            "y": node.geometry.y,
+            "width": node.geometry.width,
+            "height": node.geometry.height,
+        },
+        "style": node.style,
+        "checkpoint": node.kind == "topic"
+        and style_number(node.style, "strokeWidth", 1.5) >= 3,
+    }
+
+
+def _edge_payload(edge: Edge) -> dict[str, object]:
+    return {
+        "id": edge.id,
+        "source": edge.source,
+        "target": edge.target,
+        "style": edge.style,
+        "points": [list(point) for point in edge.points],
+    }
+
+
+def validate_website_data(payload: object, roadmap: Roadmap) -> None:
+    """Reject incomplete or malformed browser data before it is written."""
+    if not isinstance(payload, dict) or payload.get("schemaVersion") != 1:
+        raise RoadmapError("Website data must have schemaVersion 1")
+
+    topics = payload.get("topics")
+    if not isinstance(topics, list) or not all(isinstance(topic, dict) for topic in topics):
+        raise RoadmapError("Website data topics must be a list of objects")
+    expected_topic_ids = [topic.id for topic in roadmap.topics]
+    actual_topic_ids = [topic.get("id") for topic in topics]
+    if actual_topic_ids != expected_topic_ids:
+        raise RoadmapError("Website data topic IDs do not match the canonical roadmap")
+    for topic in topics:
+        geometry = topic.get("geometry")
+        resources = topic.get("resources")
+        if not isinstance(geometry, dict) or not all(
+            isinstance(geometry.get(key), (int, float))
+            for key in ("x", "y", "width", "height")
+        ):
+            raise RoadmapError(f"Website data topic {topic['id']} has invalid geometry")
+        if not isinstance(resources, list) or not all(
+            isinstance(resource, dict)
+            and isinstance(resource.get("title"), str)
+            and isinstance(resource.get("url"), str)
+            for resource in resources
+        ):
+            raise RoadmapError(f"Website data topic {topic['id']} has invalid resources")
+
+    def edge_pairs(key: str) -> list[tuple[object, object]]:
+        edges = payload.get(key)
+        if not isinstance(edges, list) or not all(isinstance(edge, dict) for edge in edges):
+            raise RoadmapError(f"Website data {key} must be a list of objects")
+        return [(edge.get("source"), edge.get("target")) for edge in edges]
+
+    if edge_pairs("visibleEdges") != [
+        (edge.source, edge.target) for edge in roadmap.visible_edges
+    ]:
+        raise RoadmapError("Website data visible edges do not match the canonical atlas")
+    if edge_pairs("prerequisiteEdges") != [
+        (edge.source, edge.target) for edge in roadmap.semantic_edges
+    ]:
+        raise RoadmapError("Website data prerequisite edges do not match the canonical graph")
+
+
+def render_website_data(roadmap: Roadmap, references_text: str) -> str:
+    """Render deterministic browser data from the canonical roadmap inputs."""
+    topic_bodies, _ = _marked_reference_bodies(references_text)
+    payload: dict[str, object] = {
+        "schemaVersion": 1,
+        "canvas": {
+            "width": roadmap.canvas_width,
+            "height": roadmap.canvas_height,
+            "background": roadmap.background,
+        },
+        "start": _node_payload(roadmap.start),
+        "groups": [
+            {
+                "id": group.id,
+                "order": group.order,
+                "title": group.title,
+                "fill": group.fill,
+                "stroke": group.stroke,
+                "hub": _node_payload(group.hub),
+                "topicIds": [topic.id for topic in group.topics],
+            }
+            for group in roadmap.groups
+        ],
+        "topics": [
+            {
+                **_node_payload(topic),
+                "resources": _resource_payloads(topic_bodies.get(topic.id, "")),
+            }
+            for topic in roadmap.topics
+        ],
+        "rings": [
+            {
+                "id": ring.id,
+                "geometry": {
+                    "x": ring.geometry.x,
+                    "y": ring.geometry.y,
+                    "width": ring.geometry.width,
+                    "height": ring.geometry.height,
+                },
+                "style": ring.style,
+            }
+            for ring in roadmap.rings
+        ],
+        # These are the only connections the normal atlas should draw.
+        "visibleEdges": [_edge_payload(edge) for edge in roadmap.visible_edges],
+        # This complete direct graph drives prerequisite and successor lists,
+        # including hidden cross-track relationships.
+        "prerequisiteEdges": [_edge_payload(edge) for edge in roadmap.semantic_edges],
+    }
+    validate_website_data(payload, roadmap)
+    return json.dumps(payload, indent=2, sort_keys=True) + "\n"
+
+
 def build_outputs(roadmap: Roadmap) -> dict[Path, str]:
+    references = sync_references(REFERENCES_PATH.read_text(encoding="utf-8"), roadmap)
     return {
         SVG_PATH: render_svg(roadmap),
         MERMAID_PATH: render_mermaid(roadmap),
@@ -1028,9 +1179,8 @@ def build_outputs(roadmap: Roadmap) -> dict[Path, str]:
         UNDERSTANDING_PATH: sync_understanding(
             UNDERSTANDING_PATH.read_text(encoding="utf-8"), roadmap
         ),
-        REFERENCES_PATH: sync_references(
-            REFERENCES_PATH.read_text(encoding="utf-8"), roadmap
-        ),
+        REFERENCES_PATH: references,
+        WEBSITE_DATA_PATH: render_website_data(roadmap, references),
     }
 
 

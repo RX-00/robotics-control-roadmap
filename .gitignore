@@ -9,3 +9,7 @@
 # Python generator cache
 __pycache__/
 *.py[cod]
+
+# Website dependencies and build output
+website/node_modules/
+website/dist/

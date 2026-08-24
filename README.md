@@ -4,6 +4,12 @@ A prerequisite-based learning atlas for robot control. This project connects the
 
 The roadmap is a work in progress. Its structure is now established, but the accompanying learning resources still need to be curated.
 
+## Interactive Website
+
+Explore the roadmap at [rx-00.github.io/robotics-control-roadmap](https://rx-00.github.io/robotics-control-roadmap/). The site preserves the radial atlas and adds pan/zoom, topic details, existing learning resources, direct prerequisite/next-topic links, and shareable topic hashes such as `#R6`.
+
+For local development, synchronization, testing, and deployment details, see [the website guide](docs/website.md).
+
 ## Audience
 
 The roadmap is intended for advanced undergraduates, graduate students, researchers, and practitioners who want to:
@@ -79,6 +85,15 @@ The synchronizer uses only the Python standard library and never rewrites the Dr
 python scripts/sync_from_drawio.py --check
 ```
 
+The interactive website consumes the generated `website/src/generated/roadmap.json`; do not edit that file by hand. To run it locally:
+
+```bash
+python scripts/sync_from_drawio.py
+cd website
+npm install
+npm run dev
+```
+
 ### PNG Export
 
 Render the synchronized SVG as a PNG with an installed SVG renderer. The script uses `rsvg-convert`, Inkscape, or ImageMagick, in that order:
@@ -106,4 +121,4 @@ The repository retains `images/Control_Map_ver5.png` as a visual design referenc
 
 ## TODOs / Next Steps
 
-- Eventually make whole thing into an interactivate webapp where you can easily zoom and parse, with popups for the references
+- V2 content-curation pass: comprehensively curate **every** roadmap topic with a concise beginner-friendly explanation, key concepts, carefully selected high-quality learning resources, seminal papers where appropriate, representative modern papers where appropriate, and representative lectures/videos. This is a separate research/content task, not part of the V1 website.

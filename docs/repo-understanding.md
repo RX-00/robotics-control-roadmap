@@ -1,6 +1,6 @@
 # Repository Understanding
 
-This repository is a work-in-progress learning atlas for robot control. It is primarily a documentation and diagram project, with a small standard-library synchronizer used to derive rendered and textual artifacts from the editable Draw.io source.
+This repository is a work-in-progress learning atlas for robot control. It combines an editable Draw.io roadmap, curated Markdown resources, a standard-library synchronizer, and a small static React website that makes the atlas interactive.
 
 ## Project Goal
 
@@ -57,6 +57,10 @@ Cross-track connectors are omitted from the public atlas because they create exc
 - `topics-and-references.md`: partially synchronized reference index; topic bodies remain human-authored.
 - `scripts/sync_from_drawio.py`: standard-library parser, validator, and synchronizer.
 - `tests/test_sync_from_drawio.py`: synchronization and preservation regression tests.
+- `website/`: React, TypeScript, and Vite static site for interactive roadmap exploration.
+- `website/src/generated/roadmap.json`: generated browser data; it is derived from the Draw.io source and topic-reference Markdown and must not be hand-edited.
+- `docs/website.md`: website architecture, local development, safe-editing, and GitHub Pages deployment guide.
+- `.github/workflows/deploy-pages.yml`: test/build/deploy workflow for GitHub Pages.
 - `images/Control_Map_ver5.png`: external visual inspiration; it is not an export of this roadmap.
 - `LICENSE`: GPL-3.0 license text.
 
@@ -74,9 +78,9 @@ Check that committed artifacts are current without writing files:
 python scripts/sync_from_drawio.py --check
 ```
 
-The synchronizer validates stable node IDs, layer roles, edge endpoints, section roots, duplicate edges, graph acyclicity, canvas bounds, node overlap, and SVG XML. It supports both compressed and uncompressed Draw.io pages, but never rewrites the Draw.io source. Contributors should additionally inspect the SVG after meaningful layout changes.
+The synchronizer validates stable node IDs, layer roles, edge endpoints, section roots, duplicate edges, graph acyclicity, canvas bounds, node overlap, and SVG XML. It also renders the deterministic website data, including the distinction between drawn atlas edges and the complete semantic prerequisite graph. It supports both compressed and uncompressed Draw.io pages, but never rewrites the Draw.io source. Contributors should additionally inspect the SVG and website after meaningful layout changes.
 
-There is no package build or automated CI workflow at present.
+The website is checked with `npm run typecheck` and built with `npm run build` from `website/`. GitHub Actions verifies synchronization, runs Python tests and frontend checks, then deploys the Vite build to GitHub Pages from `main`.
 
 ## Contribution Guidance
 
@@ -86,7 +90,7 @@ When changing roadmap content:
 2. Keep existing semantic IDs stable. New topics should use a custom `roadmapId` such as `F7`; new section hubs should use `hub-X` and a unique, consecutive positive `roadmapOrder` value.
 3. Put within-track arrows on the visible **Radial atlas** layer and entry or cross-track arrows on the hidden detail layer.
 4. Run `python scripts/sync_from_drawio.py`.
-5. Inspect the radial SVG for overlap, clipping, and confusing edge crossings.
-6. Run the unit tests and synchronization check before committing.
+5. Inspect the radial SVG and interactive website for overlap, clipping, and confusing edge crossings.
+6. Run the unit tests, synchronization check, TypeScript check, and production build before committing.
 
 When adding references, prefer stable, authoritative, and pedagogically strong sources. Do not add a reference merely to fill a section; topic-level curation is part of the roadmap's intended value.
