@@ -434,7 +434,7 @@ export default function App() {
           {roadmap.groups.map((group) => <marker key={group.id} id={`arrow-${group.id}`} markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill={group.stroke} /></marker>)}
         </defs>
         <g transform={`translate(${transform.x} ${transform.y}) scale(${transform.scale})`}>
-          <rect width={roadmap.canvas.width} height={roadmap.canvas.height} fill={roadmap.canvas.background} />
+          <rect className="map-background" width={roadmap.canvas.width} height={roadmap.canvas.height} fill={roadmap.canvas.background} />
           {roadmap.rings.map((ring) => <ellipse key={ring.id} cx={ring.geometry.x + ring.geometry.width / 2} cy={ring.geometry.y + ring.geometry.height / 2} rx={ring.geometry.width / 2} ry={ring.geometry.height / 2} fill="none" stroke={ring.style.strokeColor ?? '#9aa0a6'} strokeWidth={numberStyle(ring.style, 'strokeWidth', 1) * 2} opacity={Math.min(1, numberStyle(ring.style, 'opacity', 20) / 100 * 0.7)} />)}
           <g className="map-edges">
             {roadmap.visibleEdges.map((edge) => {
