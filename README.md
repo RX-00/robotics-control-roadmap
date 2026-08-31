@@ -121,4 +121,6 @@ The repository retains `images/Control_Map_ver5.png` as a visual design referenc
 
 ## TODOs / Next Steps
 
-- V2 content-curation pass: comprehensively curate **every** roadmap topic with a concise beginner-friendly explanation, key concepts, carefully selected high-quality learning resources, seminal papers where appropriate, representative modern papers where appropriate, and representative lectures/videos. This is a separate research/content task, not part of the V1 website.
+- Change "Robot Control Roadmap" name into "Robot Optimization Roadmap" everywhere in the whole repo and even the name lol.
+- Setup system where we can easily integrate Github issues. Like a note so that people can suggest more resources, nodes, etc.
+- Make it a minipage into the TCOpt main webpage (figure out how to do that).
