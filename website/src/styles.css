@@ -51,14 +51,16 @@ button, a { font: inherit; }
 .floating-header a { color: #a9c9e8; font-size: 13px; text-decoration: none; }
 .floating-header a:hover, .floating-header a:focus-visible { text-decoration: underline; }
 
-.map-node { transition: opacity 170ms ease; }
+.map-node, .map-start { transition: opacity 150ms cubic-bezier(.2, .75, .25, 1); }
 .map-node rect, .map-start circle { filter: drop-shadow(0 5px 5px rgb(32 33 36 / 13%)); }
+.map-node rect, .map-start circle { transition: filter 160ms cubic-bezier(.2, .75, .25, 1), stroke-width 140ms cubic-bezier(.2, .75, .25, 1); }
 .map-node text, .map-start text { fill: #202124; }
 .map-interactive { cursor: pointer; outline: none; }
 .map-interactive:hover rect, .map-interactive:focus-visible rect { stroke-width: 5; }
-.map-node.is-selected rect { stroke-width: 7; filter: drop-shadow(0 0 0 8px rgb(32 33 36 / 18%)) drop-shadow(0 7px 7px rgb(32 33 36 / 18%)); }
+.map-node.is-selected rect, .map-start.is-selected circle { stroke-width: 7; filter: drop-shadow(0 0 0 8px rgb(32 33 36 / 18%)) drop-shadow(0 7px 7px rgb(32 33 36 / 18%)); }
 .map-node.is-dimmed, .map-start.is-dimmed { opacity: .38; }
-.map-edges { pointer-events: none; transition: opacity 170ms ease; }
+.map-edges { pointer-events: none; }
+.map-edges path { transition: opacity 160ms cubic-bezier(.2, .75, .25, 1); }
 
 .onboarding {
   align-items: center;
@@ -91,7 +93,7 @@ button, a { font: inherit; }
 }
 
 .topic-panel {
-  animation: panel-in 180ms ease-out;
+  animation: panel-in 180ms cubic-bezier(.2, .8, .2, 1);
   background: #252e39;
   border-left: 1px solid #485463;
   box-shadow: -8px 0 24px rgb(0 0 0 / 32%);
@@ -112,6 +114,7 @@ button, a { font: inherit; }
 .panel-heading h2 { font-size: 23px; letter-spacing: -.025em; line-height: 1.15; margin: 5px 0 0; overflow-wrap: anywhere; }
 .topic-kicker { align-items: center; color: #b7c1cc; display: flex; font-size: 11px; font-weight: 700; gap: 7px; letter-spacing: .06em; margin: 0; text-transform: uppercase; }
 .topic-kicker span { border-radius: 999px; display: inline-block; height: 8px; width: 8px; }
+.roadmap-panel .topic-kicker span { background: #a9c9e8; }
 .topic-panel section + section { border-top: 1px solid #414d5b; margin-top: 25px; padding-top: 22px; }
 .topic-panel h3 { font-size: 12px; letter-spacing: .08em; margin: 0 0 11px; text-transform: uppercase; }
 .core-description p { color: #dce3ea; font-size: 15px; line-height: 1.55; margin: 0; }

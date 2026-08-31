@@ -10,6 +10,7 @@ type Transform = { x: number; y: number; scale: number }
 const MIN_SCALE = 0.12
 const MAX_SCALE = 1.25
 const REPOSITORY_URL = 'https://github.com/RX-00/robotics-control-roadmap'
+const ROADMAP_DESCRIPTION = 'The IEEE Robotics and Automation Society Technical Committee on Model-Based Optimization for Robotics advances model-based optimization methods for generating, controlling, and practically deploying dynamic robot behaviors. This roadmap maps the foundations and connected methods that support that work.'
 const CORE_TRACK_DESCRIPTIONS: Record<string, string> = {
   F: 'The mathematical and computational tools used to formulate robot models, analyze algorithms, and solve the numerical problems that appear throughout robotics.',
   M: 'Methods for expressing a robot’s geometry, kinematics, dynamics, and actuation so its motion and forces can be predicted.',
@@ -98,7 +99,7 @@ function initialTransform(width: number, height: number): Transform {
 
 function hashNodeId() {
   const id = decodeURIComponent(window.location.hash.replace(/^#/, ''))
-  return roadmap.topics.some((topic) => topic.id === id) || roadmap.groups.some((group) => group.hub.id === id) ? id : null
+  return id === roadmap.start.id || roadmap.topics.some((topic) => topic.id === id) || roadmap.groups.some((group) => group.hub.id === id) ? id : null
 }
 
 function MapNode({
@@ -166,12 +167,26 @@ function MapNode({
   )
 }
 
-function StartNode({ node, dimmed }: { node: Node; dimmed: boolean }) {
+function StartNode({ node, selected, dimmed, onSelect }: { node: Node; selected: boolean; dimmed: boolean; onSelect: (id: string) => void }) {
   const nodeCenter = center(node.geometry)
   const radius = Math.min(node.geometry.width, node.geometry.height) / 2
   const [title = node.label, subtitle = '', ...legend] = node.labelLines
   return (
-    <g className={`map-start ${dimmed ? 'is-dimmed' : ''}`}>
+    <g
+      className={`map-start map-interactive ${selected ? 'is-selected' : ''} ${dimmed ? 'is-dimmed' : ''}`}
+      role="button"
+      aria-label="Open Robot Control Roadmap overview"
+      aria-pressed={selected}
+      tabIndex={0}
+      onPointerDown={(event) => event.stopPropagation()}
+      onClick={() => onSelect(node.id)}
+      onKeyDown={(event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault()
+          onSelect(node.id)
+        }
+      }}
+    >
       <circle cx={nodeCenter.x} cy={nodeCenter.y} r={radius} fill={node.style.fillColor ?? '#fff'} stroke={node.style.strokeColor ?? '#202124'} strokeWidth="5" />
       <text x={nodeCenter.x} y={nodeCenter.y - 40} textAnchor="middle" fontSize="38" fontWeight="750">{title}</text>
       {subtitle && <text x={nodeCenter.x} y={nodeCenter.y + 78} textAnchor="middle" fontSize="18" fill="#5f6368">{subtitle}</text>}
@@ -249,6 +264,25 @@ function CoreTrackPanel({ group, onClose }: { group: Group; onClose: () => void 
   )
 }
 
+function RoadmapPanel({ onClose }: { onClose: () => void }) {
+  return (
+    <aside className="topic-panel roadmap-panel" aria-label="About the Robot Control Roadmap">
+      <div className="panel-handle" aria-hidden="true" />
+      <div className="panel-heading">
+        <div>
+          <p className="topic-kicker"><span />About this roadmap</p>
+          <h2>Robot Control Roadmap</h2>
+        </div>
+        <button className="close-button" onClick={onClose} aria-label="Close roadmap overview">×</button>
+      </div>
+      <section className="core-description">
+        <h3>IEEE RAS technical committee</h3>
+        <p>{ROADMAP_DESCRIPTION}</p>
+      </section>
+    </aside>
+  )
+}
+
 function TopicLinks({ topics, onNavigate }: { topics: Topic[]; onNavigate: (id: string) => void }) {
   return <ul className="topic-links">
     {topics.map((topic) => <li key={topic.id}><button onClick={() => onNavigate(topic.id)}><span>{topic.id}</span>{topic.label}</button></li>)}
@@ -295,7 +329,7 @@ export default function App() {
     const from = transformRef.current
     const startTime = performance.now()
     const tick = (now: number) => {
-      const progress = Math.min(1, (now - startTime) / 320)
+      const progress = Math.min(1, (now - startTime) / 240)
       const eased = 1 - (1 - progress) ** 3
       updateTransform({
         x: from.x + (next.x - from.x) * eased,
@@ -325,7 +359,7 @@ export default function App() {
   }, [animateTo, nodes, updateTransform])
 
   const selectNode = useCallback((id: string, fromHistory = false) => {
-    if (!nodes.has(id) || id === roadmap.start.id) return
+    if (!nodes.has(id)) return
     setSelectedId(id)
     focusNode(id)
     if (!fromHistory && window.location.hash !== `#${id}`) window.history.pushState(null, '', `#${id}`)
@@ -486,7 +520,7 @@ export default function App() {
               return <path key={edge.id} d={path} fill="none" stroke={edge.style.strokeColor ?? group?.stroke ?? '#555'} strokeWidth={baseWidth} opacity={related ? baseOpacity : baseOpacity * 0.14} markerEnd={isSpoke ? undefined : `url(#arrow-${groupId})`} />
             })}
           </g>
-          <StartNode node={roadmap.start} dimmed={Boolean(selectedId) && !visibleContext.has('START')} />
+          <StartNode node={roadmap.start} selected={roadmap.start.id === selectedId} dimmed={Boolean(selectedId) && !visibleContext.has('START')} onSelect={selectNode} />
           {roadmap.groups.map((group) => <MapNode key={group.hub.id} node={group.hub} selected={group.hub.id === selectedId} dimmed={Boolean(selectedId) && !visibleContext.has(group.hub.id)} onSelect={selectNode} />)}
           {roadmap.topics.map((topic) => <MapNode key={topic.id} node={topic} selected={topic.id === selectedId} dimmed={Boolean(selectedId) && !visibleContext.has(topic.id)} onSelect={selectNode} />)}
         </g>
@@ -494,6 +528,7 @@ export default function App() {
       {hintVisible && !selectedId && <div className="onboarding" role="status"><span>Drag to explore · Scroll or pinch to zoom · Select a topic</span><button onClick={dismissHint} aria-label="Dismiss exploration hint">×</button></div>}
       {selectedTopic && <TopicPanel topic={selectedTopic} prerequisites={prerequisiteTopics} nextTopics={nextTopics} onNavigate={selectNode} onClose={closePanel} />}
       {selectedGroup && <CoreTrackPanel group={selectedGroup} onClose={closePanel} />}
+      {selectedId === roadmap.start.id && <RoadmapPanel onClose={closePanel} />}
     </main>
   )
 }
