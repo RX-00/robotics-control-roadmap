@@ -123,4 +123,4 @@ The repository retains `images/Control_Map_ver5.png` as a visual design referenc
 
 - Change "Robot Control Roadmap" name into "Robot Optimization Roadmap" everywhere in the whole repo and even the name lol.
 - Setup system where we can easily integrate Github issues. Like a note so that people can suggest more resources, nodes, etc.
-- Make it a minipage into the TCOpt main webpage (figure out how to do that).
+- Make it a minipage into the TCOpt main webpage (figure out how to do that by talking to Konstantinos).
