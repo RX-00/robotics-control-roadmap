@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState, type PointerEvent, type WheelEvent } from 'react'
 import rawRoadmap from './generated/roadmap.json'
-import type { Edge, Geometry, Node, RoadmapData, Style, Topic } from './types'
+import type { Edge, Geometry, Group, Node, RoadmapData, Style, Topic } from './types'
 
 const roadmap = rawRoadmap as unknown as RoadmapData
 
@@ -10,6 +10,19 @@ type Transform = { x: number; y: number; scale: number }
 const MIN_SCALE = 0.12
 const MAX_SCALE = 1.25
 const REPOSITORY_URL = 'https://github.com/RX-00/robotics-control-roadmap'
+const CORE_TRACK_DESCRIPTIONS: Record<string, string> = {
+  F: 'The mathematical and computational tools used to formulate robot models, analyze algorithms, and solve the numerical problems that appear throughout robotics.',
+  M: 'Methods for expressing a robot’s geometry, kinematics, dynamics, and actuation so its motion and forces can be predicted.',
+  C: 'Principles and methods for using measurements to make a system follow desired behavior and remain stable despite disturbances and uncertainty.',
+  E: 'Techniques for inferring a robot’s unobserved state—such as position, velocity, or map—from noisy sensors and a model.',
+  P: 'Algorithms that find collision-free, feasible motions from a start configuration to a goal while respecting the robot and environment.',
+  O: 'A framework for choosing control inputs that optimize an objective over time while satisfying dynamics and constraints.',
+  R: 'Coordinated control of a robot’s many joints and tasks so the entire body moves, balances, and interacts as intended.',
+  I: 'Control methods for physical interaction involving contact, friction, impacts, and force regulation between a robot and its environment.',
+  L: 'Methods that use data to learn models, policies, or control components, often improving performance when hand-designed models are limited.',
+  D: 'Methods for ensuring robots operate safely, including constraint enforcement, risk management, verification, and fault handling.',
+  H: 'The engineering practices that turn control and planning methods into dependable physical systems, including sensing, software, calibration, and testing.',
+}
 
 function numberStyle(style: Style, key: string, fallback: number) {
   const value = Number(style[key])
@@ -83,9 +96,9 @@ function initialTransform(width: number, height: number): Transform {
   return { x: width / 2 - roadmapCenter.x * scale, y: height / 2 - roadmapCenter.y * scale, scale }
 }
 
-function hashTopicId() {
+function hashNodeId() {
   const id = decodeURIComponent(window.location.hash.replace(/^#/, ''))
-  return roadmap.topics.some((topic) => topic.id === id) ? id : null
+  return roadmap.topics.some((topic) => topic.id === id) || roadmap.groups.some((group) => group.hub.id === id) ? id : null
 }
 
 function MapNode({
@@ -107,7 +120,7 @@ function MapNode({
   const lines = softWrap(node.label, node.kind === 'hub' ? 28 : Math.max(18, Math.floor(geometry.width / 9)))
   const lineHeight = fontSize * 1.25
   const firstY = geometry.y + geometry.height / 2 - ((lines.length - 1) * lineHeight) / 2
-  const isInteractive = node.kind === 'topic'
+  const isInteractive = node.kind === 'topic' || node.kind === 'hub'
 
   const activate = () => {
     if (isInteractive) onSelect(node.id)
@@ -115,9 +128,9 @@ function MapNode({
 
   return (
     <g
-      className={`map-node ${isInteractive ? 'map-topic' : ''} ${selected ? 'is-selected' : ''} ${dimmed ? 'is-dimmed' : ''}`}
+      className={`map-node ${isInteractive ? 'map-interactive' : ''} ${selected ? 'is-selected' : ''} ${dimmed ? 'is-dimmed' : ''}`}
       role={isInteractive ? 'button' : undefined}
-      aria-label={isInteractive ? `Open ${node.label}` : undefined}
+      aria-label={isInteractive ? `Open ${node.label} details` : undefined}
       aria-pressed={isInteractive ? selected : undefined}
       tabIndex={isInteractive ? 0 : undefined}
       onPointerDown={isInteractive ? (event) => event.stopPropagation() : undefined}
@@ -217,6 +230,25 @@ function TopicPanel({
   )
 }
 
+function CoreTrackPanel({ group, onClose }: { group: Group; onClose: () => void }) {
+  return (
+    <aside className="topic-panel core-track-panel" aria-label={`${group.title} overview`}>
+      <div className="panel-handle" aria-hidden="true" />
+      <div className="panel-heading">
+        <div>
+          <p className="topic-kicker"><span style={{ background: group.stroke }} />Core track</p>
+          <h2>{group.title}</h2>
+        </div>
+        <button className="close-button" onClick={onClose} aria-label="Close track overview">×</button>
+      </div>
+      <section className="core-description">
+        <h3>Overview</h3>
+        <p>{CORE_TRACK_DESCRIPTIONS[group.id]}</p>
+      </section>
+    </aside>
+  )
+}
+
 function TopicLinks({ topics, onNavigate }: { topics: Topic[]; onNavigate: (id: string) => void }) {
   return <ul className="topic-links">
     {topics.map((topic) => <li key={topic.id}><button onClick={() => onNavigate(topic.id)}><span>{topic.id}</span>{topic.label}</button></li>)}
@@ -232,7 +264,7 @@ export default function App() {
   const hasInitialized = useRef(false)
   const initialDeepLinkScheduled = useRef(false)
   const [transform, setTransform] = useState<Transform>(transformRef.current)
-  const [selectedId, setSelectedId] = useState<string | null>(hashTopicId)
+  const [selectedId, setSelectedId] = useState<string | null>(hashNodeId)
   const [hintVisible, setHintVisible] = useState(() => window.localStorage.getItem('roadmap-onboarding-dismissed') !== '1')
 
   const nodes = useMemo(() => new Map<string, Node>([
@@ -242,6 +274,7 @@ export default function App() {
   ]), [])
   const topicsById = useMemo(() => new Map(roadmap.topics.map((topic) => [topic.id, topic])), [])
   const groupById = useMemo(() => new Map(roadmap.groups.map((group) => [group.id, group])), [])
+  const groupsByHubId = useMemo(() => new Map(roadmap.groups.map((group) => [group.hub.id, group])), [])
 
   const updateTransform = useCallback((next: Transform) => {
     transformRef.current = next
@@ -275,13 +308,13 @@ export default function App() {
     animationFrame.current = requestAnimationFrame(tick)
   }, [stopAnimation, updateTransform])
 
-  const focusTopic = useCallback((id: string, animate = true) => {
-    const topic = topicsById.get(id)
+  const focusNode = useCallback((id: string, animate = true) => {
+    const node = nodes.get(id)
     const svg = svgRef.current
-    if (!topic || !svg) return
+    if (!node || !svg) return
     const bounds = svg.getBoundingClientRect()
     const scale = Math.min(0.58, Math.max(0.28, Math.min(bounds.width / 1450, bounds.height / 1300)))
-    const point = center(topic.geometry)
+    const point = center(node.geometry)
     const next = {
       x: (bounds.width > 900 ? bounds.width * 0.42 : bounds.width / 2) - point.x * scale,
       y: bounds.height / 2 - point.y * scale,
@@ -289,14 +322,14 @@ export default function App() {
     }
     if (animate) animateTo(next)
     else updateTransform(next)
-  }, [animateTo, topicsById, updateTransform])
+  }, [animateTo, nodes, updateTransform])
 
-  const selectTopic = useCallback((id: string, fromHistory = false) => {
-    if (!topicsById.has(id)) return
+  const selectNode = useCallback((id: string, fromHistory = false) => {
+    if (!nodes.has(id) || id === roadmap.start.id) return
     setSelectedId(id)
-    focusTopic(id)
+    focusNode(id)
     if (!fromHistory && window.location.hash !== `#${id}`) window.history.pushState(null, '', `#${id}`)
-  }, [focusTopic, topicsById])
+  }, [focusNode, nodes])
 
   useEffect(() => {
     const svg = svgRef.current
@@ -306,10 +339,10 @@ export default function App() {
       if (!hasInitialized.current) {
         hasInitialized.current = true
         updateTransform(initialTransform(width, height))
-        const deepLinkedTopic = hashTopicId()
-        if (deepLinkedTopic && !initialDeepLinkScheduled.current) {
+        const deepLinkedNode = hashNodeId()
+        if (deepLinkedNode && !initialDeepLinkScheduled.current) {
           initialDeepLinkScheduled.current = true
-          requestAnimationFrame(() => focusTopic(deepLinkedTopic))
+          requestAnimationFrame(() => focusNode(deepLinkedNode))
         }
       }
     }
@@ -318,17 +351,17 @@ export default function App() {
     const observer = new ResizeObserver(([entry]) => updateViewport(entry.contentRect.width, entry.contentRect.height))
     observer.observe(svg)
     return () => observer.disconnect()
-  }, [focusTopic, updateTransform])
+  }, [focusNode, updateTransform])
 
   useEffect(() => {
     const onHashChange = () => {
-      const id = hashTopicId()
+      const id = hashNodeId()
       setSelectedId(id)
-      if (id) focusTopic(id)
+      if (id) focusNode(id)
     }
     window.addEventListener('hashchange', onHashChange)
     return () => window.removeEventListener('hashchange', onHashChange)
-  }, [focusTopic])
+  }, [focusNode])
 
   useEffect(() => () => stopAnimation(), [stopAnimation])
 
@@ -384,12 +417,13 @@ export default function App() {
     updateTransform({ x: point.x - ((point.x - current.x) / current.scale) * scale, y: point.y - ((point.y - current.y) / current.scale) * scale, scale })
   }
 
-  const selected = selectedId ? topicsById.get(selectedId) ?? null : null
-  const prerequisiteTopics = selected ? roadmap.prerequisiteEdges
-    .filter((edge) => edge.target === selected.id && edge.source !== 'START')
+  const selectedTopic = selectedId ? topicsById.get(selectedId) ?? null : null
+  const selectedGroup = selectedId ? groupsByHubId.get(selectedId) ?? null : null
+  const prerequisiteTopics = selectedTopic ? roadmap.prerequisiteEdges
+    .filter((edge) => edge.target === selectedTopic.id && edge.source !== 'START')
     .map((edge) => topicsById.get(edge.source)).filter((topic): topic is Topic => Boolean(topic)) : []
-  const nextTopics = selected ? roadmap.prerequisiteEdges
-    .filter((edge) => edge.source === selected.id)
+  const nextTopics = selectedTopic ? roadmap.prerequisiteEdges
+    .filter((edge) => edge.source === selectedTopic.id)
     .map((edge) => topicsById.get(edge.target)).filter((topic): topic is Topic => Boolean(topic)) : []
   const visibleContext = useMemo(() => {
     if (!selectedId) return new Set<string>()
@@ -453,12 +487,13 @@ export default function App() {
             })}
           </g>
           <StartNode node={roadmap.start} dimmed={Boolean(selectedId) && !visibleContext.has('START')} />
-          {roadmap.groups.map((group) => <MapNode key={group.hub.id} node={group.hub} selected={false} dimmed={Boolean(selectedId) && !visibleContext.has(group.hub.id)} onSelect={selectTopic} />)}
-          {roadmap.topics.map((topic) => <MapNode key={topic.id} node={topic} selected={topic.id === selectedId} dimmed={Boolean(selectedId) && !visibleContext.has(topic.id)} onSelect={selectTopic} />)}
+          {roadmap.groups.map((group) => <MapNode key={group.hub.id} node={group.hub} selected={group.hub.id === selectedId} dimmed={Boolean(selectedId) && !visibleContext.has(group.hub.id)} onSelect={selectNode} />)}
+          {roadmap.topics.map((topic) => <MapNode key={topic.id} node={topic} selected={topic.id === selectedId} dimmed={Boolean(selectedId) && !visibleContext.has(topic.id)} onSelect={selectNode} />)}
         </g>
       </svg>
-      {hintVisible && !selected && <div className="onboarding" role="status"><span>Drag to explore · Scroll or pinch to zoom · Select a topic</span><button onClick={dismissHint} aria-label="Dismiss exploration hint">×</button></div>}
-      {selected && <TopicPanel topic={selected} prerequisites={prerequisiteTopics} nextTopics={nextTopics} onNavigate={selectTopic} onClose={closePanel} />}
+      {hintVisible && !selectedId && <div className="onboarding" role="status"><span>Drag to explore · Scroll or pinch to zoom · Select a topic</span><button onClick={dismissHint} aria-label="Dismiss exploration hint">×</button></div>}
+      {selectedTopic && <TopicPanel topic={selectedTopic} prerequisites={prerequisiteTopics} nextTopics={nextTopics} onNavigate={selectNode} onClose={closePanel} />}
+      {selectedGroup && <CoreTrackPanel group={selectedGroup} onClose={closePanel} />}
     </main>
   )
 }

@@ -54,8 +54,8 @@ button, a { font: inherit; }
 .map-node { transition: opacity 170ms ease; }
 .map-node rect, .map-start circle { filter: drop-shadow(0 5px 5px rgb(32 33 36 / 13%)); }
 .map-node text, .map-start text { fill: #202124; }
-.map-topic { cursor: pointer; outline: none; }
-.map-topic:hover rect, .map-topic:focus-visible rect { stroke-width: 5; }
+.map-interactive { cursor: pointer; outline: none; }
+.map-interactive:hover rect, .map-interactive:focus-visible rect { stroke-width: 5; }
 .map-node.is-selected rect { stroke-width: 7; filter: drop-shadow(0 0 0 8px rgb(32 33 36 / 18%)) drop-shadow(0 7px 7px rgb(32 33 36 / 18%)); }
 .map-node.is-dimmed, .map-start.is-dimmed { opacity: .38; }
 .map-edges { pointer-events: none; transition: opacity 170ms ease; }
@@ -114,6 +114,7 @@ button, a { font: inherit; }
 .topic-kicker span { border-radius: 999px; display: inline-block; height: 8px; width: 8px; }
 .topic-panel section + section { border-top: 1px solid #414d5b; margin-top: 25px; padding-top: 22px; }
 .topic-panel h3 { font-size: 12px; letter-spacing: .08em; margin: 0 0 11px; text-transform: uppercase; }
+.core-description p { color: #dce3ea; font-size: 15px; line-height: 1.55; margin: 0; }
 
 .resource-list, .topic-links { list-style: none; margin: 0; padding: 0; }
 .resource-list li + li { margin-top: 15px; }
